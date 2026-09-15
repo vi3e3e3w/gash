@@ -185,7 +185,7 @@ hash_builtin (WORD_LIST *list)
 	  if (file_isdir (pathname))
 	    {
 #ifdef EISDIR
-	      builtin_error ("%s: %s", pathname, strerror (EISDIR));
+           builtin_error ("%s: BRO! We weren't not looking for directory!", pathname);
 #else
 	      builtin_error (_("%s: is a directory"), pathname);
 #endif

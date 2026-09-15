@@ -228,7 +228,7 @@ describe_command (char *command, int dflags)
       if (dflags & CDESC_TYPE)
 	puts ("alias");
       else if (dflags & CDESC_SHORTDESC)
-	printf (_("%s is aliased to `%s'\n"), command, alias->value);
+	printf (_("You found %s, not a command, but it's shortcut for `%s'\n"), command, alias->value);
       else if (dflags & CDESC_REUSABLE)
 	{
 	  x = sh_single_quote (alias->value);
@@ -311,9 +311,10 @@ describe_command (char *command, int dflags)
       else if (dflags & CDESC_SHORTDESC)
 	{
 	  if (posixly_correct && (current_builtin->flags & SPECIAL_BUILTIN))
-	    printf (_("%s is a special shell builtin\n"), command);
+	    printf (_("OHH!You found %s, a sPeaCAl SheLL BuilTIn \n"), command);
 	  else
-	    printf (_("%s is a shell builtin\n"), command);
+	    printf (_("You found %s, a shell builtin\n"), command);
+            printf ("That can't find in /usr/bin or prefix even you add all directory as your prefix...but you won't do that\n");
 	}
       else if (dflags & CDESC_REUSABLE)
 	printf ("%s\n", command);
@@ -355,7 +356,7 @@ describe_command (char *command, int dflags)
 	  if (dflags & CDESC_TYPE)
 	    puts ("file");
 	  else if (dflags & CDESC_SHORTDESC)
-	    printf (_("%s is hashed (%s)\n"), command, full_path);
+	    printf (_("Bro!you found %s, and it points to an ELF or something else... (For who don't know, it directory is %s, that all)\n"), command, full_path);
 	  else if (dflags & (CDESC_REUSABLE|CDESC_PATH_ONLY))
 	    printf ("%s\n", full_path);
 

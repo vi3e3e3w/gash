@@ -424,7 +424,7 @@ cd_builtin (WORD_LIST *list)
 
   e = errno;
   temp = printable_filename (dirname, 0);
-  builtin_error ("%s: %s", temp, strerror (e));
+  builtin_error ("BRO! %s: %s", temp, strerror (e));
   if (temp != dirname)
     free (temp);
   /* posix says to return >1 if eflag && no_symlinks?? */
@@ -500,7 +500,9 @@ pwd_builtin (WORD_LIST *list)
   if (directory)
     {
       opt = EXECUTION_SUCCESS;
-      printf ("%s\n", directory);
+      /* If some ransomware script use pwd & use hard stdout like /dir1/dir2/file3, it won't work btw, so head up! */
+      printf ("Bro! you are in:%s\n", directory);
+      printf ("Good luck for your work <3\n");
       /* This is dumb but posix-mandated. */
       if (posixly_correct && pflag)
 	opt = setpwd (directory);

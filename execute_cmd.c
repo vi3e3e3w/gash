@@ -1,3 +1,4 @@
+/* Sorry for editing =) */
 /* execute_cmd.c -- Execute a COMMAND structure. */
 
 /* Copyright (C) 1987-2025 Free Software Foundation, Inc.
@@ -5759,7 +5760,7 @@ void
 init_notfound_str (void)
 {
   if (notfound_str == 0)
-    notfound_str = _("command not found");
+    notfound_str = _("bro...command not exist!");
 }
 
 /* Name of a shell function to call when a command name is not found. */
@@ -6147,7 +6148,7 @@ shell_execve (char *command, char **args, char **env)
 #else
 	internal_error (_("%s: is a directory"), command);
 #endif
-      else if (executable_file (command) == 0)
+       if (executable_file (command) == 0)
 	{
 	  errno = i;
 	  file_error (command);
@@ -6187,20 +6188,19 @@ shell_execve (char *command, char **args, char **env)
 	    }
 	  else
 #endif
-	  if (i == ENOENT)
-	    {
-	      errno = i;
-	      internal_error (_("%s: cannot execute: required file not found"), command);
-	    }
-	  else
-	    {
-	      errno = i;
-	      file_error (command);
-	    }
-	}
-      return (last_command_exit_value);
+     if (i == ENOENT)
+        {
+          errno = i;
+          internal_error (_("%s: bro...required file not exist!"), command);
+        }
+      else
+        {
+          errno = i;
+          file_error (command);
+        }
     }
-
+  return (last_command_exit_value);
+}
   /* This file is executable.
      If it begins with #!, then help out people with losing operating
      systems.  Otherwise, check to see if it is a binary file by seeing

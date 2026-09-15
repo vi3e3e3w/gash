@@ -1769,10 +1769,10 @@ unset_bash_input (int check_zero)
       bash_input.type = st_none;		/* XXX */
     }
 }
-      
+
 
 #if !defined (PROGRAM)
-#  define PROGRAM "bash"
+#  define PROGRAM "gash"
 #endif
 
 static void

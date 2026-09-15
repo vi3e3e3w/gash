@@ -58,7 +58,7 @@ exit_builtin (WORD_LIST *list)
 
   if (interactive)
     {
-      fprintf (stderr, login_shell ? _("logout\n") : "exit\n");
+      fprintf (stderr, login_shell ? _("bro logged out, so\n") : "Bro exit the shell, so\n");
       fflush (stderr);
     }
 
@@ -147,7 +147,7 @@ exit_or_logout (WORD_LIST *list)
   bash_logout ();
 
   last_command_exit_value = exit_value;
-
+  fprintf (stderr, _("Bye bye and never meet again!\n"));
   /* Exit the program. */
   jump_to_top_level (EXITBLTIN);
   /*NOTREACHED*/

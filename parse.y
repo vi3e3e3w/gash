@@ -6856,9 +6856,9 @@ report_syntax_error (const char *message)
 	  msg = p;
 	}
       if (shell_eof_token && current_token != shell_eof_token)
-	parser_error (line_number, _("syntax error near unexpected token `%s' while looking for matching `%c'"), msg, shell_eof_token);
+	parser_error (line_number, _("BRO! You left your `%s' while we searching`%c'"), msg, shell_eof_token);
       else
-	parser_error (line_number, _("syntax error near unexpected token `%s'"), msg);
+	parser_error (line_number, _("BRO! you left your `%s'"), msg);
       free (msg);
 
       if (interactive == 0)
@@ -6877,7 +6877,7 @@ report_syntax_error (const char *message)
       msg = error_token_from_text ();
       if (msg)
 	{
-	  parser_error (line_number, _("syntax error near `%s'"), msg);
+	  parser_error (line_number, _("BRO! token `%s' is wrong"), msg);
 	  free (msg);
 	}
 
