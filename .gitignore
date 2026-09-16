@@ -1,3 +1,6 @@
+# Hold bash binary for org bash 'till delete it
+bash
+
 # don't push out -i
 -i
 
@@ -24,7 +27,7 @@ configure~
 
 autom4te.cache
 
-bash
+gash
 bashbug
 bashversion
 
