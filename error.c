@@ -125,9 +125,13 @@ get_name_for_error (void)
 void
 file_error (const char *filename)
 {
-  report_error ("%s: %s", filename, strerror (errno));
+  if (errno == ENOENT)
+    report_error ("%s: bro...file not exist!", filename);
+   else if (errno == EACCES)
+    report_error ("%s: Bro, you got 403!", filename);
+  else
+    report_error ("%s: %s", filename, strerror (errno));
 }
-
 void
 programming_error (const char *format, ...)
 {
