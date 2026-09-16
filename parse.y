@@ -1,3 +1,4 @@
+
 /* parse.y - Yacc grammar for bash. */
 
 /* Copyright (C) 1989-2025 Free Software Foundation, Inc.
@@ -6896,9 +6897,9 @@ report_syntax_error (const char *message)
 	  if (x == 0)
 	    x = find_token_in_alist (compoundcmd_lineno[compoundcmd_top].token, other_token_alist, 1);
 	  if (x)
-	    parser_error (line_number, _("syntax error: unexpected end of file from `%s' command on line %d"), x, compoundcmd_lineno[compoundcmd_top].lineno);
+	    parser_error (line_number, _("Error STUFF!! | Syntax Error : Why did you end the file too soon while we were looking for the end flag from `%s' command on line %d"), x, compoundcmd_lineno[compoundcmd_top].lineno);
 	  else
-	    parser_error (line_number, _("syntax error: unexpected end of file from command on line %d"), compoundcmd_lineno[compoundcmd_top].lineno);
+	    parser_error (line_number, _("Error STUFF!! | Syntax Error: Why you end file too soon while we find a end flag from a command on %d"), compoundcmd_lineno[compoundcmd_top].lineno);
 	}
       else
 	{
