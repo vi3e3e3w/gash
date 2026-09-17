@@ -631,6 +631,8 @@ initialize_shell_variables (char **env, int privmode)
 
   /* Make a variable called BASH_VERSION which contains the version info. */
   bind_variable ("BASH_VERSION", shell_version_string (), 0);
+  /* Make a variable called GASH_VERSION which contains the GASH version. */
+  bind_variable ("GASH_VERSION", GASH_VERSION (), 0);
 #if defined (ARRAY_VARS)
   make_vers_array ();
 #endif
@@ -6519,3 +6521,5 @@ sv_childmax (const char *name)
   set_maxchild (s);
 }
 #endif
+
+bind_variable ("WHERE_WE_GET_GASH", GASH_SOURCE, 0);
