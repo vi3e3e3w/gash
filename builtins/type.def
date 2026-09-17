@@ -286,8 +286,8 @@ describe_command (char *command, int dflags)
 	{
 	  char *result;
 
-	  printf (_("%s is a function\n"), command);
-
+	  printf (_("You found %s, and it is a shell function \n"), command);
+          printf ("This type is a function go with shell when running...and like a shell builtins, it can't be found in prefix btw, content:\n");
 	  /* We're blowing away THE_PRINTED_COMMAND here... */
 
 	  result = named_function_string (command, function_cell (func), FUNC_MULTILINE|FUNC_EXTERNAL);
