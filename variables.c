@@ -36,6 +36,9 @@
 #  include <unistd.h>
 #endif
 
+/* variables.c */
+#include "gash.h"
+
 #include <stdio.h>
 #include "chartypes.h"
 #if defined (HAVE_PWD_H)
@@ -632,7 +635,9 @@ initialize_shell_variables (char **env, int privmode)
   /* Make a variable called BASH_VERSION which contains the version info. */
   bind_variable ("BASH_VERSION", shell_version_string (), 0);
   /* Make a variable called GASH_VERSION which contains the GASH version. */
-  bind_variable ("GASH_VERSION", GASH_VERSION (), 0);
+  bind_variable ("GASH_VERSION", GASH_VERSION , 0);
+  /* Make a variable called WHERE_WE_GET_GASH which contains the GASH source. */
+bind_variable ("WHERE_WE_GET_GASH", GASH_SOURCE, 0);
 #if defined (ARRAY_VARS)
   make_vers_array ();
 #endif
@@ -6012,7 +6017,6 @@ sv_hostfile (const char *name)
   else
     hostname_list_initialized = 0;
 }
-
 #if defined (STRICT_POSIX)
 /* In strict posix mode, we allow assignments to LINES and COLUMNS (and values
    found in the initial environment) to override the terminal size reported by
@@ -6522,4 +6526,3 @@ sv_childmax (const char *name)
 }
 #endif
 
-bind_variable ("WHERE_WE_GET_GASH", GASH_SOURCE, 0);

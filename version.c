@@ -33,8 +33,7 @@
 #include "conftypes.h"
 
 #include "bashintl.h"
-#define GASH_VERSION "gash_1.3(int1092)-release"
-#define WHERE_WE_GET_GASH "github"
+#include "gash.h"
 extern char *shell_name;
 
 /* Defines from version.h */
