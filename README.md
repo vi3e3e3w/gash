@@ -33,3 +33,9 @@ You can try some behavior and stuff...
 
 # Project has been fork to made this:
 GNU Bash, a defaut shell by Linux and every Linux User use everyday
+## Known Issues
+
+- GASH currently follows the Bash login-shell startup flow.
+- Login shells may source `/etc/profile` and `/etc/bash.bashrc`
+  before the user's GASH configuration is loaded.
+- `~/.gashrc` works as the default interactive non-login startup file.
