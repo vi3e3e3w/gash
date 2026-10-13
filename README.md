@@ -1,4 +1,4 @@
-# Introducing GASH
+# Introducing GAS
 
 ---
 
@@ -18,21 +18,19 @@ and one more time....this project **has a support by ChatGPT!**
 # How to use...
 
 Cause is a Bash fork so is use like bash
+*note: I'm making install script to install automatic*
 
 ```Bash
 git clone https://github.com/vi3e3e3w/gash.git
 cd gash
-make
-ls -lad gash # Make sure is executeable
-# if not
-chmod +x gash
-./gash
+./install.sh
 ```
 Yas
 You can try some behavior and stuff...
 
 # Project has been fork to made this:
 GNU Bash, a defaut shell by Linux and every Linux User use everyday
+
 ## Known Issues
 
 - GASH currently follows the Bash login-shell startup flow.

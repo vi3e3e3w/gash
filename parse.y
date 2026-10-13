@@ -6889,7 +6889,7 @@ report_syntax_error (const char *message)
   else
     {
       if (EOF_Reached && shell_eof_token && current_token != shell_eof_token)
-	parser_error (line_number, _("unexpected EOF while looking for matching `%c'"), shell_eof_token);
+	parser_error (line_number, _("BRO! We are finding `%c', but why you EOF too soon?"), shell_eof_token);
       else if (EOF_Reached && compoundcmd_top >= 0)
 	{
 	  char *x;
@@ -6903,7 +6903,7 @@ report_syntax_error (const char *message)
 	}
       else
 	{
-	  msg = EOF_Reached ? _("syntax error: unexpected end of file") : _("syntax error");
+	  msg = EOF_Reached ? _("Error STUFF: You left your EOF ") : _("syntax error");
 	  parser_error (line_number, "%s", msg);
 	}
 
