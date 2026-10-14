@@ -13,22 +13,35 @@ if [[ $configure_exit != 0 || ! -f Makefile ]];then
     exit 1
 fi
 
-printf 'Enter your CPU Number for make (1-%s): ' "$(nproc)"
-read -r cpu
+while true; do
+    printf 'Enter your CPU Number for make (1-%s): ' "$(nproc)"
+    read -r cpu
 
-make -j"$cpu"
+    if [[ "$cpu" =~ ^[0-9]+$ ]] &&
+       (( 10#$cpu > 0 && 10#$cpu <= $(nproc) )); then
+        break
+    else
+        echo "bro...your CPU it invald"
+    fi
+done
 
-if [[ -x ./gash ]];then
-    echo "gash has been arrive"
-        printf "Would you want to install gash to your computer?"
+if make -j"$cpu"; then
+    if [[ -x ./gash ]]; then
+        echo "Gash has been built successfully!"
+
+        printf "Would you want to install Gash to your computer? [y/N]: "
         read -r yn
-        if [[ $yn == "y" ]];then
+
+        if [[ "$yn" == "y" ]]; then
             make install
         else
-            echo "(Abort) OK! install complete"
+            echo "(Abort) Build complete; installation skipped."
         fi
+    else
+        echo "Looks like the build failed."
+        exit 2
+    fi
 else
-    echo "Look like build failed"
+    echo "Looks like the build failed."
     exit 2
-
 fi
