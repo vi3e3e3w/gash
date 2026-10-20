@@ -1,0 +1,124 @@
+.TH GASH 1 "2026 October 20" "GASH 5.3" "BroTools"
+.SH NAME
+gash \- Giang Again Shell
+.SH SYNOPSIS
+.B gash
+.RI [ options ]
+.RI [ command_string | file ]
+.SH COPYRIGHT
+Bash is Copyright (C) 1989\-2025 by the Free Software Foundation, Inc.
+.PP
+GASH is a Bash fork. GASH-specific changes are Copyright (C) 2026 by vi3e3e3e3e3w.
+.PP
+GASH is distributed under the GNU General Public License, version 3
+or later. See the COPYING file for details.
+.SH DESCRIPTION
+.B GASH
+is Bash, but in BroStyle.
+.PP
+That's all, bro!
+.PP
+.B Fun fact:
+I'm planning to bring 2026 slang into this project.
+The terminal is about to get a vocabulary upgrade. =D
+.SH OPTIONS
+GASH is based on GNU Bash, so its command syntax and options are
+generally inherited from Bash. Some output and error-message behavior
+may differ because of GASH customizations.
+.PP
+Here are some common options:
+.TP
+.BI \-c " command_string"
+Execute commands from
+.IR command_string ,
+then exit.
+.IP
+.B BroTip:
+Wrap a command string in quotes when it contains spaces or shell
+metacharacters, for example:
+.B "gash -c 'git remote -v'"
+.TP
+.BI \-n " file"
+Read commands and check their syntax without executing them.
+.IP
+.B Warning:
+This checks shell syntax, not whether your script's logic is correct
+or whether it will behave as you expect.
+.IP
+.B BroTip:
+Want to catch more potential script problems?
+Give
+.BR shellcheck (1)
+a try. It's free. =D
+.TP
+.BR \-l ", " \-\-login
+Make GASH act as if it had been invoked as a login shell.
+.PP
+For the complete list of options, see
+.BR bash (1)
+or the Bash reference documentation.
+.SH AUTHOR
+.TP
+.B VI3E3E3W
+Project maintainer and author of this GASH manual.
+.TP
+.B ChatGPT =D
+Helped draft and edit this manual.
+.SH BUGS
+It's too big and too slow. (Subjective, bro.)
+.PP
+GASH inherits many of Bash's behaviors and limitations, including:
+.IP \(bu 3
+There are subtle differences between Bash and traditional versions
+of
+.BR sh ,
+mostly because of the POSIX specification.
+.IP \(bu 3
+Aliases can be confusing in some situations.
+.IP \(bu 3
+Shell built-in commands and functions cannot be stopped and restarted
+in the same way as ordinary external processes.
+.IP \(bu 3
+Compound commands and command lists such as
+.B "a ; b ; c"
+may behave unexpectedly when process suspension is involved.
+When a process is stopped, the shell may execute the next command in
+the list or exit an existing loop. Enclosing the command in
+parentheses runs it in a subshell, which can be stopped as a unit.
+.IP \(bu 3
+Array variables may not be exportable in the way users expect.
+.PP
+Some details may vary by Bash version and configuration. Check the
+upstream Bash documentation for the exact behavior.
+.SH SEE ALSO
+.BR bash (1),
+.BR shellcheck (1)
+.SH BE A CONTRIBUTOR
+Hey bro! I'm VI3E3E3W, the project maintainer. Thanks for using GASH
+and checking out what we're building!
+.PP
+GASH is based on GNU Bash, so huge respect to Chet Ramey, the original
+Bash contributors, and everyone helping keep this shell alive.
+I also appreciate everyone contributing directly to GASH!
+.PP
+Wanna help out? Here's the quest:
+.IP 1. 4
+Fork the repository and create your own branch.
+.IP 2. 4
+Make your changes and commit them.
+.IP 3. 4
+Open a pull request on GitHub.
+.PP
+Every contribution counts, whether it's code, bug reports,
+documentation, or ideas.
+.PP
+Thanks for having our back, bro. Much love! <3
+.PP
+GASH is a fork of GNU Bash. Preserve upstream notices and comply
+with the applicable license when redistributing modified versions.
+.SH
+GASH/BASH 5.3
+.PP
+2026 October 20
+
+
