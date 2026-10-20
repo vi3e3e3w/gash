@@ -6146,9 +6146,9 @@ shell_execve (char *command, char **args, char **env)
 #if defined (EISDIR)
 	internal_error ("%s: %s", command, strerror (EISDIR));
 #else
-	internal_error (_("%s: is a directory"), command);
+	internal_error (_("%s: Bro! You are execute the directory"), command);
 #endif
-       if (executable_file (command) == 0)
+    else if (executable_file (command) == 0)
 	{
 	  errno = i;
 	  file_error (command);
@@ -6188,19 +6188,19 @@ shell_execve (char *command, char **args, char **env)
 	    }
 	  else
 #endif
-     if (i == ENOENT)
-        {
-          errno = i;
-          internal_error (_("%s: bro...required file not exist!"), command);
+          if (i == ENOENT)
+            {
+              errno = i;
+              internal_error (_("%s: bro...required file not exist!"), command);
+            }
+          else
+            {
+              errno = i;
+              file_error (command);
+            }
         }
-      else
-        {
-          errno = i;
-          file_error (command);
-        }
+      return (last_command_exit_value);
     }
-  return (last_command_exit_value);
-}
   /* This file is executable.
      If it begins with #!, then help out people with losing operating
      systems.  Otherwise, check to see if it is a binary file by seeing
