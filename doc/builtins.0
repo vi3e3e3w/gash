@@ -1,0 +1,16 @@
+_B_A_S_H___B_U_I_L_T_I_N_S(1)            General Commands Manual           _B_A_S_H___B_U_I_L_T_I_N_S(1)
+
+NNAAMMEE
+       :, ., [, alias, bg, bind, break, builtin, caller, cd, command, compgen,
+       complete, compopt, continue, declare, dirs, disown, echo, enable, eval,
+       exec,  exit, export, false, fc, fg, getopts, hash, help, history, jobs,
+       kill, let, local, logout, mapfile,  popd,  printf,  pushd,  pwd,  read,
+       readarray,  readonly, return, set, shift, shopt, source, suspend, test,
+       times, trap, true, type, typeset, ulimit, umask, unalias, unset, wait -
+       bash built-in commands, see bbaasshh(1)
+
+BBAASSHH BBUUIILLTTIINN CCOOMMMMAANNDDSS
+SSEEEE AALLSSOO
+       bash(1), sh(1)
+
+GNU Bash 5.2                    2023 January 27               _B_A_S_H___B_U_I_L_T_I_N_S(1)

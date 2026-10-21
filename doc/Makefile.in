@@ -196,25 +196,25 @@ bash.info: $(BASHREF_FILES) $(HSUSER) $(RLUSER)
 	$(RM) $@
 	$(MAKEINFO) -o $@ --no-split -I$(TEXINPUTDIR) $(srcdir)/bashref.texi
 
-bash.txt: bash.1
-bash.ps: bash.1
-bash.html: bash.1
+bash.txt: gash.1
+bash.ps: gash.1
+bash.html: gash.1
 bashbug.ps: bashbug.1
-builtins.ps: builtins.1 bash.1
-rbash.ps: rbash.1 bash.1
-bash.0: bash.1
+builtins.ps: builtins.1 gash.1
+rbash.ps: rbash.1 gash.1
+bash.0: gash.1
 bashbug.0: bashbug.1
-builtins.0: builtins.1 bash.1
-rbash.0: rbash.1 bash.1
+builtins.0: builtins.1 gash.1
+rbash.0: rbash.1 gash.1
 article.ps: article.ms
 
 bashref.ps: bashref.dvi
 
 # experimental
 bashref.pdf: bashref.texi
-bash.pdf: bash.1
+bash.pdf: gash.1
 
-builtins.pdf: builtins.1 bash.1
+builtins.pdf: builtins.1 gash.1
 	$(RM) $@
 	-${GROFF} -I${srcdir} -man -T pdf builtins.1 > $@
 
@@ -262,7 +262,7 @@ installdirs:
 	fi
 	
 install: info installdirs
-	-$(INSTALL_DATA) $(srcdir)/bash.1 $(DESTDIR)$(man1dir)/bash${man1ext}
+	-$(INSTALL_DATA) $(srcdir)/gash.1 $(DESTDIR)$(man1dir)/bash${man1ext}
 	-$(INSTALL_DATA) $(srcdir)/bashbug.1 $(DESTDIR)$(man1dir)/bashbug${man1ext}
 	-$(INSTALL_DATA) $(OTHER_DOCS) $(DESTDIR)$(docdir)
 # uncomment the next lines to install the builtins man page
