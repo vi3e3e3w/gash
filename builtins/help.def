@@ -514,12 +514,12 @@ show_builtin_command_help (void)
   char *t, blurb[128];
 
   printf (
-_("These shell commands are defined internally.  Type `help' to see this list.\n\
+_("These shell commands are defined internally. Please type `help' to see this list.\n\
 Type `help name' to find out more about the function `name'.\n\
 Use `info bash' to find out more about the shell in general.\n\
 Use `man -k' or `info' to find out more about commands not in this list.\n\
 \n\
-A star (*) next to a name means that the command is disabled.\n\
+A star (*) next to a name means that the command is disable.\n\
 \n"));
 
   width = default_columns ();
