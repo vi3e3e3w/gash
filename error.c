@@ -60,6 +60,34 @@ extern const char * const bash_badsub_errmsg;
 
 static void error_prolog (int);
 
+/* Keep common system errors readable, but give Gash a little Internet
+   personality while we are here.  The returned strings are static. */
+static const char *
+gash_strerror (int error_number)
+{
+  switch (error_number)
+    {
+    case EACCES:
+      return _("403 Forbidden: permission skill issue");
+    case ENOENT:
+      return _("404 Not Found: this path has left the chat");
+    case EEXIST:
+      return _("Already exists: duplicate arc unlocked");
+    case ENOTDIR:
+      return _("Not a directory: wrong side quest");
+    case EISDIR:
+      return _("Is a directory: plot twist");
+    case ENOSPC:
+      return _("No space left: the disk is cooked");
+    case EROFS:
+      return _("Read-only filesystem said nope");
+    case EPIPE:
+      return _("Broken pipe: the other side went to touch grass");
+    default:
+      return strerror (error_number);
+    }
+}
+
 /* The current maintainer of the shell.  You change this in the
    Makefile. */
 #if !defined (MAINTAINER)
@@ -125,12 +153,7 @@ get_name_for_error (void)
 void
 file_error (const char *filename)
 {
-  if (errno == ENOENT)
-    report_error ("%s: bro...file not exist!", filename);
-   else if (errno == EACCES)
-    report_error ("%s: Bro, you got 403!", filename);
-  else
-    report_error ("%s: %s", filename, strerror (errno));
+  report_error ("%s: %s", filename, gash_strerror (errno));
 }
 void
 programming_error (const char *format, ...)
@@ -287,7 +310,7 @@ sys_error (const char *format, ...)
   va_start (args, format);
 
   vfprintf (stderr, format, args);
-  fprintf (stderr, ": %s\n", strerror (e));
+  fprintf (stderr, ": %s\n", gash_strerror (e));
 
   va_end (args);
 }

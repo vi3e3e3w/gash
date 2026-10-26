@@ -96,4 +96,6 @@ show_shell_version (int extended)
       printf ("%s\n", _("There is NO WARRANTY, to the extent permitted by law."));
    }
    printf ("Just type, and you and your computer will be friends!\n");
+   printf ("Meme protocol: online. Keep calm, stay based, and do not feed the\n");
+   printf ("        terminal gremlins.\n");
 }

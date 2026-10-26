@@ -2099,6 +2099,7 @@ show_shell_usage (FILE *fp, int extra)
       fprintf (fp, "\n");
       fprintf (fp, _("bash home page: <http://www.gnu.org/software/bash>\n"));
       fprintf (fp, _("General help using GNU software: <http://www.gnu.org/gethelp/>\n"));
+      fprintf (fp, _("Internet lore status: skill issue contained; keep calm and touch grass.\n"));
     }
 }
 
