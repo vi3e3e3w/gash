@@ -5908,7 +5908,8 @@ execute_disk_command (WORD_LIST *words, REDIRECT *redirects, char *command_line,
 	    {
 	      /* Make sure filenames are displayed using printable characters */
 	      pathname = printable_filename (pathname, 0);
-	      internal_error ("%s: %s", pathname, notfound_str);
+          internal_error ("%s: \033[31m%s\033[0m", pathname, notfound_str);
+          printf("\033[31mMake sure if your command has been installed, bro!\033[0m\n");
 	      exit (EX_NOTFOUND);	/* Posix.2 says the exit status is 127 */
 	    }
 
@@ -6325,7 +6326,7 @@ execute_intern_function (WORD_DESC *name, FUNCTION_DEF *funcdef)
   if (var && ASSIGN_DISALLOWED (var, 0))
     {
       if (readonly_p (var))
-	internal_error (_("%s: readonly function"), var->name);
+	internal_error (_("%s: BRO! only read this thing!"), var->name);
       return (EXECUTION_FAILURE);
     }
 
