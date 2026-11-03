@@ -1,5 +1,5 @@
 dnl
-dnl Configure script for bash-5.3
+dnl Configure script for gash-1.8
 dnl
 dnl report bugs to chet.ramey@case.edu
 dnl
@@ -21,12 +21,12 @@ dnl Process this file with autoconf to produce a configure script.
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-AC_REVISION([for Bash 5.3, version 5.080])dnl
+AC_REVISION([for gash 1.8, version 5.080])dnl
 
-define(bashvers, 5.3)
+define(gashvers, 1.8)
 define(relstatus, release)
 
-AC_INIT([bash], bashvers-relstatus, [bug-bash@gnu.org])
+AC_INIT([gash], gashvers-relstatus, [https://github.com/vi3e3e3w/gash/issues])
 
 dnl make sure we are using a recent autoconf version
 AC_PREREQ(2.69)
@@ -37,7 +37,7 @@ AC_CONFIG_AUX_DIR(./support)
 AC_CONFIG_HEADERS(config.h buildconf.h)
 
 dnl checks for version info
-BASHVERS=bashvers
+BASHVERS=gashvers
 RELSTATUS=relstatus
 
 dnl defaults for debug settings

@@ -1,4 +1,4 @@
-This is bash.info, produced by makeinfo version 7.2 from bashref.texi.
+This is bash.info, produced by makeinfo version 7.3 from bashref.texi.
 
 This text is a brief description of the features that are present in the
 Bash shell (version 5.3, 18 May 2025).
@@ -13527,7 +13527,7 @@ D.5 Concept Index
 * history list:                          Bash History Facilities.
                                                               (line   6)
 * History, how to use:                   A Programmable Completion Example.
-                                                              (line 113)
+                                                              (line 112)
 * identifier:                            Definitions.         (line  55)
 * initialization file, readline:         Readline Init File.  (line   6)
 * installation:                          Basic Installation.  (line   6)
@@ -13577,7 +13577,7 @@ D.5 Concept Index
 * quoting:                               Quoting.             (line   6)
 * quoting, ANSI:                         ANSI-C Quoting.      (line   6)
 * Readline, how to use:                  Job Control Variables.
-                                                              (line  23)
+                                                              (line  22)
 * redirection:                           Redirections.        (line   6)
 * reserved word:                         Definitions.         (line  74)
 * reserved words:                        Reserved Words.      (line   6)
