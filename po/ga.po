@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bash 5.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 09:37-0400\n"
+"POT-Creation-Date: 2026-10-27 13:00+0700\n"
 "PO-Revision-Date: 2019-01-16 21:05+0000\n"
 "Last-Translator: Séamus Ó Ciardhuáin <sociardhuain@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -24,8 +24,8 @@ msgstr ""
 msgid "bad array subscript"
 msgstr "droch-fhoscript eagair"
 
-#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2196 variables.c:2225
-#: variables.c:3099
+#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2203 variables.c:2232
+#: variables.c:3106
 #, c-format
 msgid "%s: removing nameref attribute"
 msgstr "%s: aitreabúid nameref (tagairt athróga) á baint"
@@ -93,7 +93,7 @@ msgstr ""
 msgid "brace expansion: failed to allocate memory for `%s'"
 msgstr "fairsingiú lúibíní: theip ar leithdháileadh cuimhne le haghaidh '%s'"
 
-#: builtins/alias.def:131 variables.c:1789
+#: builtins/alias.def:131 variables.c:1796
 #, c-format
 msgid "`%s': invalid alias name"
 msgstr "'%s': ainm neamhbhailí ar mhapa eochrach"
@@ -192,7 +192,7 @@ msgstr "Níl OLDPWD socruithe"
 msgid "line %d: "
 msgstr "líne %d: "
 
-#: builtins/common.c:117 error.c:227
+#: builtins/common.c:117 error.c:254
 #, c-format
 msgid "warning: "
 msgstr "rabhadh: "
@@ -227,7 +227,7 @@ msgstr "%s: rogha neamhbhailí"
 msgid "%s: invalid option name"
 msgstr "%s: ainm neamhbhailí rogha"
 
-#: builtins/common.c:210 error.c:461
+#: builtins/common.c:210 error.c:488
 #, c-format
 msgid "`%s': not a valid identifier"
 msgstr "'%s': ní aitheantóir bailí é"
@@ -254,7 +254,7 @@ msgstr "%s: sonrú neamhbhailí comhartha"
 msgid "`%s': not a pid or valid job spec"
 msgstr "'%s': ní aitheantas próisis nó sonrú taisc bailí é"
 
-#: builtins/common.c:242 error.c:455
+#: builtins/common.c:242 error.c:482
 #, c-format
 msgid "%s: readonly variable"
 msgstr "%s: athróg inléite amháin"
@@ -350,12 +350,12 @@ msgstr "Níl cabhair ar fáil sa leagan seo."
 msgid "%s: not an indexed array"
 msgstr "%s: ní eagar innéacsaithe é"
 
-#: builtins/common.c:1028 builtins/set.def:964 variables.c:3868
+#: builtins/common.c:1028 builtins/set.def:964 variables.c:3875
 #, c-format
 msgid "%s: cannot unset: readonly %s"
 msgstr "%s: ní féidir díshocrú: %s inléite amháin"
 
-#: builtins/common.c:1033 builtins/set.def:930 variables.c:3873
+#: builtins/common.c:1033 builtins/set.def:930 variables.c:3880
 #, c-format
 msgid "%s: cannot unset"
 msgstr "%s: ní féidir díshocrú"
@@ -393,7 +393,7 @@ msgstr "Inúsáidte i bhfeidhmeanna amháin. "
 msgid "cannot use `-f' to make functions"
 msgstr "Ní féidir '-f' a úsáid chun feidhmeanna a dhéanamh"
 
-#: builtins/declare.def:499 execute_cmd.c:6320
+#: builtins/declare.def:499
 #, c-format
 msgid "%s: readonly function"
 msgstr "%s: feidhm inléite amháin"
@@ -403,13 +403,13 @@ msgstr "%s: feidhm inléite amháin"
 msgid "%s: reference variable cannot be an array"
 msgstr "%s: ní féidir le athróg thagartha bheith ina h-eagar"
 
-#: builtins/declare.def:567 variables.c:3346
+#: builtins/declare.def:567 variables.c:3353
 #, c-format
 msgid "%s: nameref variable self references not allowed"
 msgstr ""
 "%s: ní cheadaítear tagairtí don athróg féin i nameref (tagairt athróga)"
 
-#: builtins/declare.def:572 variables.c:2035 variables.c:3343
+#: builtins/declare.def:572 variables.c:2042 variables.c:3350
 #, c-format
 msgid "%s: circular name reference"
 msgstr "%s: tagairt ainm ciorclach"
@@ -476,7 +476,7 @@ msgstr "%s: níl sé luchtaithe go dinimiciúil"
 msgid "%s: cannot delete: %s"
 msgstr "%s: ní féidir scrios: %s"
 
-#: builtins/evalfile.c:137 builtins/hash.def:190 execute_cmd.c:6140
+#: builtins/evalfile.c:137 builtins/hash.def:190
 #, c-format
 msgid "%s: is a directory"
 msgstr "%s: is comhadlann é"
@@ -491,7 +491,7 @@ msgstr "%s: ní gnáthchomhad é"
 msgid "%s: file is too large"
 msgstr "%s: tá an comhad ró-mhór"
 
-#: builtins/evalfile.c:189 builtins/evalfile.c:207 execute_cmd.c:6222
+#: builtins/evalfile.c:191 builtins/evalfile.c:209 execute_cmd.c:6231
 #: shell.c:1687
 #, fuzzy
 msgid "cannot execute binary file"
@@ -509,8 +509,8 @@ msgstr "%s: ní féidir rith: %s"
 
 #: builtins/exit.def:61
 #, c-format
-msgid "logout\n"
-msgstr "logout\n"
+msgid "bro logged out, so\n"
+msgstr ""
 
 #: builtins/exit.def:85
 msgid "not login shell: use `exit'"
@@ -525,6 +525,11 @@ msgstr "Tá tascanna stoptha ann.\n"
 #, c-format
 msgid "There are running jobs.\n"
 msgstr "Tá tascanna ag rith.\n"
+
+#: builtins/exit.def:150
+#, c-format
+msgid "Bye bye and never meet again!\n"
+msgstr ""
 
 #: builtins/fc.def:284 builtins/fc.def:391 builtins/fc.def:435
 msgid "no command found"
@@ -602,20 +607,21 @@ msgid "cannot open"
 msgstr "Ní féidir cur ar fionraí."
 
 #: builtins/help.def:264 builtins/help.def:306 builtins/history.def:306
-#: builtins/history.def:325 builtins/read.def:909
+#: builtins/history.def:325 builtins/read.def:911
 #, fuzzy
 msgid "read error"
 msgstr "Earráid léite: %d: %s"
 
 #: builtins/help.def:517
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"These shell commands are defined internally.  Type `help' to see this list.\n"
+"These shell commands are defined internally. Please type `help' to see this "
+"list.\n"
 "Type `help name' to find out more about the function `name'.\n"
 "Use `info bash' to find out more about the shell in general.\n"
 "Use `man -k' or `info' to find out more about commands not in this list.\n"
 "\n"
-"A star (*) next to a name means that the command is disabled.\n"
+"A star (*) next to a name means that the command is disable.\n"
 "\n"
 msgstr ""
 "Tá na horduithe blaoisce seo sainmhínithe go hinmheánach.\n"
@@ -641,7 +647,7 @@ msgstr "suíomh staire"
 msgid "empty filename"
 msgstr "ainm folamh athróga eagair"
 
-#: builtins/history.def:282 subst.c:8226
+#: builtins/history.def:282 subst.c:8233
 #, c-format
 msgid "%s: parameter null or not set"
 msgstr "%s: paraiméadar neamhnitheach nó gan socrú."
@@ -673,36 +679,36 @@ msgstr "Earráid neamhaithnid"
 msgid "expression expected"
 msgstr "Ag súil le slonn"
 
-#: builtins/mapfile.def:249 builtins/read.def:373
+#: builtins/mapfile.def:252 builtins/read.def:373
 #, c-format
 msgid "%s: invalid file descriptor specification"
 msgstr "%s: sonrú neamhbhailí tuairisceora comhaid"
 
-#: builtins/mapfile.def:257 builtins/read.def:380
+#: builtins/mapfile.def:260 builtins/read.def:380
 #, fuzzy
 msgid "invalid file descriptor"
 msgstr "%d: tuairisceoir comhaid neamhbhailí: %s"
 
-#: builtins/mapfile.def:266 builtins/mapfile.def:304
+#: builtins/mapfile.def:269 builtins/mapfile.def:307
 #, c-format
 msgid "%s: invalid line count"
 msgstr "%s: comhaireamh neamhbhailí línte"
 
-#: builtins/mapfile.def:277
+#: builtins/mapfile.def:280
 #, c-format
 msgid "%s: invalid array origin"
 msgstr "%s: bunphointe neamhbhailí eagair"
 
-#: builtins/mapfile.def:294
+#: builtins/mapfile.def:297
 #, c-format
 msgid "%s: invalid callback quantum"
 msgstr "%s: candam neamhbhailí aisghlaoigh"
 
-#: builtins/mapfile.def:327
+#: builtins/mapfile.def:330
 msgid "empty array variable name"
 msgstr "ainm folamh athróga eagair"
 
-#: builtins/mapfile.def:347
+#: builtins/mapfile.def:350
 msgid "array variable support required"
 msgstr "tacaíocht le hathróga eagair de dhíth"
 
@@ -960,38 +966,50 @@ msgstr "']' ar iarraidh"
 
 #: builtins/type.def:231
 #, c-format
-msgid "%s is aliased to `%s'\n"
-msgstr "Tá %s ailiasáilte go '%s'.\n"
+msgid "You found %s, not a command, but it's shortcut for `%s'\n"
+msgstr ""
 
 #: builtins/type.def:252
 #, c-format
-msgid "%s is a shell keyword\n"
-msgstr "Is eochairfhocal blaoisce é %s.\n"
+msgid "You found %s! A shell keyword, it is the part of the shell lang!\n"
+msgstr ""
 
-#: builtins/type.def:270 builtins/type.def:314
+#: builtins/type.def:270
 #, c-format
 msgid "%s is a special shell builtin\n"
 msgstr "Is ordú ionsuite blaoisce speisialta é %s\n"
 
 #: builtins/type.def:289
 #, c-format
-msgid "%s is a function\n"
-msgstr "Is feidhm é %s.\n"
+msgid "You found %s, and it is a shell function \n"
+msgstr ""
+
+#: builtins/type.def:314
+#, c-format
+msgid "OHH!You found %s, a sPeaCAl SheLL BuilTIn \n"
+msgstr ""
 
 #: builtins/type.def:316
-#, c-format
-msgid "%s is a shell builtin\n"
+#, fuzzy, c-format
+msgid "You found %s, a shell builtin\n"
 msgstr "Is ordú ionsuite blaoisce é %s\n"
 
-#: builtins/type.def:338 builtins/type.def:425
+#: builtins/type.def:339
 #, c-format
 msgid "%s is %s\n"
 msgstr "Tá %s %s\n"
 
-#: builtins/type.def:358
+#: builtins/type.def:359
 #, c-format
-msgid "%s is hashed (%s)\n"
-msgstr "Tá %s haiseáilte (%s)\n"
+msgid ""
+"Bro!you found %s, and it points to an ELF or something else... (For who "
+"don't know, it directory is %s, that all)\n"
+msgstr ""
+
+#: builtins/type.def:426
+#, c-format
+msgid "You found %s! a executable in $PATH (Directory:%s)\n"
+msgstr ""
 
 #: builtins/ulimit.def:403
 #, c-format
@@ -1031,48 +1049,81 @@ msgstr "'%c': oibreoir neamhbhailí móid shiombalaigh"
 msgid "`%c': invalid symbolic mode character"
 msgstr "'%c': carachtar neamhbhailí móid shiombalaigh"
 
-#: error.c:83 error.c:311 error.c:313 error.c:315
+#: error.c:71
+msgid "403 Forbidden: permission skill issue"
+msgstr ""
+
+#: error.c:73
+msgid "404 Not Found: this path has left the chat"
+msgstr ""
+
+#: error.c:75
+msgid "Already exists: duplicate arc unlocked"
+msgstr ""
+
+#: error.c:77
+msgid "Not a directory: wrong side quest"
+msgstr ""
+
+#: error.c:79
+#, fuzzy
+msgid "Is a directory: plot twist"
+msgstr "%s: is comhadlann é"
+
+#: error.c:81
+msgid "No space left: the disk is cooked"
+msgstr ""
+
+#: error.c:83
+msgid "Read-only filesystem said nope"
+msgstr ""
+
+#: error.c:85
+msgid "Broken pipe: the other side went to touch grass"
+msgstr ""
+
+#: error.c:111 error.c:338 error.c:340 error.c:342
 msgid " line "
 msgstr " líne "
 
-#: error.c:151
+#: error.c:178
 #, c-format
 msgid "last command: %s\n"
 msgstr "Ordú deireanach: %s\n"
 
-#: error.c:159
+#: error.c:186
 #, c-format
 msgid "Aborting..."
 msgstr "Ag tobscor..."
 
 #. TRANSLATORS: this is a prefix for informational messages.
-#: error.c:244
+#: error.c:271
 #, c-format
 msgid "INFORM: "
 msgstr "EOLAS: "
 
-#: error.c:261
+#: error.c:288
 #, fuzzy, c-format
 msgid "DEBUG warning: "
 msgstr "rabhadh: "
 
-#: error.c:413
+#: error.c:440
 msgid "unknown command error"
 msgstr "earráid ordaithe neamhaithnid"
 
-#: error.c:414
+#: error.c:441
 msgid "bad command type"
 msgstr "droch-chineál ordaithe"
 
-#: error.c:415
+#: error.c:442
 msgid "bad connector"
 msgstr "drochnascóir"
 
-#: error.c:416
+#: error.c:443
 msgid "bad jump"
 msgstr "drochléim"
 
-#: error.c:449
+#: error.c:476
 #, c-format
 msgid "%s: unbound variable"
 msgstr "%s: athróg neamhcheangailte"
@@ -1081,71 +1132,80 @@ msgstr "%s: athróg neamhcheangailte"
 msgid "\atimed out waiting for input: auto-logout\n"
 msgstr "\aImithe thar am ag feitheamh le hionchur: logáil amach uathoibríoch\n"
 
-#: execute_cmd.c:606
+#: execute_cmd.c:607
 #, fuzzy
 msgid "cannot redirect standard input from /dev/null"
 msgstr "Ní féidir an ionchur caighdeánach a atreorú ó /dev/null: %s"
 
-#: execute_cmd.c:1412
+#: execute_cmd.c:1413
 #, c-format
 msgid "TIMEFORMAT: `%c': invalid format character"
 msgstr "FORMÁID_AMA: '%c': carachtar formáide neamhbhaií."
 
-#: execute_cmd.c:2493
+#: execute_cmd.c:2494
 #, c-format
 msgid "execute_coproc: coproc [%d:%s] still exists"
 msgstr "execute_coproc: tá an comhphróiseas [%d:%s] fós ann"
 
-#: execute_cmd.c:2647
+#: execute_cmd.c:2648
 msgid "pipe error"
 msgstr "earráid phíopa"
 
-#: execute_cmd.c:4100
+#: execute_cmd.c:4101
 #, c-format
 msgid "invalid regular expression `%s': %s"
 msgstr ""
 
-#: execute_cmd.c:4102
+#: execute_cmd.c:4103
 #, c-format
 msgid "invalid regular expression `%s'"
 msgstr ""
 
-#: execute_cmd.c:5056
+#: execute_cmd.c:5061
 #, c-format
 msgid "eval: maximum eval nesting level exceeded (%d)"
 msgstr "eval: imithe thar uasleibhéal neadaithe eval (%d)"
 
-#: execute_cmd.c:5069
+#: execute_cmd.c:5074
 #, c-format
 msgid "%s: maximum source nesting level exceeded (%d)"
 msgstr "%s: imithe thar uasleibhéal neadaithe foinse (%d)"
 
-#: execute_cmd.c:5198
+#: execute_cmd.c:5203
 #, c-format
 msgid "%s: maximum function nesting level exceeded (%d)"
 msgstr "%s: imithe thar uasleibhéal neadaithe feidhme (%d)"
 
-#: execute_cmd.c:5754
-#, fuzzy
-msgid "command not found"
-msgstr "%s: níor aimsíodh an t-ordú"
+#: execute_cmd.c:5763
+msgid "bro...command not exist!"
+msgstr ""
 
-#: execute_cmd.c:5783
+#: execute_cmd.c:5792
 #, c-format
 msgid "%s: restricted: cannot specify `/' in command names"
 msgstr "%s: srianta: ní féidir \"/\" a shonrú in ainmneacha ordaithe"
 
-#: execute_cmd.c:6176
+#: execute_cmd.c:6150
+#, c-format
+msgid "%s: Bro! You are execute the directory"
+msgstr ""
+
+#: execute_cmd.c:6186
 #, fuzzy
 msgid "bad interpreter"
 msgstr "%s: %s: drochléirmhínitheoir"
 
-#: execute_cmd.c:6185
-#, fuzzy, c-format
-msgid "%s: cannot execute: required file not found"
-msgstr "%s: ní féidir comhad dénártha a rith"
+#: execute_cmd.c:6195
+#, c-format
+msgid "%s: bro...required file not exist!"
+msgstr ""
 
-#: execute_cmd.c:6361
+#: execute_cmd.c:6329
+#, c-format
+msgid "%s: BRO! only read this thing!"
+msgstr ""
+
+#: execute_cmd.c:6370
 #, c-format
 msgid "cannot duplicate fd %d to fd %d"
 msgstr ""
@@ -1242,12 +1302,12 @@ msgstr "%s: earráid sloinn\n"
 msgid "getcwd: cannot access parent directories"
 msgstr "getcwd: ní féidir na máthairchomhadlanna a rochtain."
 
-#: general.c:459
+#: general.c:464
 #, c-format
 msgid "`%s': is a special builtin"
 msgstr "Is ordú ionsuite speisialta é '%s'"
 
-#: input.c:98 subst.c:6542
+#: input.c:98 subst.c:6544
 #, c-format
 msgid "cannot reset nodelay mode for fd %d"
 msgstr ""
@@ -1574,7 +1634,7 @@ msgstr ""
 msgid "make_redirection: redirection instruction `%d' out of range"
 msgstr "make_redirection: ordú atreoraithe \"%d\" as raon."
 
-#: parse.y:2572
+#: parse.y:2584
 #, c-format
 msgid ""
 "shell_getc: shell_input_line_size (%zu) exceeds SIZE_MAX (%lu): line "
@@ -1583,130 +1643,139 @@ msgstr ""
 "shell_getc: tá méid an líne ionchuir blaoisce (%zu) níos mó ná SIZE_MAX "
 "(%lu): líne giorraithe"
 
-#: parse.y:2864
+#: parse.y:2876
 #, fuzzy
 msgid "script file read error"
 msgstr "earráid scríofa: %s"
 
-#: parse.y:3101
+#: parse.y:3113
 msgid "maximum here-document count exceeded"
 msgstr "Imithe thar uasfhad na cáipéise-anseo"
 
-#: parse.y:3901 parse.y:4799 parse.y:6859
+#: parse.y:3913 parse.y:4811
 #, c-format
 msgid "unexpected EOF while looking for matching `%c'"
 msgstr "Deireadh comhaid gan súil leis agus \"%c\" a mheaitseálann á lorg."
 
-#: parse.y:5006
+#: parse.y:5019
 msgid "unexpected EOF while looking for `]]'"
 msgstr "Deireadh comhaid gan súil leis agus \"]]\" á lorg."
 
-#: parse.y:5011
+#: parse.y:5024
 #, c-format
 msgid "syntax error in conditional expression: unexpected token `%s'"
 msgstr ""
 "Earráid chomhréire i slonn coinníollach: comhartha \"%s\" gan suil leis."
 
-#: parse.y:5015
+#: parse.y:5028
 msgid "syntax error in conditional expression"
 msgstr "Earráid chomhréire i slonn coinníollach."
 
-#: parse.y:5093
+#: parse.y:5106
 #, c-format
 msgid "unexpected token `%s', expected `)'"
 msgstr "Comhartha '%s' gan súil leis; ag súil le ')'."
 
-#: parse.y:5097
+#: parse.y:5110
 msgid "expected `)'"
 msgstr "Ag súil le \")\""
 
-#: parse.y:5127
+#: parse.y:5140
 #, c-format
 msgid "unexpected argument `%s' to conditional unary operator"
 msgstr "Argóint \"%s\" gan súil lei go hoibreoir aonártha coinníollach."
 
-#: parse.y:5131
+#: parse.y:5144
 msgid "unexpected argument to conditional unary operator"
 msgstr "Argóint gan súil lei go hoibreoir coinníollach aonártha ."
 
-#: parse.y:5178
+#: parse.y:5191
 #, c-format
 msgid "unexpected token `%s', conditional binary operator expected"
 msgstr ""
 "Comhartha \"%s\" gan súil leis. Bhíothas ag súil le hoibreoir coinníollach "
 "dénártha."
 
-#: parse.y:5182
+#: parse.y:5195
 msgid "conditional binary operator expected"
 msgstr "Bhíothas ag súil le hoibreoir coinníollach dénártha."
 
-#: parse.y:5211
+#: parse.y:5224
 #, c-format
 msgid "unexpected argument `%s' to conditional binary operator"
 msgstr "Argóint '%s' gan súil lei go hoibreoir dénártha coinníollach."
 
-#: parse.y:5215
+#: parse.y:5228
 msgid "unexpected argument to conditional binary operator"
 msgstr "Argóint gan súil lei go hoibreoir dénártha coinníollach."
 
-#: parse.y:5226
+#: parse.y:5239
 #, c-format
 msgid "unexpected token `%c' in conditional command"
 msgstr "Comhartha '%c' gan súil leis in ordú coinníollach."
 
-#: parse.y:5229
+#: parse.y:5242
 #, c-format
 msgid "unexpected token `%s' in conditional command"
 msgstr "Comhartha \"%s\" gan súil leis in ordú coinníollach."
 
-#: parse.y:5233
+#: parse.y:5246
 #, c-format
 msgid "unexpected token %d in conditional command"
 msgstr "Comhartha %d gan súil leis in ordú coinníollach."
 
-#: parse.y:6827
-#, fuzzy, c-format
-msgid "syntax error near unexpected token `%s' while looking for matching `%c'"
-msgstr "Deireadh comhaid gan súil leis agus \"%c\" a mheaitseálann á lorg."
-
-#: parse.y:6829
+#: parse.y:6860
 #, c-format
-msgid "syntax error near unexpected token `%s'"
-msgstr "Earráid chomhréire in aice comhartha '%s' nach rabhthas ag súil leis."
+msgid "BRO! You left your `%s' while we searching`%c'"
+msgstr ""
 
-#: parse.y:6848
+#: parse.y:6862
 #, c-format
-msgid "syntax error near `%s'"
-msgstr "Earráid chomhréire in aice '%s'"
+msgid "BRO! you left your `%s'"
+msgstr ""
 
-#: parse.y:6867
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from `%s' command on line %d"
-msgstr "Earráid chomhréire: deireadh comhaid gan súil leis."
+#: parse.y:6881
+#, c-format
+msgid "BRO! token `%s' is wrong"
+msgstr ""
 
-#: parse.y:6869
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from command on line %d"
-msgstr "Earráid chomhréire: deireadh comhaid gan súil leis."
+#: parse.y:6892
+#, c-format
+msgid "BRO! We are finding `%c', but why you EOF too soon?"
+msgstr ""
 
-#: parse.y:6873
-msgid "syntax error: unexpected end of file"
-msgstr "Earráid chomhréire: deireadh comhaid gan súil leis."
+#: parse.y:6900
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error : Why did you end the file too soon while we "
+"were looking for the end flag from `%s' command on line %d"
+msgstr ""
 
-#: parse.y:6873
+#: parse.y:6902
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error: Why you end file too soon while we find a end "
+"flag from a command on %d"
+msgstr ""
+
+#: parse.y:6906
+msgid "Error STUFF: You left your EOF "
+msgstr ""
+
+#: parse.y:6906
 msgid "syntax error"
 msgstr "Earráid chomhréire"
 
-#: parse.y:6922
+#: parse.y:6955
 #, c-format
 msgid "Use \"%s\" to leave the shell.\n"
 msgstr "Úsáid '%s' le scoir den mblaosc.\n"
 
-#: parse.y:7120
+#: parse.y:7153
 msgid "unexpected EOF while looking for matching `)'"
 msgstr "Deireadh comhaid gan súil leis agus ')' á lorg le meaitseáil."
 
-#: pathexp.c:897
+#: pathexp.c:909
 #, fuzzy
 msgid "invalid glob sort type"
 msgstr "Bonn neamhbhailí"
@@ -1896,7 +1965,13 @@ msgstr "leathanach baile bash: <http://www.gnu.org/software/bash>\n"
 msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 msgstr "Cabhair ghinearálta le bogearraí GNU: <http://www.gnu.org/gethelp/>\n"
 
-#: sig.c:809
+#: shell.c:2102
+#, c-format
+msgid ""
+"Internet lore status: skill issue contained; keep calm and touch grass.\n"
+msgstr ""
+
+#: sig.c:812
 #, c-format
 msgid "sigprocmask: %d: invalid operation"
 msgstr "sigprocmask: %d: oibríocht neamhbhailí"
@@ -2066,105 +2141,105 @@ msgstr "Iarratas faisnéise"
 msgid "Unknown Signal #%d"
 msgstr "Comhartha neamhaithnid #%d"
 
-#: subst.c:1503 subst.c:1795 subst.c:2001
+#: subst.c:1505 subst.c:1797 subst.c:2003
 #, c-format
 msgid "bad substitution: no closing `%s' in %s"
 msgstr "Drochionadú: níl '%s' dúnta i %s"
 
-#: subst.c:3601
+#: subst.c:3603
 #, c-format
 msgid "%s: cannot assign list to array member"
 msgstr "%s: ní féidir liosta a shannadh go ball eagair."
 
-#: subst.c:6381 subst.c:6397
+#: subst.c:6383 subst.c:6399
 msgid "cannot make pipe for process substitution"
 msgstr "Ní féidir píopa a dhéanamh le haghaidh ionadaíocht próisis."
 
-#: subst.c:6457
+#: subst.c:6459
 msgid "cannot make child for process substitution"
 msgstr "Ní féidir macphróiseas a dhéanamh le haghaidh ionadaíocht próisis."
 
-#: subst.c:6532
+#: subst.c:6534
 #, c-format
 msgid "cannot open named pipe %s for reading"
 msgstr "Ní féidir píopa ainmnithe %s a oscailt le haghaidh léamh."
 
-#: subst.c:6534
+#: subst.c:6536
 #, c-format
 msgid "cannot open named pipe %s for writing"
 msgstr "Ní féidir píopa ainmnithe %s a oscailt le haghaidh scríofa."
 
-#: subst.c:6557
+#: subst.c:6559
 #, c-format
 msgid "cannot duplicate named pipe %s as fd %d"
 msgstr ""
 "Ní féidir an píopa ainmnithe %s a dhúbailt mar thuairisceoir comhaid %d."
 
-#: subst.c:6723
+#: subst.c:6725
 msgid "command substitution: ignored null byte in input"
 msgstr "ionadú orduithe: tugadh neamhaird ar ghiotán neamhnitheach san ionchur"
 
-#: subst.c:6962
+#: subst.c:6964
 msgid "function_substitute: cannot open anonymous file for output"
 msgstr ""
 
-#: subst.c:7036
+#: subst.c:7043
 #, fuzzy
 msgid "function_substitute: cannot duplicate anonymous file as standard output"
 msgstr ""
 "command_substitute: ní feidir an píopa a dhúbailt mar thuairisceoir comhaid "
 "1."
 
-#: subst.c:7210 subst.c:7231
+#: subst.c:7217 subst.c:7238
 msgid "cannot make pipe for command substitution"
 msgstr "Ní féidir píopa a dhéanamh le haghaidh ionadú ordaithe."
 
-#: subst.c:7282
+#: subst.c:7289
 msgid "cannot make child for command substitution"
 msgstr "Ní féidir macphróiseas a dhéanamh le haghaidh ionadú ordaithe."
 
-#: subst.c:7315
+#: subst.c:7322
 msgid "command_substitute: cannot duplicate pipe as fd 1"
 msgstr ""
 "command_substitute: ní feidir an píopa a dhúbailt mar thuairisceoir comhaid "
 "1."
 
-#: subst.c:7813 subst.c:10989
+#: subst.c:7820 subst.c:11013
 #, c-format
 msgid "%s: invalid variable name for name reference"
 msgstr "'%s': ainm neamhbhailí athróige le haghaidh tagairt ainm"
 
-#: subst.c:7906 subst.c:7924 subst.c:8100
+#: subst.c:7913 subst.c:7931 subst.c:8107
 #, c-format
 msgid "%s: invalid indirect expansion"
 msgstr "%s: fairsingiú neamhbhailí indíreach"
 
-#: subst.c:7940 subst.c:8108
+#: subst.c:7947 subst.c:8115
 #, c-format
 msgid "%s: invalid variable name"
 msgstr "%s: ainm neamhbhailí athróige"
 
-#: subst.c:8125 subst.c:10271 subst.c:10298
+#: subst.c:8132 subst.c:10278 subst.c:10305
 #, c-format
 msgid "%s: bad substitution"
 msgstr "%s: drochionadú"
 
-#: subst.c:8224
+#: subst.c:8231
 #, c-format
 msgid "%s: parameter not set"
 msgstr "%s: paraiméadar gan socrú."
 
-#: subst.c:8480 subst.c:8495
+#: subst.c:8487 subst.c:8502
 #, c-format
 msgid "%s: substring expression < 0"
 msgstr "%s: slonn fotheaghráin < 0"
 
-#: subst.c:10397
+#: subst.c:10404
 #, c-format
 msgid "$%s: cannot assign in this way"
 msgstr "$%s: ní féidir sannadh mar seo."
 
-#: subst.c:10855
+#: subst.c:10862
 msgid ""
 "future versions of the shell will force evaluation as an arithmetic "
 "substitution"
@@ -2172,12 +2247,12 @@ msgstr ""
 "i leaganacha den bhlaosc amach anseo, beidh luachálú mar ionadú uimhríochta "
 "éigeantach"
 
-#: subst.c:11563
+#: subst.c:11587
 #, c-format
 msgid "bad substitution: no closing \"`\" in %s"
 msgstr "drochionadú: níl  '`' dúnta i %s"
 
-#: subst.c:12636
+#: subst.c:12668
 #, c-format
 msgid "no match: %s"
 msgstr "gan meaitseáil: %s"
@@ -2247,85 +2322,85 @@ msgstr "trap_handler: droch-chomhartha %d"
 msgid "frame not found"
 msgstr "%s: níor aimsíodh an comhad"
 
-#: variables.c:441
+#: variables.c:444
 #, c-format
 msgid "error importing function definition for `%s'"
 msgstr "Earráid agus sainmhíniú na feidhme '%s' á iompórtáil."
 
-#: variables.c:864
+#: variables.c:871
 #, c-format
 msgid "shell level (%d) too high, resetting to 1"
 msgstr "Tá an leibhéal blaoisce (%d) ró-ard; á athshocrú go 1."
 
-#: variables.c:2191 variables.c:2220 variables.c:2278 variables.c:2297
-#: variables.c:2315 variables.c:2350 variables.c:2378 variables.c:2405
-#: variables.c:2431 variables.c:3274 variables.c:3282 variables.c:3797
-#: variables.c:3841
+#: variables.c:2198 variables.c:2227 variables.c:2285 variables.c:2304
+#: variables.c:2322 variables.c:2357 variables.c:2385 variables.c:2412
+#: variables.c:2438 variables.c:3281 variables.c:3289 variables.c:3804
+#: variables.c:3848
 #, fuzzy, c-format
 msgid "%s: maximum nameref depth (%d) exceeded"
 msgstr "Imithe thar uasfhad na cáipéise-anseo"
 
-#: variables.c:2641
+#: variables.c:2648
 msgid "make_local_variable: no function context at current scope"
 msgstr "make_local_variable: níl comhthéacs feidhme sa scóip reatha."
 
-#: variables.c:2660
+#: variables.c:2667
 #, c-format
 msgid "%s: variable may not be assigned value"
 msgstr "%s: ní féidir luach a shannadh ar an athróg"
 
-#: variables.c:2831 variables.c:2884
+#: variables.c:2838 variables.c:2891
 #, c-format
 msgid "%s: cannot inherit value from incompatible type"
 msgstr ""
 
-#: variables.c:3437
+#: variables.c:3444
 #, c-format
 msgid "%s: assigning integer to name reference"
 msgstr "%s: slánuimhir a sannadh go tagairt ainm"
 
-#: variables.c:4387
+#: variables.c:4394
 msgid "all_local_variables: no function context at current scope"
 msgstr "all_local_variables: níl comhthéacs feidhme sa scóip reatha"
 
-#: variables.c:4816
+#: variables.c:4823
 #, c-format
 msgid "%s has null exportstr"
 msgstr "Tá teaghrán easpórtála neamhnitheach ag %s"
 
-#: variables.c:4821 variables.c:4830
+#: variables.c:4828 variables.c:4837
 #, c-format
 msgid "invalid character %d in exportstr for %s"
 msgstr "Carachtar neamhbhailí %d sa teaghrán easpórtála le haghaidh %s."
 
-#: variables.c:4836
+#: variables.c:4843
 #, c-format
 msgid "no `=' in exportstr for %s"
 msgstr "Níl '=' sa teaghrán easpórtála le haghaidh %s."
 
-#: variables.c:5354
+#: variables.c:5361
 msgid "pop_var_context: head of shell_variables not a function context"
 msgstr "pop_var_context: ní comhthéacs feidhme é ceann shell_variables"
 
-#: variables.c:5367
+#: variables.c:5374
 msgid "pop_var_context: no global_variables context"
 msgstr "pop_var_context: níl comhthéacs global_variables ann"
 
-#: variables.c:5457
+#: variables.c:5464
 msgid "pop_scope: head of shell_variables not a temporary environment scope"
 msgstr "pop_scope: ní scóip shealadach thimpeallachta é ceann shell_variables"
 
-#: variables.c:6448
+#: variables.c:6454
 #, c-format
 msgid "%s: %s: cannot open as FILE"
 msgstr "%s: %s: ní féidir a oscailt mar CHOMHAD"
 
-#: variables.c:6453
+#: variables.c:6459
 #, c-format
 msgid "%s: %s: invalid value for trace file descriptor"
 msgstr "%s: %s: luach neamhbhailí le haghaidh tuairisceoir comhaid rianaithe"
 
-#: variables.c:6497
+#: variables.c:6503
 #, c-format
 msgid "%s: %s: compatibility value out of range"
 msgstr "%s: %s: luach comhoiriúnachta as raon"
@@ -2337,16 +2412,18 @@ msgstr "Cóipcheart © 2012 Free Software Foundation, Inc."
 
 #: version.c:51
 msgid ""
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
-"html>\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/"
+"gpl.html>\n"
 msgstr ""
 "Ceadúnas GPLv3+: GNU GPL leagan 3 nó níos déanaí <http://gnu.org/licenses/"
 "gpl.html>\n"
 
 #: version.c:90
 #, c-format
-msgid "GNU bash, version %s (%s)\n"
-msgstr "GNU bash, leagan %s (%s)\n"
+msgid ""
+"Hello! My name is Gash, Version %s (%s), I like helping people talk with "
+"their computer!\n"
+msgstr ""
 
 #: version.c:95
 msgid "This is free software; you are free to change and redistribute it."
@@ -2392,8 +2469,8 @@ msgid ""
 "x keyseq:shell-command] [keyseq:readline-function or readline-command]"
 msgstr ""
 "bind [-lpsvPSVX] [-m MAPA_EOCHRACH] [-f AINM_CHOMHAID] [-q AINM] [-u AINM] [-"
-"r SRAITH_EOCHRACHA] [-x SRAITH_EOCHRACHA:ORDÚ_BLAOISCE] [SRAITH_EOCHRACHA:"
-"GNÍOMH_readline nó ORDÚ_readline]"
+"r SRAITH_EOCHRACHA] [-x SRAITH_EOCHRACHA:ORDÚ_BLAOISCE] "
+"[SRAITH_EOCHRACHA:GNÍOMH_readline nó ORDÚ_readline]"
 
 #: builtins.c:56
 msgid "break [n]"
@@ -2502,8 +2579,8 @@ msgid ""
 "history [-c] [-d offset] [n] or history -anrw [filename] or history -ps arg "
 "[arg...]"
 msgstr ""
-"history [-c] [-d SEACH_CHUR] [n] nó history -anrw [COMHADAINM] nó history -"
-"ps ARGÓINT [ARGÓINT...]"
+"history [-c] [-d SEACH_CHUR] [n] nó history -anrw [COMHADAINM] nó history "
+"-ps ARGÓINT [ARGÓINT...]"
 
 #: builtins.c:127
 msgid "jobs [-lnprs] [jobspec ...] or jobs -x command [args]"
@@ -5336,8 +5413,8 @@ msgid ""
 "    When completion is attempted, the actions are applied in the order the\n"
 "    uppercase-letter options are listed above. If multiple options are "
 "supplied,\n"
-"    the -D option takes precedence over -E, and both take precedence over -"
-"I.\n"
+"    the -D option takes precedence over -E, and both take precedence over "
+"-I.\n"
 "    \n"
 "    Exit Status:\n"
 "    Returns success unless an invalid option is supplied or an error occurs."
@@ -5528,6 +5605,63 @@ msgstr ""
 "Léann línte ó chomhad agus cuireann in athróg eagair iad.\n"
 "    \n"
 "    Comhchiallach le \"mapfile\"."
+
+#, c-format
+#~ msgid "logout\n"
+#~ msgstr "logout\n"
+
+#, c-format
+#~ msgid "%s is aliased to `%s'\n"
+#~ msgstr "Tá %s ailiasáilte go '%s'.\n"
+
+#, c-format
+#~ msgid "%s is a shell keyword\n"
+#~ msgstr "Is eochairfhocal blaoisce é %s.\n"
+
+#, c-format
+#~ msgid "%s is a function\n"
+#~ msgstr "Is feidhm é %s.\n"
+
+#, c-format
+#~ msgid "%s is hashed (%s)\n"
+#~ msgstr "Tá %s haiseáilte (%s)\n"
+
+#, fuzzy
+#~ msgid "command not found"
+#~ msgstr "%s: níor aimsíodh an t-ordú"
+
+#, fuzzy, c-format
+#~ msgid "%s: cannot execute: required file not found"
+#~ msgstr "%s: ní féidir comhad dénártha a rith"
+
+#, fuzzy, c-format
+#~ msgid ""
+#~ "syntax error near unexpected token `%s' while looking for matching `%c'"
+#~ msgstr "Deireadh comhaid gan súil leis agus \"%c\" a mheaitseálann á lorg."
+
+#, c-format
+#~ msgid "syntax error near unexpected token `%s'"
+#~ msgstr ""
+#~ "Earráid chomhréire in aice comhartha '%s' nach rabhthas ag súil leis."
+
+#, c-format
+#~ msgid "syntax error near `%s'"
+#~ msgstr "Earráid chomhréire in aice '%s'"
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from `%s' command on line %d"
+#~ msgstr "Earráid chomhréire: deireadh comhaid gan súil leis."
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from command on line %d"
+#~ msgstr "Earráid chomhréire: deireadh comhaid gan súil leis."
+
+#~ msgid "syntax error: unexpected end of file"
+#~ msgstr "Earráid chomhréire: deireadh comhaid gan súil leis."
+
+#, c-format
+#~ msgid "GNU bash, version %s (%s)\n"
+#~ msgstr "GNU bash, leagan %s (%s)\n"
 
 #, c-format
 #~ msgid "%s: cannot open: %s"

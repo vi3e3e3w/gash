@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bash 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 09:37-0400\n"
+"POT-Creation-Date: 2026-10-27 13:00+0700\n"
 "PO-Revision-Date: 2011-03-16 21:22+0100\n"
 "Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -22,8 +22,8 @@ msgstr ""
 msgid "bad array subscript"
 msgstr "chybný index poľa"
 
-#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2196 variables.c:2225
-#: variables.c:3099
+#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2203 variables.c:2232
+#: variables.c:3106
 #, c-format
 msgid "%s: removing nameref attribute"
 msgstr ""
@@ -88,7 +88,7 @@ msgstr ""
 msgid "brace expansion: failed to allocate memory for `%s'"
 msgstr ""
 
-#: builtins/alias.def:131 variables.c:1789
+#: builtins/alias.def:131 variables.c:1796
 #, c-format
 msgid "`%s': invalid alias name"
 msgstr "„%s“: neplatný názov aliasu"
@@ -185,7 +185,7 @@ msgstr "OLDPWD nebola nastavená"
 msgid "line %d: "
 msgstr "riadok %d: "
 
-#: builtins/common.c:117 error.c:227
+#: builtins/common.c:117 error.c:254
 #, c-format
 msgid "warning: "
 msgstr "upozornenie: "
@@ -220,7 +220,7 @@ msgstr "%s: neplatná voľba"
 msgid "%s: invalid option name"
 msgstr "%s: neplatný názov voľby"
 
-#: builtins/common.c:210 error.c:461
+#: builtins/common.c:210 error.c:488
 #, c-format
 msgid "`%s': not a valid identifier"
 msgstr "„%s“: nie je platný identifikátor"
@@ -247,7 +247,7 @@ msgstr "%s: neplatné určenie signálu"
 msgid "`%s': not a pid or valid job spec"
 msgstr "„%s“: nie je pid ani platný špecifikátor úlohy"
 
-#: builtins/common.c:242 error.c:455
+#: builtins/common.c:242 error.c:482
 #, c-format
 msgid "%s: readonly variable"
 msgstr "%s: premenná len na čítanie"
@@ -343,12 +343,12 @@ msgstr ""
 msgid "%s: not an indexed array"
 msgstr "%s: nie je indexované pole"
 
-#: builtins/common.c:1028 builtins/set.def:964 variables.c:3868
+#: builtins/common.c:1028 builtins/set.def:964 variables.c:3875
 #, c-format
 msgid "%s: cannot unset: readonly %s"
 msgstr "%s: nie je možné zrušiť: len na čítanie %s"
 
-#: builtins/common.c:1033 builtins/set.def:930 variables.c:3873
+#: builtins/common.c:1033 builtins/set.def:930 variables.c:3880
 #, c-format
 msgid "%s: cannot unset"
 msgstr "%s: nie je možné zrušiť"
@@ -384,7 +384,7 @@ msgstr "je možné použiť iba vo funkcii"
 msgid "cannot use `-f' to make functions"
 msgstr "nie je možné použiť „-f“ pre tvorbu funkcií"
 
-#: builtins/declare.def:499 execute_cmd.c:6320
+#: builtins/declare.def:499
 #, c-format
 msgid "%s: readonly function"
 msgstr "%s: funkcia iba na čítanie"
@@ -394,12 +394,12 @@ msgstr "%s: funkcia iba na čítanie"
 msgid "%s: reference variable cannot be an array"
 msgstr ""
 
-#: builtins/declare.def:567 variables.c:3346
+#: builtins/declare.def:567 variables.c:3353
 #, c-format
 msgid "%s: nameref variable self references not allowed"
 msgstr ""
 
-#: builtins/declare.def:572 variables.c:2035 variables.c:3343
+#: builtins/declare.def:572 variables.c:2042 variables.c:3350
 #, c-format
 msgid "%s: circular name reference"
 msgstr ""
@@ -463,7 +463,7 @@ msgstr "%s: nie je dynamicky načítané"
 msgid "%s: cannot delete: %s"
 msgstr "%s: nie je možné zmazať: %s"
 
-#: builtins/evalfile.c:137 builtins/hash.def:190 execute_cmd.c:6140
+#: builtins/evalfile.c:137 builtins/hash.def:190
 #, c-format
 msgid "%s: is a directory"
 msgstr "%s: je adresár"
@@ -478,7 +478,7 @@ msgstr "%s: nie je obyčajný súbor"
 msgid "%s: file is too large"
 msgstr "%s: súbor je príliš veľký"
 
-#: builtins/evalfile.c:189 builtins/evalfile.c:207 execute_cmd.c:6222
+#: builtins/evalfile.c:191 builtins/evalfile.c:209 execute_cmd.c:6231
 #: shell.c:1687
 #, fuzzy
 msgid "cannot execute binary file"
@@ -496,8 +496,8 @@ msgstr "%s: nie je možné spustiť: %s"
 
 #: builtins/exit.def:61
 #, c-format
-msgid "logout\n"
-msgstr "odhlásenie\n"
+msgid "bro logged out, so\n"
+msgstr ""
 
 #: builtins/exit.def:85
 msgid "not login shell: use `exit'"
@@ -512,6 +512,11 @@ msgstr "Existujú zastavené úlohy.\n"
 #, c-format
 msgid "There are running jobs.\n"
 msgstr "Existujú bežiace úlohy.\n"
+
+#: builtins/exit.def:150
+#, c-format
+msgid "Bye bye and never meet again!\n"
+msgstr ""
 
 #: builtins/fc.def:284 builtins/fc.def:391 builtins/fc.def:435
 msgid "no command found"
@@ -587,20 +592,21 @@ msgid "cannot open"
 msgstr "nie je možné suspendovať"
 
 #: builtins/help.def:264 builtins/help.def:306 builtins/history.def:306
-#: builtins/history.def:325 builtins/read.def:909
+#: builtins/history.def:325 builtins/read.def:911
 #, fuzzy
 msgid "read error"
 msgstr "chyba pri čítaní: %d: %s"
 
 #: builtins/help.def:517
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"These shell commands are defined internally.  Type `help' to see this list.\n"
+"These shell commands are defined internally. Please type `help' to see this "
+"list.\n"
 "Type `help name' to find out more about the function `name'.\n"
 "Use `info bash' to find out more about the shell in general.\n"
 "Use `man -k' or `info' to find out more about commands not in this list.\n"
 "\n"
-"A star (*) next to a name means that the command is disabled.\n"
+"A star (*) next to a name means that the command is disable.\n"
 "\n"
 msgstr ""
 "Tieto príkazy shellu sú definované interne. Napísaním „help“ zobrazíte tento "
@@ -627,7 +633,7 @@ msgstr "poloha histórie"
 msgid "empty filename"
 msgstr "názov prázdnej premennej poľa"
 
-#: builtins/history.def:282 subst.c:8226
+#: builtins/history.def:282 subst.c:8233
 #, c-format
 msgid "%s: parameter null or not set"
 msgstr "%s: parameter je null alebo nenastavený"
@@ -659,36 +665,36 @@ msgstr "Neznáma chyba"
 msgid "expression expected"
 msgstr "očakával sa výraz"
 
-#: builtins/mapfile.def:249 builtins/read.def:373
+#: builtins/mapfile.def:252 builtins/read.def:373
 #, c-format
 msgid "%s: invalid file descriptor specification"
 msgstr "%s: neplatná špecifikácia popisovača súboru"
 
-#: builtins/mapfile.def:257 builtins/read.def:380
+#: builtins/mapfile.def:260 builtins/read.def:380
 #, fuzzy
 msgid "invalid file descriptor"
 msgstr "%d: neplatný popisovač súboru: %s"
 
-#: builtins/mapfile.def:266 builtins/mapfile.def:304
+#: builtins/mapfile.def:269 builtins/mapfile.def:307
 #, c-format
 msgid "%s: invalid line count"
 msgstr "%s: neplatný počet riadkov"
 
-#: builtins/mapfile.def:277
+#: builtins/mapfile.def:280
 #, c-format
 msgid "%s: invalid array origin"
 msgstr "%s: neplatný začiatok poľa"
 
-#: builtins/mapfile.def:294
+#: builtins/mapfile.def:297
 #, c-format
 msgid "%s: invalid callback quantum"
 msgstr "%s: neplatné kvantum spätného volania"
 
-#: builtins/mapfile.def:327
+#: builtins/mapfile.def:330
 msgid "empty array variable name"
 msgstr "názov prázdnej premennej poľa"
 
-#: builtins/mapfile.def:347
+#: builtins/mapfile.def:350
 msgid "array variable support required"
 msgstr "vyžaduje sa podpora premennej poľa"
 
@@ -937,38 +943,50 @@ msgstr "chýba „]“"
 
 #: builtins/type.def:231
 #, c-format
-msgid "%s is aliased to `%s'\n"
-msgstr "%s má alias „%s“\n"
+msgid "You found %s, not a command, but it's shortcut for `%s'\n"
+msgstr ""
 
 #: builtins/type.def:252
 #, c-format
-msgid "%s is a shell keyword\n"
-msgstr "%s je kľúčové slovo shellu\n"
+msgid "You found %s! A shell keyword, it is the part of the shell lang!\n"
+msgstr ""
 
-#: builtins/type.def:270 builtins/type.def:314
+#: builtins/type.def:270
 #, fuzzy, c-format
 msgid "%s is a special shell builtin\n"
 msgstr "%s je vstavaný príkaz (builtin) shellu\n"
 
 #: builtins/type.def:289
 #, c-format
-msgid "%s is a function\n"
-msgstr "%s je funkcia\n"
+msgid "You found %s, and it is a shell function \n"
+msgstr ""
+
+#: builtins/type.def:314
+#, c-format
+msgid "OHH!You found %s, a sPeaCAl SheLL BuilTIn \n"
+msgstr ""
 
 #: builtins/type.def:316
-#, c-format
-msgid "%s is a shell builtin\n"
+#, fuzzy, c-format
+msgid "You found %s, a shell builtin\n"
 msgstr "%s je vstavaný príkaz (builtin) shellu\n"
 
-#: builtins/type.def:338 builtins/type.def:425
+#: builtins/type.def:339
 #, c-format
 msgid "%s is %s\n"
 msgstr "%s je %s\n"
 
-#: builtins/type.def:358
+#: builtins/type.def:359
 #, c-format
-msgid "%s is hashed (%s)\n"
-msgstr "%s je hašovaný (%s)\n"
+msgid ""
+"Bro!you found %s, and it points to an ELF or something else... (For who "
+"don't know, it directory is %s, that all)\n"
+msgstr ""
+
+#: builtins/type.def:426
+#, c-format
+msgid "You found %s! a executable in $PATH (Directory:%s)\n"
+msgstr ""
 
 #: builtins/ulimit.def:403
 #, c-format
@@ -1008,48 +1026,81 @@ msgstr "„%c“: neplatný operátor symbolického režimu"
 msgid "`%c': invalid symbolic mode character"
 msgstr "„%c“: neplatný znak symbolického režimu"
 
-#: error.c:83 error.c:311 error.c:313 error.c:315
+#: error.c:71
+msgid "403 Forbidden: permission skill issue"
+msgstr ""
+
+#: error.c:73
+msgid "404 Not Found: this path has left the chat"
+msgstr ""
+
+#: error.c:75
+msgid "Already exists: duplicate arc unlocked"
+msgstr ""
+
+#: error.c:77
+msgid "Not a directory: wrong side quest"
+msgstr ""
+
+#: error.c:79
+#, fuzzy
+msgid "Is a directory: plot twist"
+msgstr "%s: je adresár"
+
+#: error.c:81
+msgid "No space left: the disk is cooked"
+msgstr ""
+
+#: error.c:83
+msgid "Read-only filesystem said nope"
+msgstr ""
+
+#: error.c:85
+msgid "Broken pipe: the other side went to touch grass"
+msgstr ""
+
+#: error.c:111 error.c:338 error.c:340 error.c:342
 msgid " line "
 msgstr " riadok "
 
-#: error.c:151
+#: error.c:178
 #, c-format
 msgid "last command: %s\n"
 msgstr "posledný príkaz: %s\n"
 
-#: error.c:159
+#: error.c:186
 #, c-format
 msgid "Aborting..."
 msgstr "Ruší sa..."
 
 #. TRANSLATORS: this is a prefix for informational messages.
-#: error.c:244
+#: error.c:271
 #, c-format
 msgid "INFORM: "
 msgstr ""
 
-#: error.c:261
+#: error.c:288
 #, fuzzy, c-format
 msgid "DEBUG warning: "
 msgstr "upozornenie: "
 
-#: error.c:413
+#: error.c:440
 msgid "unknown command error"
 msgstr "chyba neznámeho príkazu"
 
-#: error.c:414
+#: error.c:441
 msgid "bad command type"
 msgstr "chybný typ príkazu"
 
-#: error.c:415
+#: error.c:442
 msgid "bad connector"
 msgstr "chybný konektor"
 
-#: error.c:416
+#: error.c:443
 msgid "bad jump"
 msgstr "chybný skok"
 
-#: error.c:449
+#: error.c:476
 #, c-format
 msgid "%s: unbound variable"
 msgstr "%s: neviazaná premenná"
@@ -1058,71 +1109,80 @@ msgstr "%s: neviazaná premenná"
 msgid "\atimed out waiting for input: auto-logout\n"
 msgstr "\ačas vypršal pri čakaní na vstup: automatické odhlásenie\n"
 
-#: execute_cmd.c:606
+#: execute_cmd.c:607
 #, fuzzy
 msgid "cannot redirect standard input from /dev/null"
 msgstr "nie je možné presmerovať štandardný vstup z /dev/null: %s"
 
-#: execute_cmd.c:1412
+#: execute_cmd.c:1413
 #, c-format
 msgid "TIMEFORMAT: `%c': invalid format character"
 msgstr "TIMEFORMAT: „%c“: neplatný formátovácí znak"
 
-#: execute_cmd.c:2493
+#: execute_cmd.c:2494
 #, c-format
 msgid "execute_coproc: coproc [%d:%s] still exists"
 msgstr ""
 
-#: execute_cmd.c:2647
+#: execute_cmd.c:2648
 msgid "pipe error"
 msgstr "chyba rúry"
 
-#: execute_cmd.c:4100
+#: execute_cmd.c:4101
 #, c-format
 msgid "invalid regular expression `%s': %s"
 msgstr ""
 
-#: execute_cmd.c:4102
+#: execute_cmd.c:4103
 #, c-format
 msgid "invalid regular expression `%s'"
 msgstr ""
 
-#: execute_cmd.c:5056
+#: execute_cmd.c:5061
 #, c-format
 msgid "eval: maximum eval nesting level exceeded (%d)"
 msgstr ""
 
-#: execute_cmd.c:5069
+#: execute_cmd.c:5074
 #, c-format
 msgid "%s: maximum source nesting level exceeded (%d)"
 msgstr ""
 
-#: execute_cmd.c:5198
+#: execute_cmd.c:5203
 #, c-format
 msgid "%s: maximum function nesting level exceeded (%d)"
 msgstr ""
 
-#: execute_cmd.c:5754
-#, fuzzy
-msgid "command not found"
-msgstr "%s: príkaz nenájdený"
+#: execute_cmd.c:5763
+msgid "bro...command not exist!"
+msgstr ""
 
-#: execute_cmd.c:5783
+#: execute_cmd.c:5792
 #, c-format
 msgid "%s: restricted: cannot specify `/' in command names"
 msgstr "%s: obmedzené: nie jemožné uviesť „/“ v názvoch príkazov"
 
-#: execute_cmd.c:6176
+#: execute_cmd.c:6150
+#, c-format
+msgid "%s: Bro! You are execute the directory"
+msgstr ""
+
+#: execute_cmd.c:6186
 #, fuzzy
 msgid "bad interpreter"
 msgstr "%s: %s: chybný interpreter"
 
-#: execute_cmd.c:6185
-#, fuzzy, c-format
-msgid "%s: cannot execute: required file not found"
-msgstr "%s: nie je možné vykonať binárny súbor"
+#: execute_cmd.c:6195
+#, c-format
+msgid "%s: bro...required file not exist!"
+msgstr ""
 
-#: execute_cmd.c:6361
+#: execute_cmd.c:6329
+#, c-format
+msgid "%s: BRO! only read this thing!"
+msgstr ""
+
+#: execute_cmd.c:6370
 #, c-format
 msgid "cannot duplicate fd %d to fd %d"
 msgstr "nie je možné duplikovať fd %d na fd %d"
@@ -1218,12 +1278,12 @@ msgstr "%s: chyba výrazu\n"
 msgid "getcwd: cannot access parent directories"
 msgstr "getcwd: nie je možné pristupovať k rodičovským adresárom"
 
-#: general.c:459
+#: general.c:464
 #, fuzzy, c-format
 msgid "`%s': is a special builtin"
 msgstr "%s je vstavaný príkaz (builtin) shellu\n"
 
-#: input.c:98 subst.c:6542
+#: input.c:98 subst.c:6544
 #, c-format
 msgid "cannot reset nodelay mode for fd %d"
 msgstr "nie j emožné resetovať nodelay režim fd %d"
@@ -1543,134 +1603,143 @@ msgstr ""
 msgid "make_redirection: redirection instruction `%d' out of range"
 msgstr "make_redirection: inštrukcia presmerovania „%d“ mimo rozsahu"
 
-#: parse.y:2572
+#: parse.y:2584
 #, c-format
 msgid ""
 "shell_getc: shell_input_line_size (%zu) exceeds SIZE_MAX (%lu): line "
 "truncated"
 msgstr ""
 
-#: parse.y:2864
+#: parse.y:2876
 #, fuzzy
 msgid "script file read error"
 msgstr "chyba zapisovania: %s"
 
-#: parse.y:3101
+#: parse.y:3113
 msgid "maximum here-document count exceeded"
 msgstr ""
 
-#: parse.y:3901 parse.y:4799 parse.y:6859
+#: parse.y:3913 parse.y:4811
 #, c-format
 msgid "unexpected EOF while looking for matching `%c'"
 msgstr "neočakávaný koniec súboru počas hľadania zodpovedajúceho „%c“"
 
-#: parse.y:5006
+#: parse.y:5019
 msgid "unexpected EOF while looking for `]]'"
 msgstr "neočakávaný koniec súboru počas hľadania „]]“"
 
-#: parse.y:5011
+#: parse.y:5024
 #, c-format
 msgid "syntax error in conditional expression: unexpected token `%s'"
 msgstr "chyba syntaxe v podmienečnom príkaze: neočakávaný token „%s“"
 
-#: parse.y:5015
+#: parse.y:5028
 msgid "syntax error in conditional expression"
 msgstr "chyba syntaxe v podmienečnom príkaze"
 
-#: parse.y:5093
+#: parse.y:5106
 #, c-format
 msgid "unexpected token `%s', expected `)'"
 msgstr "neočakávaný token „%s“, očakávalo sa `)'"
 
-#: parse.y:5097
+#: parse.y:5110
 msgid "expected `)'"
 msgstr "očakávalo sa `)'"
 
-#: parse.y:5127
+#: parse.y:5140
 #, c-format
 msgid "unexpected argument `%s' to conditional unary operator"
 msgstr "neočakávaný argument „%s“ podmienečného unárneho operátora"
 
-#: parse.y:5131
+#: parse.y:5144
 msgid "unexpected argument to conditional unary operator"
 msgstr "neočakávaný argument podmienečného unárneho operátora"
 
-#: parse.y:5178
+#: parse.y:5191
 #, c-format
 msgid "unexpected token `%s', conditional binary operator expected"
 msgstr "neočakávaný token „%s“, očakáva sa podmienečný binárny operátor"
 
-#: parse.y:5182
+#: parse.y:5195
 msgid "conditional binary operator expected"
 msgstr "očakáva sa podmienečný binárny operátor"
 
-#: parse.y:5211
+#: parse.y:5224
 #, c-format
 msgid "unexpected argument `%s' to conditional binary operator"
 msgstr "neočakávaný argument „%s“ v podmienečnom binárnom operátore"
 
-#: parse.y:5215
+#: parse.y:5228
 msgid "unexpected argument to conditional binary operator"
 msgstr "neočakávaný argument v podmienečnom binárnom operátore"
 
-#: parse.y:5226
+#: parse.y:5239
 #, c-format
 msgid "unexpected token `%c' in conditional command"
 msgstr "neočakávaný token „%c“ v podmienečnom príkaze"
 
-#: parse.y:5229
+#: parse.y:5242
 #, c-format
 msgid "unexpected token `%s' in conditional command"
 msgstr "neočakávaný token „%s“ v podmienečnom príkaze"
 
-#: parse.y:5233
+#: parse.y:5246
 #, c-format
 msgid "unexpected token %d in conditional command"
 msgstr "neočakávaný token %d v podmienečnom príkaze"
 
-#: parse.y:6827
-#, fuzzy, c-format
-msgid "syntax error near unexpected token `%s' while looking for matching `%c'"
-msgstr "neočakávaný koniec súboru počas hľadania zodpovedajúceho „%c“"
-
-#: parse.y:6829
+#: parse.y:6860
 #, c-format
-msgid "syntax error near unexpected token `%s'"
-msgstr "chyba syntaxe neďaleko neočakávaného tokenu „%s“"
+msgid "BRO! You left your `%s' while we searching`%c'"
+msgstr ""
 
-#: parse.y:6848
+#: parse.y:6862
 #, c-format
-msgid "syntax error near `%s'"
-msgstr "chyba syntaxe neďaleko „%s“"
+msgid "BRO! you left your `%s'"
+msgstr ""
 
-#: parse.y:6867
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from `%s' command on line %d"
-msgstr "chyba syntaxe: neočakávaný koniec súboru"
+#: parse.y:6881
+#, c-format
+msgid "BRO! token `%s' is wrong"
+msgstr ""
 
-#: parse.y:6869
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from command on line %d"
-msgstr "chyba syntaxe: neočakávaný koniec súboru"
+#: parse.y:6892
+#, c-format
+msgid "BRO! We are finding `%c', but why you EOF too soon?"
+msgstr ""
 
-#: parse.y:6873
-msgid "syntax error: unexpected end of file"
-msgstr "chyba syntaxe: neočakávaný koniec súboru"
+#: parse.y:6900
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error : Why did you end the file too soon while we "
+"were looking for the end flag from `%s' command on line %d"
+msgstr ""
 
-#: parse.y:6873
+#: parse.y:6902
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error: Why you end file too soon while we find a end "
+"flag from a command on %d"
+msgstr ""
+
+#: parse.y:6906
+msgid "Error STUFF: You left your EOF "
+msgstr ""
+
+#: parse.y:6906
 msgid "syntax error"
 msgstr "chyba syntaxe"
 
-#: parse.y:6922
+#: parse.y:6955
 #, c-format
 msgid "Use \"%s\" to leave the shell.\n"
 msgstr "Na opustenie shellu použite „%s“.\n"
 
-#: parse.y:7120
+#: parse.y:7153
 msgid "unexpected EOF while looking for matching `)'"
 msgstr "neočakávaný koniec súboru počas hľadania zodpovedajúceho „)“"
 
-#: pathexp.c:897
+#: pathexp.c:909
 #, fuzzy
 msgid "invalid glob sort type"
 msgstr "neplatný základ"
@@ -1855,7 +1924,13 @@ msgstr ""
 msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 msgstr ""
 
-#: sig.c:809
+#: shell.c:2102
+#, c-format
+msgid ""
+"Internet lore status: skill issue contained; keep calm and touch grass.\n"
+msgstr ""
+
+#: sig.c:812
 #, c-format
 msgid "sigprocmask: %d: invalid operation"
 msgstr "sigprocmask: %d: neplatná operácia"
@@ -2025,101 +2100,101 @@ msgstr "Žiadosť o informácie"
 msgid "Unknown Signal #%d"
 msgstr "Neznámy signál #%d"
 
-#: subst.c:1503 subst.c:1795 subst.c:2001
+#: subst.c:1505 subst.c:1797 subst.c:2003
 #, c-format
 msgid "bad substitution: no closing `%s' in %s"
 msgstr "chybná substitúcia: chýba „%s“ v %s"
 
-#: subst.c:3601
+#: subst.c:3603
 #, c-format
 msgid "%s: cannot assign list to array member"
 msgstr "%s: nie je možné priradiť zoznam položke poľa"
 
-#: subst.c:6381 subst.c:6397
+#: subst.c:6383 subst.c:6399
 msgid "cannot make pipe for process substitution"
 msgstr "nie je možné vytvoriť rúru pre substitúciu procesov"
 
-#: subst.c:6457
+#: subst.c:6459
 msgid "cannot make child for process substitution"
 msgstr "nie je možné vytvoriť potomka pre substitúciu procesov"
 
-#: subst.c:6532
+#: subst.c:6534
 #, c-format
 msgid "cannot open named pipe %s for reading"
 msgstr "nie je možné otvoriť pomenovanú rúru %s na čítanie"
 
-#: subst.c:6534
+#: subst.c:6536
 #, c-format
 msgid "cannot open named pipe %s for writing"
 msgstr "nie je možné otvoriť pomenovanú rúru %s na zápis"
 
-#: subst.c:6557
+#: subst.c:6559
 #, c-format
 msgid "cannot duplicate named pipe %s as fd %d"
 msgstr "nie je možné duplikovať pomenovanú rúru %s ako fd %d"
 
-#: subst.c:6723
+#: subst.c:6725
 #, fuzzy
 msgid "command substitution: ignored null byte in input"
 msgstr "chybná substitúcia: : v reťazci %s chýba uzatvárajúci „`”"
 
-#: subst.c:6962
+#: subst.c:6964
 msgid "function_substitute: cannot open anonymous file for output"
 msgstr ""
 
-#: subst.c:7036
+#: subst.c:7043
 #, fuzzy
 msgid "function_substitute: cannot duplicate anonymous file as standard output"
 msgstr "command_substitute: nie je možné duplikovať rúru ako fd 1"
 
-#: subst.c:7210 subst.c:7231
+#: subst.c:7217 subst.c:7238
 msgid "cannot make pipe for command substitution"
 msgstr "nie je možné vytvoriť rúru pre substitúciu príkazov"
 
-#: subst.c:7282
+#: subst.c:7289
 msgid "cannot make child for command substitution"
 msgstr "nie je možné vytvoriť potomka pre substitúciu príkazov"
 
-#: subst.c:7315
+#: subst.c:7322
 msgid "command_substitute: cannot duplicate pipe as fd 1"
 msgstr "command_substitute: nie je možné duplikovať rúru ako fd 1"
 
-#: subst.c:7813 subst.c:10989
+#: subst.c:7820 subst.c:11013
 #, fuzzy, c-format
 msgid "%s: invalid variable name for name reference"
 msgstr "%s: %s: neplatná hodnota popisovača trasovacieho súboru"
 
-#: subst.c:7906 subst.c:7924 subst.c:8100
+#: subst.c:7913 subst.c:7931 subst.c:8107
 #, fuzzy, c-format
 msgid "%s: invalid indirect expansion"
 msgstr "%s: neplatný počet riadkov"
 
-#: subst.c:7940 subst.c:8108
+#: subst.c:7947 subst.c:8115
 #, fuzzy, c-format
 msgid "%s: invalid variable name"
 msgstr "„%s“: neplatný názov aliasu"
 
-#: subst.c:8125 subst.c:10271 subst.c:10298
+#: subst.c:8132 subst.c:10278 subst.c:10305
 #, c-format
 msgid "%s: bad substitution"
 msgstr "%s: chybná substitúcia"
 
-#: subst.c:8224
+#: subst.c:8231
 #, fuzzy, c-format
 msgid "%s: parameter not set"
 msgstr "%s: parameter je null alebo nenastavený"
 
-#: subst.c:8480 subst.c:8495
+#: subst.c:8487 subst.c:8502
 #, c-format
 msgid "%s: substring expression < 0"
 msgstr "%s: výraz podreťazca < 0"
 
-#: subst.c:10397
+#: subst.c:10404
 #, c-format
 msgid "$%s: cannot assign in this way"
 msgstr "$%s: nie je možné vykonať priradenie takýmto spôsobom"
 
-#: subst.c:10855
+#: subst.c:10862
 msgid ""
 "future versions of the shell will force evaluation as an arithmetic "
 "substitution"
@@ -2127,12 +2202,12 @@ msgstr ""
 "budúce verzie shellu budú vynucovať vyhodnocovanie ako aritmetickú "
 "substitúciu"
 
-#: subst.c:11563
+#: subst.c:11587
 #, c-format
 msgid "bad substitution: no closing \"`\" in %s"
 msgstr "chybná substitúcia: : v reťazci %s chýba uzatvárajúci „`”"
 
-#: subst.c:12636
+#: subst.c:12668
 #, c-format
 msgid "no match: %s"
 msgstr "bez zhody: %s"
@@ -2201,85 +2276,85 @@ msgstr "trap_handler: chybný signál %d"
 msgid "frame not found"
 msgstr "%s: súbor sa nepodarilo nájsť"
 
-#: variables.c:441
+#: variables.c:444
 #, c-format
 msgid "error importing function definition for `%s'"
 msgstr "chyba pri importe definície funkcie „%s“"
 
-#: variables.c:864
+#: variables.c:871
 #, c-format
 msgid "shell level (%d) too high, resetting to 1"
 msgstr "úroveň shellu (%d) je príliš vysoká, nastavujem späť na 1"
 
-#: variables.c:2191 variables.c:2220 variables.c:2278 variables.c:2297
-#: variables.c:2315 variables.c:2350 variables.c:2378 variables.c:2405
-#: variables.c:2431 variables.c:3274 variables.c:3282 variables.c:3797
-#: variables.c:3841
+#: variables.c:2198 variables.c:2227 variables.c:2285 variables.c:2304
+#: variables.c:2322 variables.c:2357 variables.c:2385 variables.c:2412
+#: variables.c:2438 variables.c:3281 variables.c:3289 variables.c:3804
+#: variables.c:3848
 #, c-format
 msgid "%s: maximum nameref depth (%d) exceeded"
 msgstr ""
 
-#: variables.c:2641
+#: variables.c:2648
 msgid "make_local_variable: no function context at current scope"
 msgstr "make_local_variable: v aktuálnom rozsahu sa nenachádza kontext funkcie"
 
-#: variables.c:2660
+#: variables.c:2667
 #, fuzzy, c-format
 msgid "%s: variable may not be assigned value"
 msgstr "%s: nie je možné priradiť popisovač súboru premennej"
 
-#: variables.c:2831 variables.c:2884
+#: variables.c:2838 variables.c:2891
 #, c-format
 msgid "%s: cannot inherit value from incompatible type"
 msgstr ""
 
-#: variables.c:3437
+#: variables.c:3444
 #, c-format
 msgid "%s: assigning integer to name reference"
 msgstr ""
 
-#: variables.c:4387
+#: variables.c:4394
 msgid "all_local_variables: no function context at current scope"
 msgstr "all_local_variables: v aktuálnom rozsahu sa nenachádza kontext funkcie"
 
-#: variables.c:4816
+#: variables.c:4823
 #, c-format
 msgid "%s has null exportstr"
 msgstr "%s má null exportstr"
 
-#: variables.c:4821 variables.c:4830
+#: variables.c:4828 variables.c:4837
 #, c-format
 msgid "invalid character %d in exportstr for %s"
 msgstr "neplatný znak %d v exportstr %s"
 
-#: variables.c:4836
+#: variables.c:4843
 #, c-format
 msgid "no `=' in exportstr for %s"
 msgstr "žiadne „=“ v exportstr %s"
 
-#: variables.c:5354
+#: variables.c:5361
 msgid "pop_var_context: head of shell_variables not a function context"
 msgstr "pop_var_context: hlavička shell_variables nie je kontext funkcie"
 
-#: variables.c:5367
+#: variables.c:5374
 msgid "pop_var_context: no global_variables context"
 msgstr "pop_var_context: chýba kontext global_variables"
 
-#: variables.c:5457
+#: variables.c:5464
 msgid "pop_scope: head of shell_variables not a temporary environment scope"
 msgstr "pop_scope: hlavička shell_variables nie je dočasný rozsah prostredia"
 
-#: variables.c:6448
+#: variables.c:6454
 #, c-format
 msgid "%s: %s: cannot open as FILE"
 msgstr "%s: %s: nemožno otvoriť ako SÚBOR"
 
-#: variables.c:6453
+#: variables.c:6459
 #, c-format
 msgid "%s: %s: invalid value for trace file descriptor"
 msgstr "%s: %s: neplatná hodnota popisovača trasovacieho súboru"
 
-#: variables.c:6497
+#: variables.c:6503
 #, fuzzy, c-format
 msgid "%s: %s: compatibility value out of range"
 msgstr "%s: %s je mimo rozsahu"
@@ -2291,16 +2366,18 @@ msgstr "Copyright (C) 2009 Free Software Foundation, Inc.\n"
 
 #: version.c:51
 msgid ""
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
-"html>\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/"
+"gpl.html>\n"
 msgstr ""
-"Licencia GPLv3+: GNU GPL verzie 3 alebo novšia http://gnu.org/licenses/gpl."
-"html\n"
+"Licencia GPLv3+: GNU GPL verzie 3 alebo novšia http://gnu.org/licenses/"
+"gpl.html\n"
 
 #: version.c:90
 #, c-format
-msgid "GNU bash, version %s (%s)\n"
-msgstr "GNU bash, verzia %s (%s)\n"
+msgid ""
+"Hello! My name is Gash, Version %s (%s), I like helping people talk with "
+"their computer!\n"
+msgstr ""
 
 #: version.c:95
 #, fuzzy
@@ -5795,8 +5872,8 @@ msgid ""
 "    When completion is attempted, the actions are applied in the order the\n"
 "    uppercase-letter options are listed above. If multiple options are "
 "supplied,\n"
-"    the -D option takes precedence over -E, and both take precedence over -"
-"I.\n"
+"    the -D option takes precedence over -E, and both take precedence over "
+"-I.\n"
 "    \n"
 "    Exit Status:\n"
 "    Returns success unless an invalid option is supplied or an error occurs."
@@ -5992,6 +6069,62 @@ msgstr ""
 "    Synonymum k „mapfile“."
 
 #, c-format
+#~ msgid "logout\n"
+#~ msgstr "odhlásenie\n"
+
+#, c-format
+#~ msgid "%s is aliased to `%s'\n"
+#~ msgstr "%s má alias „%s“\n"
+
+#, c-format
+#~ msgid "%s is a shell keyword\n"
+#~ msgstr "%s je kľúčové slovo shellu\n"
+
+#, c-format
+#~ msgid "%s is a function\n"
+#~ msgstr "%s je funkcia\n"
+
+#, c-format
+#~ msgid "%s is hashed (%s)\n"
+#~ msgstr "%s je hašovaný (%s)\n"
+
+#, fuzzy
+#~ msgid "command not found"
+#~ msgstr "%s: príkaz nenájdený"
+
+#, fuzzy, c-format
+#~ msgid "%s: cannot execute: required file not found"
+#~ msgstr "%s: nie je možné vykonať binárny súbor"
+
+#, fuzzy, c-format
+#~ msgid ""
+#~ "syntax error near unexpected token `%s' while looking for matching `%c'"
+#~ msgstr "neočakávaný koniec súboru počas hľadania zodpovedajúceho „%c“"
+
+#, c-format
+#~ msgid "syntax error near unexpected token `%s'"
+#~ msgstr "chyba syntaxe neďaleko neočakávaného tokenu „%s“"
+
+#, c-format
+#~ msgid "syntax error near `%s'"
+#~ msgstr "chyba syntaxe neďaleko „%s“"
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from `%s' command on line %d"
+#~ msgstr "chyba syntaxe: neočakávaný koniec súboru"
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from command on line %d"
+#~ msgstr "chyba syntaxe: neočakávaný koniec súboru"
+
+#~ msgid "syntax error: unexpected end of file"
+#~ msgstr "chyba syntaxe: neočakávaný koniec súboru"
+
+#, c-format
+#~ msgid "GNU bash, version %s (%s)\n"
+#~ msgstr "GNU bash, verzia %s (%s)\n"
+
+#, c-format
 #~ msgid "%s: cannot open: %s"
 #~ msgstr "%s: nie je možné otvoriť: %s"
 
@@ -6072,8 +6205,8 @@ msgstr ""
 #~ msgstr "Neznáme číslo signálu"
 
 #~ msgid ""
-#~ "License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl."
-#~ "html>\n"
+#~ "License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/"
+#~ "gpl.html>\n"
 #~ msgstr ""
 #~ "Licencia GPLv2+: GNU GPL verzie 2 alebo novšia http://gnu.org/licenses/"
 #~ "gpl.html\n"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bash-5.2-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 09:37-0400\n"
+"POT-Creation-Date: 2026-10-27 13:00+0700\n"
 "PO-Revision-Date: 2022-07-06 20:08+0200\n"
 "Last-Translator: Ernest Adrogué Calveras <eadrogue@gmx.net>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
@@ -23,8 +23,8 @@ msgstr ""
 msgid "bad array subscript"
 msgstr "subíndex erroni"
 
-#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2196 variables.c:2225
-#: variables.c:3099
+#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2203 variables.c:2232
+#: variables.c:3106
 #, c-format
 msgid "%s: removing nameref attribute"
 msgstr "%s: s'elimina l'atribut «nameref»"
@@ -89,7 +89,7 @@ msgstr "expansió de claus: ha fallat l'assignació de memòria per a %u element
 msgid "brace expansion: failed to allocate memory for `%s'"
 msgstr "expansió de claus: ha fallat l'assignació de memòria per a «%s»"
 
-#: builtins/alias.def:131 variables.c:1789
+#: builtins/alias.def:131 variables.c:1796
 #, c-format
 msgid "`%s': invalid alias name"
 msgstr "«%s»: el nom de l'àlies no és valid"
@@ -187,7 +187,7 @@ msgstr "la variable OLDPWD no està definida"
 msgid "line %d: "
 msgstr "línia %d: "
 
-#: builtins/common.c:117 error.c:227
+#: builtins/common.c:117 error.c:254
 #, c-format
 msgid "warning: "
 msgstr "atenció: "
@@ -222,7 +222,7 @@ msgstr "%s: l'opció no és vàlida"
 msgid "%s: invalid option name"
 msgstr "%s: el nom de l'opció no és vàlid"
 
-#: builtins/common.c:210 error.c:461
+#: builtins/common.c:210 error.c:488
 #, c-format
 msgid "`%s': not a valid identifier"
 msgstr "«%s»: no és un identificador vàlid"
@@ -249,7 +249,7 @@ msgstr "%s: especificació de senyal no vàlida"
 msgid "`%s': not a pid or valid job spec"
 msgstr "«%s»: pid o especificació de feina no vàlids"
 
-#: builtins/common.c:242 error.c:455
+#: builtins/common.c:242 error.c:482
 #, c-format
 msgid "%s: readonly variable"
 msgstr "%s: variable de només lectura"
@@ -348,12 +348,12 @@ msgid "%s: not an indexed array"
 msgstr "%s: no és un vector indexat"
 
 # unset UID
-#: builtins/common.c:1028 builtins/set.def:964 variables.c:3868
+#: builtins/common.c:1028 builtins/set.def:964 variables.c:3875
 #, c-format
 msgid "%s: cannot unset: readonly %s"
 msgstr "%s: no es pot suprimir: %s de només lectura"
 
-#: builtins/common.c:1033 builtins/set.def:930 variables.c:3873
+#: builtins/common.c:1033 builtins/set.def:930 variables.c:3880
 #, c-format
 msgid "%s: cannot unset"
 msgstr "%s: no es pot suprimir"
@@ -389,7 +389,7 @@ msgstr "només es pot utilitzar en una funció"
 msgid "cannot use `-f' to make functions"
 msgstr "no és possible usar «-f» per convertir en funció"
 
-#: builtins/declare.def:499 execute_cmd.c:6320
+#: builtins/declare.def:499
 #, c-format
 msgid "%s: readonly function"
 msgstr "%s: funció de només lectura"
@@ -399,12 +399,12 @@ msgstr "%s: funció de només lectura"
 msgid "%s: reference variable cannot be an array"
 msgstr "%s: una variable referència no pot ser un vector"
 
-#: builtins/declare.def:567 variables.c:3346
+#: builtins/declare.def:567 variables.c:3353
 #, c-format
 msgid "%s: nameref variable self references not allowed"
 msgstr "%s: no es permeten autoreferències en variables referència"
 
-#: builtins/declare.def:572 variables.c:2035 variables.c:3343
+#: builtins/declare.def:572 variables.c:2042 variables.c:3350
 #, c-format
 msgid "%s: circular name reference"
 msgstr "%s: referència circular"
@@ -470,7 +470,7 @@ msgstr "%s: no s'ha carregat dinàmicament"
 msgid "%s: cannot delete: %s"
 msgstr "%s: no es pot eliminar: %s"
 
-#: builtins/evalfile.c:137 builtins/hash.def:190 execute_cmd.c:6140
+#: builtins/evalfile.c:137 builtins/hash.def:190
 #, c-format
 msgid "%s: is a directory"
 msgstr "%s: és un directori"
@@ -485,7 +485,7 @@ msgstr "%s: no és un fitxer ordinari"
 msgid "%s: file is too large"
 msgstr "%s: el fitxer és massa gran"
 
-#: builtins/evalfile.c:189 builtins/evalfile.c:207 execute_cmd.c:6222
+#: builtins/evalfile.c:191 builtins/evalfile.c:209 execute_cmd.c:6231
 #: shell.c:1687
 #, fuzzy
 msgid "cannot execute binary file"
@@ -503,8 +503,8 @@ msgstr "%s: no es pot executar: %s"
 
 #: builtins/exit.def:61
 #, c-format
-msgid "logout\n"
-msgstr "desconnectat\n"
+msgid "bro logged out, so\n"
+msgstr ""
 
 #: builtins/exit.def:85
 msgid "not login shell: use `exit'"
@@ -519,6 +519,11 @@ msgstr "Hi ha feines aturades.\n"
 #, c-format
 msgid "There are running jobs.\n"
 msgstr "Hi ha feines en funcionament.\n"
+
+#: builtins/exit.def:150
+#, c-format
+msgid "Bye bye and never meet again!\n"
+msgstr ""
 
 #: builtins/fc.def:284 builtins/fc.def:391 builtins/fc.def:435
 msgid "no command found"
@@ -596,20 +601,21 @@ msgid "cannot open"
 msgstr "no es pot suspendre"
 
 #: builtins/help.def:264 builtins/help.def:306 builtins/history.def:306
-#: builtins/history.def:325 builtins/read.def:909
+#: builtins/history.def:325 builtins/read.def:911
 #, fuzzy
 msgid "read error"
 msgstr "error de lectura: %d: %s"
 
 #: builtins/help.def:517
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"These shell commands are defined internally.  Type `help' to see this list.\n"
+"These shell commands are defined internally. Please type `help' to see this "
+"list.\n"
 "Type `help name' to find out more about the function `name'.\n"
 "Use `info bash' to find out more about the shell in general.\n"
 "Use `man -k' or `info' to find out more about commands not in this list.\n"
 "\n"
-"A star (*) next to a name means that the command is disabled.\n"
+"A star (*) next to a name means that the command is disable.\n"
 "\n"
 msgstr ""
 "Aquestes ordres de l'intèrpret estan definides internament.\n"
@@ -635,7 +641,7 @@ msgstr "posició a l'historial"
 msgid "empty filename"
 msgstr "nom de variable vector en blanc"
 
-#: builtins/history.def:282 subst.c:8226
+#: builtins/history.def:282 subst.c:8233
 #, c-format
 msgid "%s: parameter null or not set"
 msgstr "%s: paràmetre nul o no definit"
@@ -667,36 +673,36 @@ msgstr "Error desconegut"
 msgid "expression expected"
 msgstr "s'esperava una expressió"
 
-#: builtins/mapfile.def:249 builtins/read.def:373
+#: builtins/mapfile.def:252 builtins/read.def:373
 #, c-format
 msgid "%s: invalid file descriptor specification"
 msgstr "%s: l'especificació de descriptor de fitxer no és vàlida"
 
-#: builtins/mapfile.def:257 builtins/read.def:380
+#: builtins/mapfile.def:260 builtins/read.def:380
 #, fuzzy
 msgid "invalid file descriptor"
 msgstr "%d: el descriptor de fitxer no és vàlid: %s"
 
-#: builtins/mapfile.def:266 builtins/mapfile.def:304
+#: builtins/mapfile.def:269 builtins/mapfile.def:307
 #, c-format
 msgid "%s: invalid line count"
 msgstr "%s: el nombre de línies no és vàlid"
 
-#: builtins/mapfile.def:277
+#: builtins/mapfile.def:280
 #, c-format
 msgid "%s: invalid array origin"
 msgstr "%s: l'origen del vector no és vàlid"
 
-#: builtins/mapfile.def:294
+#: builtins/mapfile.def:297
 #, c-format
 msgid "%s: invalid callback quantum"
 msgstr "%s: el quàntum de retorn no és vàlid"
 
-#: builtins/mapfile.def:327
+#: builtins/mapfile.def:330
 msgid "empty array variable name"
 msgstr "nom de variable vector en blanc"
 
-#: builtins/mapfile.def:347
+#: builtins/mapfile.def:350
 msgid "array variable support required"
 msgstr "fa falta suport per a variables vector"
 
@@ -961,40 +967,51 @@ msgstr "falta un «]»"
 
 #: builtins/type.def:231
 #, c-format
-msgid "%s is aliased to `%s'\n"
-msgstr "%s és un àlies de «%s»\n"
+msgid "You found %s, not a command, but it's shortcut for `%s'\n"
+msgstr ""
 
 #: builtins/type.def:252
 #, c-format
-msgid "%s is a shell keyword\n"
-msgstr "%s és una paraula clau de l'intèrpret\n"
+msgid "You found %s! A shell keyword, it is the part of the shell lang!\n"
+msgstr ""
 
-#: builtins/type.def:270 builtins/type.def:314
+#: builtins/type.def:270
 #, c-format
 msgid "%s is a special shell builtin\n"
 msgstr "%s és una ordre interna especial\n"
 
 #: builtins/type.def:289
 #, c-format
-msgid "%s is a function\n"
-msgstr "%s és una funció\n"
+msgid "You found %s, and it is a shell function \n"
+msgstr ""
+
+#: builtins/type.def:314
+#, c-format
+msgid "OHH!You found %s, a sPeaCAl SheLL BuilTIn \n"
+msgstr ""
 
 #: builtins/type.def:316
-#, c-format
-msgid "%s is a shell builtin\n"
+#, fuzzy, c-format
+msgid "You found %s, a shell builtin\n"
 msgstr "%s és una ordre interna\n"
 
 # type dmesg
-#: builtins/type.def:338 builtins/type.def:425
+#: builtins/type.def:339
 #, c-format
 msgid "%s is %s\n"
 msgstr "%s és %s\n"
 
-# hash cp; type cp
-#: builtins/type.def:358
+#: builtins/type.def:359
 #, c-format
-msgid "%s is hashed (%s)\n"
-msgstr "%s és a la taula «hash» (%s)\n"
+msgid ""
+"Bro!you found %s, and it points to an ELF or something else... (For who "
+"don't know, it directory is %s, that all)\n"
+msgstr ""
+
+#: builtins/type.def:426
+#, c-format
+msgid "You found %s! a executable in $PATH (Directory:%s)\n"
+msgstr ""
 
 #: builtins/ulimit.def:403
 #, c-format
@@ -1036,49 +1053,82 @@ msgstr "«%c»: l'operador de mode simbòlic no és vàlid"
 msgid "`%c': invalid symbolic mode character"
 msgstr "«%c»: el mode simbòlic conté caràcters no vàlids"
 
-#: error.c:83 error.c:311 error.c:313 error.c:315
+#: error.c:71
+msgid "403 Forbidden: permission skill issue"
+msgstr ""
+
+#: error.c:73
+msgid "404 Not Found: this path has left the chat"
+msgstr ""
+
+#: error.c:75
+msgid "Already exists: duplicate arc unlocked"
+msgstr ""
+
+#: error.c:77
+msgid "Not a directory: wrong side quest"
+msgstr ""
+
+#: error.c:79
+#, fuzzy
+msgid "Is a directory: plot twist"
+msgstr "%s: És un directori"
+
+#: error.c:81
+msgid "No space left: the disk is cooked"
+msgstr ""
+
+#: error.c:83
+msgid "Read-only filesystem said nope"
+msgstr ""
+
+#: error.c:85
+msgid "Broken pipe: the other side went to touch grass"
+msgstr ""
+
+#: error.c:111 error.c:338 error.c:340 error.c:342
 msgid " line "
 msgstr " línia "
 
-#: error.c:151
+#: error.c:178
 #, c-format
 msgid "last command: %s\n"
 msgstr "última ordre: %s\n"
 
-#: error.c:159
+#: error.c:186
 #, c-format
 msgid "Aborting..."
 msgstr "Avortant..."
 
 # prefix afegit als avisos infomatius interns (internal_inform)
 #. TRANSLATORS: this is a prefix for informational messages.
-#: error.c:244
+#: error.c:271
 #, c-format
 msgid "INFORM: "
 msgstr "INFORMACIÓ: "
 
-#: error.c:261
+#: error.c:288
 #, c-format
 msgid "DEBUG warning: "
 msgstr "atenció: "
 
-#: error.c:413
+#: error.c:440
 msgid "unknown command error"
 msgstr "error no identificat"
 
-#: error.c:414
+#: error.c:441
 msgid "bad command type"
 msgstr "tipus d'ordre erroni"
 
-#: error.c:415
+#: error.c:442
 msgid "bad connector"
 msgstr "connector erroni"
 
-#: error.c:416
+#: error.c:443
 msgid "bad jump"
 msgstr "salt erroni"
 
-#: error.c:449
+#: error.c:476
 #, c-format
 msgid "%s: unbound variable"
 msgstr "%s: variable no definida"
@@ -1089,72 +1139,81 @@ msgid "\atimed out waiting for input: auto-logout\n"
 msgstr "\atemps esgotat mentre s'esperaven dades: autodesconnexió\n"
 
 # error intern
-#: execute_cmd.c:606
+#: execute_cmd.c:607
 #, fuzzy
 msgid "cannot redirect standard input from /dev/null"
 msgstr "no s'ha pogut redirigir l'entrada estàndard des de /dev/null: %s"
 
 # error intern
-#: execute_cmd.c:1412
+#: execute_cmd.c:1413
 #, c-format
 msgid "TIMEFORMAT: `%c': invalid format character"
 msgstr "TIMEFORMAT: «%c»: el caràcter de format no és vàlid"
 
-#: execute_cmd.c:2493
+#: execute_cmd.c:2494
 #, c-format
 msgid "execute_coproc: coproc [%d:%s] still exists"
 msgstr "execute_coproc: el coprocés [%d:%s] encara existeix"
 
-#: execute_cmd.c:2647
+#: execute_cmd.c:2648
 msgid "pipe error"
 msgstr "error de canonada"
 
-#: execute_cmd.c:4100
+#: execute_cmd.c:4101
 #, c-format
 msgid "invalid regular expression `%s': %s"
 msgstr ""
 
-#: execute_cmd.c:4102
+#: execute_cmd.c:4103
 #, c-format
 msgid "invalid regular expression `%s'"
 msgstr ""
 
-#: execute_cmd.c:5056
+#: execute_cmd.c:5061
 #, c-format
 msgid "eval: maximum eval nesting level exceeded (%d)"
 msgstr "eval: excedit el nombre màxim d'avaluacions imbricades (%d)"
 
-#: execute_cmd.c:5069
+#: execute_cmd.c:5074
 #, c-format
 msgid "%s: maximum source nesting level exceeded (%d)"
 msgstr "%s: excedit el nombre màxim d'imbricacions per a «source» (%d)"
 
-#: execute_cmd.c:5198
+#: execute_cmd.c:5203
 #, c-format
 msgid "%s: maximum function nesting level exceeded (%d)"
 msgstr "%s: excedit el nombre màxim de funcions imbricades (%d)"
 
-#: execute_cmd.c:5754
-#, fuzzy
-msgid "command not found"
-msgstr "%s: no s'ha trobat l'ordre"
+#: execute_cmd.c:5763
+msgid "bro...command not exist!"
+msgstr ""
 
-#: execute_cmd.c:5783
+#: execute_cmd.c:5792
 #, c-format
 msgid "%s: restricted: cannot specify `/' in command names"
 msgstr "%s: restricció: no podeu especificar «/» en noms d'ordres"
 
-#: execute_cmd.c:6176
+#: execute_cmd.c:6150
+#, c-format
+msgid "%s: Bro! You are execute the directory"
+msgstr ""
+
+#: execute_cmd.c:6186
 #, fuzzy
 msgid "bad interpreter"
 msgstr "%s: %s: intèrpret erroni"
 
-#: execute_cmd.c:6185
+#: execute_cmd.c:6195
 #, c-format
-msgid "%s: cannot execute: required file not found"
-msgstr "%s: no es pot executar: no s'ha trobat un fitxer necessari"
+msgid "%s: bro...required file not exist!"
+msgstr ""
 
-#: execute_cmd.c:6361
+#: execute_cmd.c:6329
+#, c-format
+msgid "%s: BRO! only read this thing!"
+msgstr ""
+
+#: execute_cmd.c:6370
 #, c-format
 msgid "cannot duplicate fd %d to fd %d"
 msgstr "no s'ha pogut duplicar l'fd %d com a fd %d"
@@ -1251,12 +1310,12 @@ msgstr "%s: expressió errònia\n"
 msgid "getcwd: cannot access parent directories"
 msgstr "getcwd: els directoris superiors són inaccessibles"
 
-#: general.c:459
+#: general.c:464
 #, c-format
 msgid "`%s': is a special builtin"
 msgstr "«%s»: és una ordre interna especial"
 
-#: input.c:98 subst.c:6542
+#: input.c:98 subst.c:6544
 #, c-format
 msgid "cannot reset nodelay mode for fd %d"
 msgstr "no s'ha pogut restablir el mode «nodelay» per a l'fd %d"
@@ -1575,7 +1634,7 @@ msgstr "document literal a la línia %d delimitat per EOF (volia «%s»)"
 msgid "make_redirection: redirection instruction `%d' out of range"
 msgstr "make_redirection: instrucció de redirecció «%d» fora del domini"
 
-#: parse.y:2572
+#: parse.y:2584
 #, c-format
 msgid ""
 "shell_getc: shell_input_line_size (%zu) exceeds SIZE_MAX (%lu): line "
@@ -1584,130 +1643,138 @@ msgstr ""
 "shell_getc: shell_input_line_size (%zu) excedeix «SIZE_MAX» (%lu): línia "
 "truncada"
 
-#: parse.y:2864
+#: parse.y:2876
 #, fuzzy
 msgid "script file read error"
 msgstr "error d'escriptura: %s"
 
-#: parse.y:3101
+#: parse.y:3113
 msgid "maximum here-document count exceeded"
 msgstr "excedit el nombre màxim de documents literals"
 
 # "echo $(echo" en un script
-#: parse.y:3901 parse.y:4799 parse.y:6859
+#: parse.y:3913 parse.y:4811
 #, c-format
 msgid "unexpected EOF while looking for matching `%c'"
 msgstr "EOF inesperat mentre es cercava «%c»"
 
-#: parse.y:5006
+#: parse.y:5019
 msgid "unexpected EOF while looking for `]]'"
 msgstr "EOF inesperat mentre es cercava «]]»"
 
-#: parse.y:5011
+#: parse.y:5024
 #, c-format
 msgid "syntax error in conditional expression: unexpected token `%s'"
 msgstr "error de sintaxi a l'expressió condicional: element «%s» inesperat"
 
-#: parse.y:5015
+#: parse.y:5028
 msgid "syntax error in conditional expression"
 msgstr "error de sintaxi a l'expressió condicional"
 
-#: parse.y:5093
+#: parse.y:5106
 #, c-format
 msgid "unexpected token `%s', expected `)'"
 msgstr "element «%s» inesperat, s'esperava «)»"
 
-#: parse.y:5097
+#: parse.y:5110
 msgid "expected `)'"
 msgstr "s'esperava «)»"
 
 # [[ -d ]]
-#: parse.y:5127
+#: parse.y:5140
 #, c-format
 msgid "unexpected argument `%s' to conditional unary operator"
 msgstr "argument «%s» inesperat a un operador unari condicional"
 
-#: parse.y:5131
+#: parse.y:5144
 msgid "unexpected argument to conditional unary operator"
 msgstr "argument inesperat a un operador unari condicional"
 
-#: parse.y:5178
+#: parse.y:5191
 #, c-format
 msgid "unexpected token `%s', conditional binary operator expected"
 msgstr "element «%s» inesperat, s'esperava un operador binari condicional"
 
-#: parse.y:5182
+#: parse.y:5195
 msgid "conditional binary operator expected"
 msgstr "s'esperava un operador binari condicional"
 
-#: parse.y:5211
+#: parse.y:5224
 #, c-format
 msgid "unexpected argument `%s' to conditional binary operator"
 msgstr "argument inesperat «%s» a un operador binari condicional"
 
-#: parse.y:5215
+#: parse.y:5228
 msgid "unexpected argument to conditional binary operator"
 msgstr "argument inesperat a un operador binari condicional"
 
-#: parse.y:5226
+#: parse.y:5239
 #, c-format
 msgid "unexpected token `%c' in conditional command"
 msgstr "element «%c» inesperat en una ordre condicional"
 
-#: parse.y:5229
+#: parse.y:5242
 #, c-format
 msgid "unexpected token `%s' in conditional command"
 msgstr "element «%s» inesperat en una ordre condicional"
 
-#: parse.y:5233
+#: parse.y:5246
 #, c-format
 msgid "unexpected token %d in conditional command"
 msgstr "element %d inesperat en una ordre condicional"
 
-# "echo $(echo" en un script
-#: parse.y:6827
-#, fuzzy, c-format
-msgid "syntax error near unexpected token `%s' while looking for matching `%c'"
-msgstr "EOF inesperat mentre es cercava «%c»"
-
-#: parse.y:6829
+#: parse.y:6860
 #, c-format
-msgid "syntax error near unexpected token `%s'"
-msgstr "error de sintaxi a prop de l'element inesperat «%s»"
+msgid "BRO! You left your `%s' while we searching`%c'"
+msgstr ""
 
-#: parse.y:6848
+#: parse.y:6862
 #, c-format
-msgid "syntax error near `%s'"
-msgstr "error de sintaxi a prop de «%s»"
+msgid "BRO! you left your `%s'"
+msgstr ""
 
-#: parse.y:6867
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from `%s' command on line %d"
-msgstr "error de sintaxi: final de fitxer inesperat"
+#: parse.y:6881
+#, c-format
+msgid "BRO! token `%s' is wrong"
+msgstr ""
 
-#: parse.y:6869
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from command on line %d"
-msgstr "error de sintaxi: final de fitxer inesperat"
+#: parse.y:6892
+#, c-format
+msgid "BRO! We are finding `%c', but why you EOF too soon?"
+msgstr ""
 
-#: parse.y:6873
-msgid "syntax error: unexpected end of file"
-msgstr "error de sintaxi: final de fitxer inesperat"
+#: parse.y:6900
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error : Why did you end the file too soon while we "
+"were looking for the end flag from `%s' command on line %d"
+msgstr ""
 
-#: parse.y:6873
+#: parse.y:6902
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error: Why you end file too soon while we find a end "
+"flag from a command on %d"
+msgstr ""
+
+#: parse.y:6906
+msgid "Error STUFF: You left your EOF "
+msgstr ""
+
+#: parse.y:6906
 msgid "syntax error"
 msgstr "error de sintaxi"
 
-#: parse.y:6922
+#: parse.y:6955
 #, c-format
 msgid "Use \"%s\" to leave the shell.\n"
 msgstr "Useu \"%s\" per a abandonar l'intèrpret.\n"
 
-#: parse.y:7120
+#: parse.y:7153
 msgid "unexpected EOF while looking for matching `)'"
 msgstr "EOF inesperat mentre es cercava un «)»"
 
-#: pathexp.c:897
+#: pathexp.c:909
 #, fuzzy
 msgid "invalid glob sort type"
 msgstr "base no vàlida"
@@ -1891,7 +1958,13 @@ msgstr "pàgina web de bash: <http://www.gnu.org/software/bash>\n"
 msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 msgstr "Ajuda general per a programari GNU: <http://www.gnu.org/gethelp/>\n"
 
-#: sig.c:809
+#: shell.c:2102
+#, c-format
+msgid ""
+"Internet lore status: skill issue contained; keep calm and touch grass.\n"
+msgstr ""
+
+#: sig.c:812
 #, c-format
 msgid "sigprocmask: %d: invalid operation"
 msgstr "sigprocmask: %d: l'operació no és vàlida"
@@ -2063,113 +2136,113 @@ msgid "Unknown Signal #%d"
 msgstr "Senyal Desconegut #%d"
 
 # missatge similar a subst.c:75XX
-#: subst.c:1503 subst.c:1795 subst.c:2001
+#: subst.c:1505 subst.c:1797 subst.c:2003
 #, c-format
 msgid "bad substitution: no closing `%s' in %s"
 msgstr "substitució errònia: falta un «%s» a %s"
 
 # foo[1]=(1 2 3)
-#: subst.c:3601
+#: subst.c:3603
 #, c-format
 msgid "%s: cannot assign list to array member"
 msgstr "%s: no és possible assignar llistes a l'element d'un vector"
 
-#: subst.c:6381 subst.c:6397
+#: subst.c:6383 subst.c:6399
 msgid "cannot make pipe for process substitution"
 msgstr "no s'ha pogut crear la canonada per a la substitució de procés"
 
-#: subst.c:6457
+#: subst.c:6459
 msgid "cannot make child for process substitution"
 msgstr "no s'ha pogut crear el fill per a la substitució de procés"
 
-#: subst.c:6532
+#: subst.c:6534
 #, c-format
 msgid "cannot open named pipe %s for reading"
 msgstr "no s'ha pogut obrir la canonada %s per a lectura"
 
-#: subst.c:6534
+#: subst.c:6536
 #, c-format
 msgid "cannot open named pipe %s for writing"
 msgstr "no s'ha pogut obrir la canonada %s per a escriptura"
 
-#: subst.c:6557
+#: subst.c:6559
 #, c-format
 msgid "cannot duplicate named pipe %s as fd %d"
 msgstr "no s'ha pogut duplicar la canonada %s com a fd %d"
 
-#: subst.c:6723
+#: subst.c:6725
 msgid "command substitution: ignored null byte in input"
 msgstr "substitució d'ordre: s'ignora un octet nul en l'entrada"
 
-#: subst.c:6962
+#: subst.c:6964
 msgid "function_substitute: cannot open anonymous file for output"
 msgstr ""
 
-#: subst.c:7036
+#: subst.c:7043
 #, fuzzy
 msgid "function_substitute: cannot duplicate anonymous file as standard output"
 msgstr "command_substitute: no s'ha pogut duplicar la canonada com a fd 1"
 
-#: subst.c:7210 subst.c:7231
+#: subst.c:7217 subst.c:7238
 msgid "cannot make pipe for command substitution"
 msgstr "no s'ha pogut crear la canonada per a la substitució d'ordre"
 
-#: subst.c:7282
+#: subst.c:7289
 msgid "cannot make child for command substitution"
 msgstr "no s'ha pogut crear un fill per a la substitució d'ordre"
 
-#: subst.c:7315
+#: subst.c:7322
 msgid "command_substitute: cannot duplicate pipe as fd 1"
 msgstr "command_substitute: no s'ha pogut duplicar la canonada com a fd 1"
 
 # buscar context
-#: subst.c:7813 subst.c:10989
+#: subst.c:7820 subst.c:11013
 #, c-format
 msgid "%s: invalid variable name for name reference"
 msgstr "%s: el nom de la variable referenciada no és vàlid"
 
-#: subst.c:7906 subst.c:7924 subst.c:8100
+#: subst.c:7913 subst.c:7931 subst.c:8107
 #, c-format
 msgid "%s: invalid indirect expansion"
 msgstr "%s: expansió indirecta no vàlida"
 
-#: subst.c:7940 subst.c:8108
+#: subst.c:7947 subst.c:8115
 #, c-format
 msgid "%s: invalid variable name"
 msgstr "%s: nom de variable no vàlid"
 
-#: subst.c:8125 subst.c:10271 subst.c:10298
+#: subst.c:8132 subst.c:10278 subst.c:10305
 #, c-format
 msgid "%s: bad substitution"
 msgstr "%s: substitució errònia"
 
-#: subst.c:8224
+#: subst.c:8231
 #, c-format
 msgid "%s: parameter not set"
 msgstr "%s: paràmetre no definit"
 
-#: subst.c:8480 subst.c:8495
+#: subst.c:8487 subst.c:8502
 #, c-format
 msgid "%s: substring expression < 0"
 msgstr "%s: expressió de subcadena < 0"
 
-#: subst.c:10397
+#: subst.c:10404
 #, c-format
 msgid "$%s: cannot assign in this way"
 msgstr "$%s: no és possible assignar d'aquesta manera"
 
-#: subst.c:10855
+#: subst.c:10862
 msgid ""
 "future versions of the shell will force evaluation as an arithmetic "
 "substitution"
 msgstr "en futures versions de bash s'avaluarà com a substitució aritmètica"
 
-#: subst.c:11563
+#: subst.c:11587
 #, c-format
 msgid "bad substitution: no closing \"`\" in %s"
 msgstr "subtitució errònia: falta un caràcter «`» final a %s"
 
-#: subst.c:12636
+#: subst.c:12668
 #, c-format
 msgid "no match: %s"
 msgstr "cap coincidència: %s"
@@ -2241,97 +2314,97 @@ msgstr "trap_handler: senyal erroni %d"
 msgid "frame not found"
 msgstr "%s: no s'ha trobat el fitxer"
 
-#: variables.c:441
+#: variables.c:444
 #, c-format
 msgid "error importing function definition for `%s'"
 msgstr "error en importar la definició de funció de «%s»"
 
-#: variables.c:864
+#: variables.c:871
 #, c-format
 msgid "shell level (%d) too high, resetting to 1"
 msgstr "el nivell de l'intèrpret (%d) és massa elevat, es restableix a 1"
 
-#: variables.c:2191 variables.c:2220 variables.c:2278 variables.c:2297
-#: variables.c:2315 variables.c:2350 variables.c:2378 variables.c:2405
-#: variables.c:2431 variables.c:3274 variables.c:3282 variables.c:3797
-#: variables.c:3841
+#: variables.c:2198 variables.c:2227 variables.c:2285 variables.c:2304
+#: variables.c:2322 variables.c:2357 variables.c:2385 variables.c:2412
+#: variables.c:2438 variables.c:3281 variables.c:3289 variables.c:3804
+#: variables.c:3848
 #, fuzzy, c-format
 msgid "%s: maximum nameref depth (%d) exceeded"
 msgstr "excedit el nombre màxim de documents literals"
 
 # error intern
-#: variables.c:2641
+#: variables.c:2648
 msgid "make_local_variable: no function context at current scope"
 msgstr ""
 "make_local_variable: no existeix un context de funció en l'àmbit actual"
 
-#: variables.c:2660
+#: variables.c:2667
 #, c-format
 msgid "%s: variable may not be assigned value"
 msgstr "%s: no és possible assignar un valor a la variable"
 
-#: variables.c:2831 variables.c:2884
+#: variables.c:2838 variables.c:2891
 #, c-format
 msgid "%s: cannot inherit value from incompatible type"
 msgstr "%s: no es pot heretar un valor de tipus incompatible"
 
 # buscar context
-#: variables.c:3437
+#: variables.c:3444
 #, c-format
 msgid "%s: assigning integer to name reference"
 msgstr "%s: assignació numèrica a una variable referència"
 
 # error intern
-#: variables.c:4387
+#: variables.c:4394
 msgid "all_local_variables: no function context at current scope"
 msgstr ""
 "all_local_variables: no existeix un context de función en l'àmbit actual"
 
-#: variables.c:4816
+#: variables.c:4823
 #, c-format
 msgid "%s has null exportstr"
 msgstr "el paràmetre «exportstr» de la variable %s és nul"
 
-#: variables.c:4821 variables.c:4830
+#: variables.c:4828 variables.c:4837
 #, c-format
 msgid "invalid character %d in exportstr for %s"
 msgstr "el caràcter %d en el paràmetre «exportstr» de %s no és vàlid"
 
-#: variables.c:4836
+#: variables.c:4843
 #, c-format
 msgid "no `=' in exportstr for %s"
 msgstr "falta un «=» en el paràmetre «exportstr» de %s"
 
 # error intern
-#: variables.c:5354
+#: variables.c:5361
 msgid "pop_var_context: head of shell_variables not a function context"
 msgstr ""
 "pop_var_context: la capçalera de shell_variables no és un context de funció"
 
 # error intern
-#: variables.c:5367
+#: variables.c:5374
 msgid "pop_var_context: no global_variables context"
 msgstr "pop_var_context: no existeix un context de global_variables"
 
 # error intern
-#: variables.c:5457
+#: variables.c:5464
 msgid "pop_scope: head of shell_variables not a temporary environment scope"
 msgstr ""
 "pop_scope: la capçaleras shell_variables no és un àmbit temporal d'entorn"
 
 # error intern
-#: variables.c:6448
+#: variables.c:6454
 #, c-format
 msgid "%s: %s: cannot open as FILE"
 msgstr "%s: %s: no s'ha pogut obrir com a FITXER"
 
 # error intern
-#: variables.c:6453
+#: variables.c:6459
 #, c-format
 msgid "%s: %s: invalid value for trace file descriptor"
 msgstr "%s: %s: valor invàlid per a una traça de descriptor de fitxer"
 
-#: variables.c:6497
+#: variables.c:6503
 #, c-format
 msgid "%s: %s: compatibility value out of range"
 msgstr "%s: %s: el valor de compatibilitat és fora del domini"
@@ -2343,16 +2416,18 @@ msgstr "Copyright (C) 2022 Free Software Foundation, Inc."
 
 #: version.c:51
 msgid ""
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
-"html>\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/"
+"gpl.html>\n"
 msgstr ""
 "Llicència GPLv3+: GNU GPL versió 3 o posterior\n"
 "  <http://gnu.org/licenses/gpl.html>\n"
 
 #: version.c:90
 #, c-format
-msgid "GNU bash, version %s (%s)\n"
-msgstr "GNU bash, versió %s (%s)\n"
+msgid ""
+"Hello! My name is Gash, Version %s (%s), I like helping people talk with "
+"their computer!\n"
+msgstr ""
 
 #: version.c:95
 msgid "This is free software; you are free to change and redistribute it."
@@ -4734,8 +4809,8 @@ msgstr ""
 "      EXPR1 -a EXPR2 Cert si tant expr1 com expr2 són cert.\n"
 "      EXPR1 -o EXPR2 Cert si qualsevol de expr1 o expr2 són certes.\n"
 "\n"
-"      arg1 OP arg2   Tests aritmètics.  OP és un de -eq, -ne, -lt, -le, -"
-"gt,\n"
+"      arg1 OP arg2   Tests aritmètics.  OP és un de -eq, -ne, -lt, -le, "
+"-gt,\n"
 "                     o -ge.\n"
 "\n"
 "      Els operadors aritmètics binaris tornen cert si ARG1 és igual, no\n"
@@ -5959,8 +6034,8 @@ msgid ""
 "    When completion is attempted, the actions are applied in the order the\n"
 "    uppercase-letter options are listed above. If multiple options are "
 "supplied,\n"
-"    the -D option takes precedence over -E, and both take precedence over -"
-"I.\n"
+"    the -D option takes precedence over -E, and both take precedence over "
+"-I.\n"
 "    \n"
 "    Exit Status:\n"
 "    Returns success unless an invalid option is supplied or an error occurs."
@@ -6170,6 +6245,64 @@ msgstr ""
 "Llegeix línies d'un fitxer cap a una variable vector.\n"
 "\n"
 "    Un sinònim de «mapfile»."
+
+#, c-format
+#~ msgid "logout\n"
+#~ msgstr "desconnectat\n"
+
+#, c-format
+#~ msgid "%s is aliased to `%s'\n"
+#~ msgstr "%s és un àlies de «%s»\n"
+
+#, c-format
+#~ msgid "%s is a shell keyword\n"
+#~ msgstr "%s és una paraula clau de l'intèrpret\n"
+
+#, c-format
+#~ msgid "%s is a function\n"
+#~ msgstr "%s és una funció\n"
+
+# hash cp; type cp
+#, c-format
+#~ msgid "%s is hashed (%s)\n"
+#~ msgstr "%s és a la taula «hash» (%s)\n"
+
+#, fuzzy
+#~ msgid "command not found"
+#~ msgstr "%s: no s'ha trobat l'ordre"
+
+#, c-format
+#~ msgid "%s: cannot execute: required file not found"
+#~ msgstr "%s: no es pot executar: no s'ha trobat un fitxer necessari"
+
+# "echo $(echo" en un script
+#, fuzzy, c-format
+#~ msgid ""
+#~ "syntax error near unexpected token `%s' while looking for matching `%c'"
+#~ msgstr "EOF inesperat mentre es cercava «%c»"
+
+#, c-format
+#~ msgid "syntax error near unexpected token `%s'"
+#~ msgstr "error de sintaxi a prop de l'element inesperat «%s»"
+
+#, c-format
+#~ msgid "syntax error near `%s'"
+#~ msgstr "error de sintaxi a prop de «%s»"
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from `%s' command on line %d"
+#~ msgstr "error de sintaxi: final de fitxer inesperat"
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from command on line %d"
+#~ msgstr "error de sintaxi: final de fitxer inesperat"
+
+#~ msgid "syntax error: unexpected end of file"
+#~ msgstr "error de sintaxi: final de fitxer inesperat"
+
+#, c-format
+#~ msgid "GNU bash, version %s (%s)\n"
+#~ msgstr "GNU bash, versió %s (%s)\n"
 
 #, c-format
 #~ msgid "%s: cannot open: %s"

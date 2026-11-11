@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bash-5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 09:37-0400\n"
+"POT-Creation-Date: 2026-10-27 13:00+0700\n"
 "PO-Revision-Date: 2021-04-12 10:35+0300\n"
 "Last-Translator: Lefteris Dimitroulakis <ledimitro@gmail.com>\n"
 "Language-Team: Greek <team@lists.gnome.gr>\n"
@@ -23,8 +23,8 @@ msgstr ""
 msgid "bad array subscript"
 msgstr "λάθος δείκτης πίνακα"
 
-#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2196 variables.c:2225
-#: variables.c:3099
+#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2203 variables.c:2232
+#: variables.c:3106
 #, c-format
 msgid "%s: removing nameref attribute"
 msgstr "%s: αφαίρεση του χαρακτηριστικού nameref"
@@ -88,7 +88,7 @@ msgstr "brace expansion: αδυναμία εκχώρησης μνήμης για
 msgid "brace expansion: failed to allocate memory for `%s'"
 msgstr "brace expansion: αδυναμία εκχώρησης μνήμης για «%s»"
 
-#: builtins/alias.def:131 variables.c:1789
+#: builtins/alias.def:131 variables.c:1796
 #, c-format
 msgid "`%s': invalid alias name"
 msgstr "«%s»: μη έγκυρο συνώνυμο"
@@ -182,7 +182,7 @@ msgstr "OLDPWD δεν έχει οριστεί"
 msgid "line %d: "
 msgstr "γραμμή %d: "
 
-#: builtins/common.c:117 error.c:227
+#: builtins/common.c:117 error.c:254
 #, c-format
 msgid "warning: "
 msgstr "προειδοποίηση: "
@@ -217,7 +217,7 @@ msgstr "%s: μη έγκυρη επιλογή"
 msgid "%s: invalid option name"
 msgstr "%s: μη έγκυρο όνομα επιλογής"
 
-#: builtins/common.c:210 error.c:461
+#: builtins/common.c:210 error.c:488
 #, c-format
 msgid "`%s': not a valid identifier"
 msgstr "«%s»: μή έγκυρο αναγνωριστικό"
@@ -244,7 +244,7 @@ msgstr "%s: μη έγκυρη προδιαγραφή σήματος"
 msgid "`%s': not a pid or valid job spec"
 msgstr "«%s»: όχι pid ή έγκυρο job spec"
 
-#: builtins/common.c:242 error.c:455
+#: builtins/common.c:242 error.c:482
 #, c-format
 msgid "%s: readonly variable"
 msgstr "%s: μεταβλητή μόνο για ανάγνωση"
@@ -340,12 +340,12 @@ msgstr "βοήθεια μη διαθέσιμη σ' αυτήν την έκδοσ�
 msgid "%s: not an indexed array"
 msgstr "%s: μη δικτοδοτημένος πίνακας"
 
-#: builtins/common.c:1028 builtins/set.def:964 variables.c:3868
+#: builtins/common.c:1028 builtins/set.def:964 variables.c:3875
 #, c-format
 msgid "%s: cannot unset: readonly %s"
 msgstr "%s: αδυναμία unset: %s μόνο για ανάγνωση"
 
-#: builtins/common.c:1033 builtins/set.def:930 variables.c:3873
+#: builtins/common.c:1033 builtins/set.def:930 variables.c:3880
 #, c-format
 msgid "%s: cannot unset"
 msgstr "%s: αδυναμία «unset»"
@@ -382,7 +382,7 @@ msgid "cannot use `-f' to make functions"
 msgstr ""
 "η επιλογή «-f» δεν μπορεί να χρησιμοποιηθεί για τη δημιουργία συναρτήσεων"
 
-#: builtins/declare.def:499 execute_cmd.c:6320
+#: builtins/declare.def:499
 #, c-format
 msgid "%s: readonly function"
 msgstr "%s: συνάρτηση μόνο για ανάγνωση"
@@ -392,12 +392,12 @@ msgstr "%s: συνάρτηση μόνο για ανάγνωση"
 msgid "%s: reference variable cannot be an array"
 msgstr "%s: η μεταβλητή αναφοράς δεν μπορεί να είναι πίνακας"
 
-#: builtins/declare.def:567 variables.c:3346
+#: builtins/declare.def:567 variables.c:3353
 #, c-format
 msgid "%s: nameref variable self references not allowed"
 msgstr "%s: nameref αυτοαναφορά μεταβλητής δεν επιτρέπεται"
 
-#: builtins/declare.def:572 variables.c:2035 variables.c:3343
+#: builtins/declare.def:572 variables.c:2042 variables.c:3350
 #, c-format
 msgid "%s: circular name reference"
 msgstr "%s: κυκλική αναφορά ονόματος"
@@ -461,7 +461,7 @@ msgstr "%s: δεν φορτώθηκε δυναμικά"
 msgid "%s: cannot delete: %s"
 msgstr "%s: αδυναμία διαγραφής: %s"
 
-#: builtins/evalfile.c:137 builtins/hash.def:190 execute_cmd.c:6140
+#: builtins/evalfile.c:137 builtins/hash.def:190
 #, c-format
 msgid "%s: is a directory"
 msgstr "%s: είναι κατάλογος"
@@ -476,7 +476,7 @@ msgstr "%s: όχι κανονικό αρχείο"
 msgid "%s: file is too large"
 msgstr "%s: αρχείο πολύ μεγάλο"
 
-#: builtins/evalfile.c:189 builtins/evalfile.c:207 execute_cmd.c:6222
+#: builtins/evalfile.c:191 builtins/evalfile.c:209 execute_cmd.c:6231
 #: shell.c:1687
 #, fuzzy
 msgid "cannot execute binary file"
@@ -494,8 +494,8 @@ msgstr "%s: αδυναμία εκτέλεσης: %s"
 
 #: builtins/exit.def:61
 #, c-format
-msgid "logout\n"
-msgstr "logout\n"
+msgid "bro logged out, so\n"
+msgstr ""
 
 #: builtins/exit.def:85
 msgid "not login shell: use `exit'"
@@ -510,6 +510,11 @@ msgstr "Υπάρχουν σταματημένες εργασίες.\n"
 #, c-format
 msgid "There are running jobs.\n"
 msgstr "Υπάρχουν εργασίες που τρέχουν.\n"
+
+#: builtins/exit.def:150
+#, c-format
+msgid "Bye bye and never meet again!\n"
+msgstr ""
 
 #: builtins/fc.def:284 builtins/fc.def:391 builtins/fc.def:435
 msgid "no command found"
@@ -586,20 +591,21 @@ msgid "cannot open"
 msgstr "αναστολή αδύνατη"
 
 #: builtins/help.def:264 builtins/help.def:306 builtins/history.def:306
-#: builtins/history.def:325 builtins/read.def:909
+#: builtins/history.def:325 builtins/read.def:911
 #, fuzzy
 msgid "read error"
 msgstr "σφάλμα ανάγνωσης: %d: %s"
 
 #: builtins/help.def:517
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"These shell commands are defined internally.  Type `help' to see this list.\n"
+"These shell commands are defined internally. Please type `help' to see this "
+"list.\n"
 "Type `help name' to find out more about the function `name'.\n"
 "Use `info bash' to find out more about the shell in general.\n"
 "Use `man -k' or `info' to find out more about commands not in this list.\n"
 "\n"
-"A star (*) next to a name means that the command is disabled.\n"
+"A star (*) next to a name means that the command is disable.\n"
 "\n"
 msgstr ""
 "Αυτές οι εντολές ορίζονται εσωτερικά. Δώσε «help» για να δεις την λίστα.\n"
@@ -626,7 +632,7 @@ msgstr "θέση στο ιστορικό"
 msgid "empty filename"
 msgstr "όνομα μεταβλητής πίνακα κενό"
 
-#: builtins/history.def:282 subst.c:8226
+#: builtins/history.def:282 subst.c:8233
 #, c-format
 msgid "%s: parameter null or not set"
 msgstr "%s: παράμετρος κενή ή δεν έχει οριστεί"
@@ -658,36 +664,36 @@ msgstr "Άγνωστο σφάλμα"
 msgid "expression expected"
 msgstr "αναμενόταν έκφραση"
 
-#: builtins/mapfile.def:249 builtins/read.def:373
+#: builtins/mapfile.def:252 builtins/read.def:373
 #, c-format
 msgid "%s: invalid file descriptor specification"
 msgstr "%s: μη έγκυρη προδιαγραφή περιγραφέα αρχείου"
 
-#: builtins/mapfile.def:257 builtins/read.def:380
+#: builtins/mapfile.def:260 builtins/read.def:380
 #, fuzzy
 msgid "invalid file descriptor"
 msgstr "%d: μη έγκυρος περιγραφέας αρχείου: %s"
 
-#: builtins/mapfile.def:266 builtins/mapfile.def:304
+#: builtins/mapfile.def:269 builtins/mapfile.def:307
 #, c-format
 msgid "%s: invalid line count"
 msgstr "%s: μη έγκυρος αριθμός γραμμής"
 
-#: builtins/mapfile.def:277
+#: builtins/mapfile.def:280
 #, c-format
 msgid "%s: invalid array origin"
 msgstr "%s: μη έγκυρη αρχή πίνακα"
 
-#: builtins/mapfile.def:294
+#: builtins/mapfile.def:297
 #, c-format
 msgid "%s: invalid callback quantum"
 msgstr "%s: μη έγκυρο κβάντο του callback"
 
-#: builtins/mapfile.def:327
+#: builtins/mapfile.def:330
 msgid "empty array variable name"
 msgstr "όνομα μεταβλητής πίνακα κενό"
 
-#: builtins/mapfile.def:347
+#: builtins/mapfile.def:350
 msgid "array variable support required"
 msgstr "απαιτείται υποστήριξη μεταβλητής πίνακος"
 
@@ -881,38 +887,50 @@ msgstr "απούσα «]»"
 
 #: builtins/type.def:231
 #, c-format
-msgid "%s is aliased to `%s'\n"
-msgstr "%s είναι συνώνυμο του «%s»\n"
+msgid "You found %s, not a command, but it's shortcut for `%s'\n"
+msgstr ""
 
 #: builtins/type.def:252
 #, c-format
-msgid "%s is a shell keyword\n"
-msgstr "%s αποτελεί δεσμευμένη λέξη του κελύφους\n"
+msgid "You found %s! A shell keyword, it is the part of the shell lang!\n"
+msgstr ""
 
-#: builtins/type.def:270 builtins/type.def:314
+#: builtins/type.def:270
 #, c-format
 msgid "%s is a special shell builtin\n"
 msgstr "%s είναι ένα ειδικό builtin\n"
 
 #: builtins/type.def:289
 #, c-format
-msgid "%s is a function\n"
-msgstr "%s είναι συνάρτηση\n"
+msgid "You found %s, and it is a shell function \n"
+msgstr ""
+
+#: builtins/type.def:314
+#, c-format
+msgid "OHH!You found %s, a sPeaCAl SheLL BuilTIn \n"
+msgstr ""
 
 #: builtins/type.def:316
-#, c-format
-msgid "%s is a shell builtin\n"
+#, fuzzy, c-format
+msgid "You found %s, a shell builtin\n"
 msgstr "%s είναι ένα builtin κελύφους\n"
 
-#: builtins/type.def:338 builtins/type.def:425
+#: builtins/type.def:339
 #, c-format
 msgid "%s is %s\n"
 msgstr "%s είναι %s\n"
 
-#: builtins/type.def:358
+#: builtins/type.def:359
 #, c-format
-msgid "%s is hashed (%s)\n"
-msgstr "%s is hashed (%s)\n"
+msgid ""
+"Bro!you found %s, and it points to an ELF or something else... (For who "
+"don't know, it directory is %s, that all)\n"
+msgstr ""
+
+#: builtins/type.def:426
+#, c-format
+msgid "You found %s! a executable in $PATH (Directory:%s)\n"
+msgstr ""
 
 #: builtins/ulimit.def:403
 #, c-format
@@ -952,48 +970,81 @@ msgstr "`%c': μη έγκυρος τελεστής συμβολικού mode"
 msgid "`%c': invalid symbolic mode character"
 msgstr "`%c': μη έγκυρος χαρακτήρας συμβολικού mode"
 
-#: error.c:83 error.c:311 error.c:313 error.c:315
+#: error.c:71
+msgid "403 Forbidden: permission skill issue"
+msgstr ""
+
+#: error.c:73
+msgid "404 Not Found: this path has left the chat"
+msgstr ""
+
+#: error.c:75
+msgid "Already exists: duplicate arc unlocked"
+msgstr ""
+
+#: error.c:77
+msgid "Not a directory: wrong side quest"
+msgstr ""
+
+#: error.c:79
+#, fuzzy
+msgid "Is a directory: plot twist"
+msgstr "%s: είναι κατάλογος"
+
+#: error.c:81
+msgid "No space left: the disk is cooked"
+msgstr ""
+
+#: error.c:83
+msgid "Read-only filesystem said nope"
+msgstr ""
+
+#: error.c:85
+msgid "Broken pipe: the other side went to touch grass"
+msgstr ""
+
+#: error.c:111 error.c:338 error.c:340 error.c:342
 msgid " line "
 msgstr " γραμμή "
 
-#: error.c:151
+#: error.c:178
 #, c-format
 msgid "last command: %s\n"
 msgstr "τελευταία εντολή: %s\n"
 
-#: error.c:159
+#: error.c:186
 #, c-format
 msgid "Aborting..."
 msgstr "Ακύρωση..."
 
 #. TRANSLATORS: this is a prefix for informational messages.
-#: error.c:244
+#: error.c:271
 #, c-format
 msgid "INFORM: "
 msgstr "INFORM: "
 
-#: error.c:261
+#: error.c:288
 #, fuzzy, c-format
 msgid "DEBUG warning: "
 msgstr "προειδοποίηση: "
 
-#: error.c:413
+#: error.c:440
 msgid "unknown command error"
 msgstr "σφάλμα άγνωστης εντολής"
 
-#: error.c:414
+#: error.c:441
 msgid "bad command type"
 msgstr "λάθος τύπος εντολής"
 
-#: error.c:415
+#: error.c:442
 msgid "bad connector"
 msgstr "bad connector"
 
-#: error.c:416
+#: error.c:443
 msgid "bad jump"
 msgstr "κακό άλμα"
 
-#: error.c:449
+#: error.c:476
 #, c-format
 msgid "%s: unbound variable"
 msgstr "%s: μεταβλητή χωρίς σύνδεση"
@@ -1002,71 +1053,80 @@ msgstr "%s: μεταβλητή χωρίς σύνδεση"
 msgid "\atimed out waiting for input: auto-logout\n"
 msgstr "\aη αναμονή για δεδομένα έληξε: αυτόματη αποσύνδεση\n"
 
-#: execute_cmd.c:606
+#: execute_cmd.c:607
 #, fuzzy
 msgid "cannot redirect standard input from /dev/null"
 msgstr "αδυναμία ανακατεύθυνσης τυπικής εισόδου από /dev/null: %s"
 
-#: execute_cmd.c:1412
+#: execute_cmd.c:1413
 #, c-format
 msgid "TIMEFORMAT: `%c': invalid format character"
 msgstr "TIMEFORMAT: «%c»: μη έγκυρος χαρακτήρας μορφοποίησης"
 
-#: execute_cmd.c:2493
+#: execute_cmd.c:2494
 #, c-format
 msgid "execute_coproc: coproc [%d:%s] still exists"
 msgstr "execute_coproc: coproc [%d:%s] υφίσταται ακόμη"
 
-#: execute_cmd.c:2647
+#: execute_cmd.c:2648
 msgid "pipe error"
 msgstr "pipe error"
 
-#: execute_cmd.c:4100
+#: execute_cmd.c:4101
 #, c-format
 msgid "invalid regular expression `%s': %s"
 msgstr ""
 
-#: execute_cmd.c:4102
+#: execute_cmd.c:4103
 #, c-format
 msgid "invalid regular expression `%s'"
 msgstr ""
 
-#: execute_cmd.c:5056
+#: execute_cmd.c:5061
 #, c-format
 msgid "eval: maximum eval nesting level exceeded (%d)"
 msgstr "eval: μέγιστο επίπεδο φωλιάσματος eval ξεπεράστηκε (%d)"
 
-#: execute_cmd.c:5069
+#: execute_cmd.c:5074
 #, c-format
 msgid "%s: maximum source nesting level exceeded (%d)"
 msgstr "%s: μέγιστο επίπεδο φωλιάσματος source ξεπεράστηκε (%d)"
 
-#: execute_cmd.c:5198
+#: execute_cmd.c:5203
 #, c-format
 msgid "%s: maximum function nesting level exceeded (%d)"
 msgstr "%s: μέγιστο επίπεδο φωλιάσματος συνάρτησης ξεπεράστηκε (%d)"
 
-#: execute_cmd.c:5754
-#, fuzzy
-msgid "command not found"
-msgstr "%s: εντολή δεν βρέθηκε"
+#: execute_cmd.c:5763
+msgid "bro...command not exist!"
+msgstr ""
 
-#: execute_cmd.c:5783
+#: execute_cmd.c:5792
 #, c-format
 msgid "%s: restricted: cannot specify `/' in command names"
 msgstr "%s: περιορισμός: δεν μπορεί να περιέχεται «/» σε όνομα εντολής"
 
-#: execute_cmd.c:6176
+#: execute_cmd.c:6150
+#, c-format
+msgid "%s: Bro! You are execute the directory"
+msgstr ""
+
+#: execute_cmd.c:6186
 #, fuzzy
 msgid "bad interpreter"
 msgstr "%s: %s: κακός interpreter"
 
-#: execute_cmd.c:6185
-#, fuzzy, c-format
-msgid "%s: cannot execute: required file not found"
-msgstr "%s: αδυναμία εκτέλεσης δυαδικού αρχείου"
+#: execute_cmd.c:6195
+#, c-format
+msgid "%s: bro...required file not exist!"
+msgstr ""
 
-#: execute_cmd.c:6361
+#: execute_cmd.c:6329
+#, c-format
+msgid "%s: BRO! only read this thing!"
+msgstr ""
+
+#: execute_cmd.c:6370
 #, c-format
 msgid "cannot duplicate fd %d to fd %d"
 msgstr "αδυναμία αντιγραφής του fd %d στον fd %d"
@@ -1161,12 +1221,12 @@ msgstr "%s: σφάλμα έκφρασης\n"
 msgid "getcwd: cannot access parent directories"
 msgstr "getcwd: αδυναμία πρόσβασης στο γονικό κατάλογο"
 
-#: general.c:459
+#: general.c:464
 #, c-format
 msgid "`%s': is a special builtin"
 msgstr "«%s»: είναι ειδικό builtin"
 
-#: input.c:98 subst.c:6542
+#: input.c:98 subst.c:6544
 #, c-format
 msgid "cannot reset nodelay mode for fd %d"
 msgstr "αδυναμία επανάταξης nodelay mode για fd %d"
@@ -1484,7 +1544,7 @@ msgstr ""
 msgid "make_redirection: redirection instruction `%d' out of range"
 msgstr "make_redirection: η οδηγία της ανακατεύθυνσης «%d» εκτός ορίων"
 
-#: parse.y:2572
+#: parse.y:2584
 #, c-format
 msgid ""
 "shell_getc: shell_input_line_size (%zu) exceeds SIZE_MAX (%lu): line "
@@ -1493,127 +1553,136 @@ msgstr ""
 "shell_getc: shell_input_line_size (%zu) υπερβαίνει το SIZE_MAX (%lu): γραμμή "
 "κόπηκε"
 
-#: parse.y:2864
+#: parse.y:2876
 #, fuzzy
 msgid "script file read error"
 msgstr "σφάλμα εγγραφής: %s"
 
-#: parse.y:3101
+#: parse.y:3113
 msgid "maximum here-document count exceeded"
 msgstr "ο μέγιστος αριθμός here-document ξεπεράστηκε"
 
-#: parse.y:3901 parse.y:4799 parse.y:6859
+#: parse.y:3913 parse.y:4811
 #, c-format
 msgid "unexpected EOF while looking for matching `%c'"
 msgstr "μη αναμενόμενο EOF κατά την αναζήτηση «%c»"
 
-#: parse.y:5006
+#: parse.y:5019
 msgid "unexpected EOF while looking for `]]'"
 msgstr "μη αναμενόμενο EOF ενώ έψαχνα για «]]»"
 
-#: parse.y:5011
+#: parse.y:5024
 #, c-format
 msgid "syntax error in conditional expression: unexpected token `%s'"
 msgstr "syntax error in conditional expression: μη αναμενόμενο σύμβολο «%s»"
 
-#: parse.y:5015
+#: parse.y:5028
 msgid "syntax error in conditional expression"
 msgstr "συντακτικό σφάλμα σ' έκφραση υπό συνθήκη"
 
-#: parse.y:5093
+#: parse.y:5106
 #, c-format
 msgid "unexpected token `%s', expected `)'"
 msgstr "μη αναμενόμενο σύμβολο «%s», αναμενόταν «)»"
 
-#: parse.y:5097
+#: parse.y:5110
 msgid "expected `)'"
 msgstr "αναμενόταν «)»"
 
-#: parse.y:5127
+#: parse.y:5140
 #, c-format
 msgid "unexpected argument `%s' to conditional unary operator"
 msgstr "απροσδόκητο όρισμα «%s» στον υπό αίρεση μοναδιαίο τελεστή"
 
-#: parse.y:5131
+#: parse.y:5144
 msgid "unexpected argument to conditional unary operator"
 msgstr "απροσδόκητο όρισμα για τον μοναδιαίο τελεστή"
 
-#: parse.y:5178
+#: parse.y:5191
 #, c-format
 msgid "unexpected token `%s', conditional binary operator expected"
 msgstr "απροσδόκητο σύμβολο «%s» βρέθηκε αντί για δυαδικό τελεστή υπό αίρεση"
 
-#: parse.y:5182
+#: parse.y:5195
 msgid "conditional binary operator expected"
 msgstr "αναμενόταν δυαδικός τελεστής υπό αίρεση"
 
-#: parse.y:5211
+#: parse.y:5224
 #, c-format
 msgid "unexpected argument `%s' to conditional binary operator"
 msgstr "απροσδόκητο όρισμα «%s» για δυαδικό τελεστή υπό αίρεση"
 
-#: parse.y:5215
+#: parse.y:5228
 msgid "unexpected argument to conditional binary operator"
 msgstr "απροσδόκητο όρισμα για δυαδικό τελεστή υπό αίρεση"
 
-#: parse.y:5226
+#: parse.y:5239
 #, c-format
 msgid "unexpected token `%c' in conditional command"
 msgstr "απροσδόκητο σύμβολο «%c» σε εντολή υπό αίρεση"
 
-#: parse.y:5229
+#: parse.y:5242
 #, c-format
 msgid "unexpected token `%s' in conditional command"
 msgstr "απροσδόκητο σύμβολο «%s» σε εντολή υπό αίρεση"
 
-#: parse.y:5233
+#: parse.y:5246
 #, c-format
 msgid "unexpected token %d in conditional command"
 msgstr "απροσδόκητο σύμβολο %d σε εντολή υπό αίρεση"
 
-#: parse.y:6827
-#, fuzzy, c-format
-msgid "syntax error near unexpected token `%s' while looking for matching `%c'"
-msgstr "μη αναμενόμενο EOF κατά την αναζήτηση «%c»"
-
-#: parse.y:6829
+#: parse.y:6860
 #, c-format
-msgid "syntax error near unexpected token `%s'"
-msgstr "συντακτικό σφάλμα κοντά στο μη αναμενόμενο σύμβολο «%s»"
+msgid "BRO! You left your `%s' while we searching`%c'"
+msgstr ""
 
-#: parse.y:6848
+#: parse.y:6862
 #, c-format
-msgid "syntax error near `%s'"
-msgstr "συντακτικό σφάλμα κοντά σε «%s»"
+msgid "BRO! you left your `%s'"
+msgstr ""
 
-#: parse.y:6867
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from `%s' command on line %d"
-msgstr "syntax error: μη αναμενόμενο τέλος αρχείου"
+#: parse.y:6881
+#, c-format
+msgid "BRO! token `%s' is wrong"
+msgstr ""
 
-#: parse.y:6869
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from command on line %d"
-msgstr "syntax error: μη αναμενόμενο τέλος αρχείου"
+#: parse.y:6892
+#, c-format
+msgid "BRO! We are finding `%c', but why you EOF too soon?"
+msgstr ""
 
-#: parse.y:6873
-msgid "syntax error: unexpected end of file"
-msgstr "syntax error: μη αναμενόμενο τέλος αρχείου"
+#: parse.y:6900
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error : Why did you end the file too soon while we "
+"were looking for the end flag from `%s' command on line %d"
+msgstr ""
 
-#: parse.y:6873
+#: parse.y:6902
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error: Why you end file too soon while we find a end "
+"flag from a command on %d"
+msgstr ""
+
+#: parse.y:6906
+msgid "Error STUFF: You left your EOF "
+msgstr ""
+
+#: parse.y:6906
 msgid "syntax error"
 msgstr "συντακτικό σφάλμα"
 
-#: parse.y:6922
+#: parse.y:6955
 #, c-format
 msgid "Use \"%s\" to leave the shell.\n"
 msgstr "Χρήση «%s» για έξοδο από το κέλυφος.\n"
 
-#: parse.y:7120
+#: parse.y:7153
 msgid "unexpected EOF while looking for matching `)'"
 msgstr "μη αναμενόμενο EOF ενώ έψαχνα «)»"
 
-#: pathexp.c:897
+#: pathexp.c:909
 #, fuzzy
 msgid "invalid glob sort type"
 msgstr "μη έγκυρη βάση"
@@ -1802,7 +1871,13 @@ msgstr ""
 "Γενική βοήθεια για την χρήση του λογισμικού GNU: <http://www.gnu.org/gethelp/"
 ">\n"
 
-#: sig.c:809
+#: shell.c:2102
+#, c-format
+msgid ""
+"Internet lore status: skill issue contained; keep calm and touch grass.\n"
+msgstr ""
+
+#: sig.c:812
 #, c-format
 msgid "sigprocmask: %d: invalid operation"
 msgstr "sigprocmask: %d: μη έγκυρη λειτουργία"
@@ -1972,100 +2047,100 @@ msgstr "Αίτηση για πληροφορίες"
 msgid "Unknown Signal #%d"
 msgstr "Άγνωστο σήμα #%d"
 
-#: subst.c:1503 subst.c:1795 subst.c:2001
+#: subst.c:1505 subst.c:1797 subst.c:2003
 #, c-format
 msgid "bad substitution: no closing `%s' in %s"
 msgstr "κακή αντικατάσταση: όχι «%s» που κλείνει στο %s"
 
-#: subst.c:3601
+#: subst.c:3603
 #, c-format
 msgid "%s: cannot assign list to array member"
 msgstr "%s: αδυναμία εκχώρησης λίστας σε στοιχείο του πίνακα"
 
-#: subst.c:6381 subst.c:6397
+#: subst.c:6383 subst.c:6399
 msgid "cannot make pipe for process substitution"
 msgstr "αδυναμία δημιουργίας σωλήνα για αντικατάσταση διεργασίας"
 
-#: subst.c:6457
+#: subst.c:6459
 msgid "cannot make child for process substitution"
 msgstr "αδυναμία δημιουργίας θυγατρικής για αντικατάσταση διεργασίας"
 
-#: subst.c:6532
+#: subst.c:6534
 #, c-format
 msgid "cannot open named pipe %s for reading"
 msgstr "αδυναμία ανοίγματοε επώνυμης σωλήνας %s προς ανάγνωση"
 
-#: subst.c:6534
+#: subst.c:6536
 #, c-format
 msgid "cannot open named pipe %s for writing"
 msgstr "αδυναμία ανοίγματος επώνυμης σωλήνας %s προς εγγραφή"
 
-#: subst.c:6557
+#: subst.c:6559
 #, c-format
 msgid "cannot duplicate named pipe %s as fd %d"
 msgstr "αδυναμία αναπαραγωγής named pipe %s ως fd %d"
 
-#: subst.c:6723
+#: subst.c:6725
 msgid "command substitution: ignored null byte in input"
 msgstr "αντικατάσταση εντολής: null byte αγνοήθηκε στην είσοδο"
 
-#: subst.c:6962
+#: subst.c:6964
 msgid "function_substitute: cannot open anonymous file for output"
 msgstr ""
 
-#: subst.c:7036
+#: subst.c:7043
 #, fuzzy
 msgid "function_substitute: cannot duplicate anonymous file as standard output"
 msgstr "command_substitute: αδυναμία αναπαραγωγής σωλήνα ως fd 1"
 
-#: subst.c:7210 subst.c:7231
+#: subst.c:7217 subst.c:7238
 msgid "cannot make pipe for command substitution"
 msgstr "αδυναμία δημιουργίας σωλήνα για αντικατάσταση εντολής"
 
-#: subst.c:7282
+#: subst.c:7289
 msgid "cannot make child for command substitution"
 msgstr "αδυναμία δημιουργίας θυγατρικής για αντικατάσταση εντολής"
 
-#: subst.c:7315
+#: subst.c:7322
 msgid "command_substitute: cannot duplicate pipe as fd 1"
 msgstr "command_substitute: αδυναμία αναπαραγωγής σωλήνα ως fd 1"
 
-#: subst.c:7813 subst.c:10989
+#: subst.c:7820 subst.c:11013
 #, c-format
 msgid "%s: invalid variable name for name reference"
 msgstr "%s: μη έγκυρο όνομα μεταβλητής ως όνομα αναφοράς"
 
-#: subst.c:7906 subst.c:7924 subst.c:8100
+#: subst.c:7913 subst.c:7931 subst.c:8107
 #, c-format
 msgid "%s: invalid indirect expansion"
 msgstr "%s: μη έγκυρη έμμεση επέκταση"
 
-#: subst.c:7940 subst.c:8108
+#: subst.c:7947 subst.c:8115
 #, c-format
 msgid "%s: invalid variable name"
 msgstr "%s: μη έγκυρο όνομα μεταβλητής"
 
-#: subst.c:8125 subst.c:10271 subst.c:10298
+#: subst.c:8132 subst.c:10278 subst.c:10305
 #, c-format
 msgid "%s: bad substitution"
 msgstr "%s: κακή αντικατάσταση"
 
-#: subst.c:8224
+#: subst.c:8231
 #, c-format
 msgid "%s: parameter not set"
 msgstr "%s: παράμετρος δεν έχει οριστεί"
 
-#: subst.c:8480 subst.c:8495
+#: subst.c:8487 subst.c:8502
 #, c-format
 msgid "%s: substring expression < 0"
 msgstr "%s: έκφραση αρνητική < 0"
 
-#: subst.c:10397
+#: subst.c:10404
 #, c-format
 msgid "$%s: cannot assign in this way"
 msgstr "$%s: αδύνατη ανάθεση κατ' αυτόν τον τρόπο"
 
-#: subst.c:10855
+#: subst.c:10862
 msgid ""
 "future versions of the shell will force evaluation as an arithmetic "
 "substitution"
@@ -2073,12 +2148,12 @@ msgstr ""
 "μελλοντικές εκδόσεις του κελύφους θα επιβάλουν την αποτίμηση ως μια "
 "αριθμητική αντικατάσταση"
 
-#: subst.c:11563
+#: subst.c:11587
 #, c-format
 msgid "bad substitution: no closing \"`\" in %s"
 msgstr "κακή αντικατάσταση: δεν υπάρχει «`» που κλείνει στο %s"
 
-#: subst.c:12636
+#: subst.c:12668
 #, c-format
 msgid "no match: %s"
 msgstr "χωρίς ταίριασμα: %s"
@@ -2148,85 +2223,85 @@ msgstr "trap_handler: κακό σήμα %d"
 msgid "frame not found"
 msgstr "%s: αρχείο δεν βρέθηκε"
 
-#: variables.c:441
+#: variables.c:444
 #, c-format
 msgid "error importing function definition for `%s'"
 msgstr "σφάλμα κατά την εισαγωγή του ορισμού της συνάρτησης «%s»"
 
-#: variables.c:864
+#: variables.c:871
 #, c-format
 msgid "shell level (%d) too high, resetting to 1"
 msgstr "επίπεδο κελύφους (%d) πολύ υψηλό, επαναφορά στο 1"
 
-#: variables.c:2191 variables.c:2220 variables.c:2278 variables.c:2297
-#: variables.c:2315 variables.c:2350 variables.c:2378 variables.c:2405
-#: variables.c:2431 variables.c:3274 variables.c:3282 variables.c:3797
-#: variables.c:3841
+#: variables.c:2198 variables.c:2227 variables.c:2285 variables.c:2304
+#: variables.c:2322 variables.c:2357 variables.c:2385 variables.c:2412
+#: variables.c:2438 variables.c:3281 variables.c:3289 variables.c:3804
+#: variables.c:3848
 #, fuzzy, c-format
 msgid "%s: maximum nameref depth (%d) exceeded"
 msgstr "ο μέγιστος αριθμός here-document ξεπεράστηκε"
 
-#: variables.c:2641
+#: variables.c:2648
 msgid "make_local_variable: no function context at current scope"
 msgstr "make_local_variable: no function context at current scope"
 
-#: variables.c:2660
+#: variables.c:2667
 #, c-format
 msgid "%s: variable may not be assigned value"
 msgstr "%s: η μεταβλητή δεν μπορεί να δεχτεί τιμή"
 
-#: variables.c:2831 variables.c:2884
+#: variables.c:2838 variables.c:2891
 #, c-format
 msgid "%s: cannot inherit value from incompatible type"
 msgstr ""
 
-#: variables.c:3437
+#: variables.c:3444
 #, c-format
 msgid "%s: assigning integer to name reference"
 msgstr ""
 
-#: variables.c:4387
+#: variables.c:4394
 msgid "all_local_variables: no function context at current scope"
 msgstr ""
 
-#: variables.c:4816
+#: variables.c:4823
 #, c-format
 msgid "%s has null exportstr"
 msgstr "%s έχει κενό exportstr"
 
-#: variables.c:4821 variables.c:4830
+#: variables.c:4828 variables.c:4837
 #, c-format
 msgid "invalid character %d in exportstr for %s"
 msgstr "ο χαρακτήρας %d δεν έίναι έγκυρος στην exportstr για %s"
 
-#: variables.c:4836
+#: variables.c:4843
 #, c-format
 msgid "no `=' in exportstr for %s"
 msgstr "απουσία «=» στην exportstr για %s"
 
-#: variables.c:5354
+#: variables.c:5361
 msgid "pop_var_context: head of shell_variables not a function context"
 msgstr "pop_var_context: head of shell_variables not a function context"
 
-#: variables.c:5367
+#: variables.c:5374
 msgid "pop_var_context: no global_variables context"
 msgstr "pop_var_context: no global_variables context"
 
-#: variables.c:5457
+#: variables.c:5464
 msgid "pop_scope: head of shell_variables not a temporary environment scope"
 msgstr "pop_scope: head of shell_variables not a temporary environment scope"
 
-#: variables.c:6448
+#: variables.c:6454
 #, c-format
 msgid "%s: %s: cannot open as FILE"
 msgstr "%s: %s: αδυναμία ανοίγματος ως ΑΡΧΕΙΟ"
 
-#: variables.c:6453
+#: variables.c:6459
 #, c-format
 msgid "%s: %s: invalid value for trace file descriptor"
 msgstr "%s: %s: μη έγκυρη τιμή για trace file descriptor"
 
-#: variables.c:6497
+#: variables.c:6503
 #, c-format
 msgid "%s: %s: compatibility value out of range"
 msgstr "%s: %s: τιμή συμβατότητας εκτός ορίου"
@@ -2238,16 +2313,18 @@ msgstr "Copyright (C) 2020 Free Software Foundation, Inc."
 
 #: version.c:51
 msgid ""
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
-"html>\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/"
+"gpl.html>\n"
 msgstr ""
-"License GPLv3+: GNU GPL έκδοση 3 ή νεώτερη <http://gnu.org/licenses/gpl."
-"html>\n"
+"License GPLv3+: GNU GPL έκδοση 3 ή νεώτερη <http://gnu.org/licenses/"
+"gpl.html>\n"
 
 #: version.c:90
 #, c-format
-msgid "GNU bash, version %s (%s)\n"
-msgstr "GNU bash, έκδοση %s (%s)\n"
+msgid ""
+"Hello! My name is Gash, Version %s (%s), I like helping people talk with "
+"their computer!\n"
+msgstr ""
 
 #: version.c:95
 msgid "This is free software; you are free to change and redistribute it."
@@ -4683,8 +4760,8 @@ msgid ""
 "    When completion is attempted, the actions are applied in the order the\n"
 "    uppercase-letter options are listed above. If multiple options are "
 "supplied,\n"
-"    the -D option takes precedence over -E, and both take precedence over -"
-"I.\n"
+"    the -D option takes precedence over -E, and both take precedence over "
+"-I.\n"
 "    \n"
 "    Exit Status:\n"
 "    Returns success unless an invalid option is supplied or an error occurs."
@@ -4790,6 +4867,62 @@ msgstr ""
 "Διαβάζει γραμμές από αρχείο σε μεταβλητή τύπου πίνακα.\n"
 "    \n"
 "    Συνώνυμο του «mapfile»."
+
+#, c-format
+#~ msgid "logout\n"
+#~ msgstr "logout\n"
+
+#, c-format
+#~ msgid "%s is aliased to `%s'\n"
+#~ msgstr "%s είναι συνώνυμο του «%s»\n"
+
+#, c-format
+#~ msgid "%s is a shell keyword\n"
+#~ msgstr "%s αποτελεί δεσμευμένη λέξη του κελύφους\n"
+
+#, c-format
+#~ msgid "%s is a function\n"
+#~ msgstr "%s είναι συνάρτηση\n"
+
+#, c-format
+#~ msgid "%s is hashed (%s)\n"
+#~ msgstr "%s is hashed (%s)\n"
+
+#, fuzzy
+#~ msgid "command not found"
+#~ msgstr "%s: εντολή δεν βρέθηκε"
+
+#, fuzzy, c-format
+#~ msgid "%s: cannot execute: required file not found"
+#~ msgstr "%s: αδυναμία εκτέλεσης δυαδικού αρχείου"
+
+#, fuzzy, c-format
+#~ msgid ""
+#~ "syntax error near unexpected token `%s' while looking for matching `%c'"
+#~ msgstr "μη αναμενόμενο EOF κατά την αναζήτηση «%c»"
+
+#, c-format
+#~ msgid "syntax error near unexpected token `%s'"
+#~ msgstr "συντακτικό σφάλμα κοντά στο μη αναμενόμενο σύμβολο «%s»"
+
+#, c-format
+#~ msgid "syntax error near `%s'"
+#~ msgstr "συντακτικό σφάλμα κοντά σε «%s»"
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from `%s' command on line %d"
+#~ msgstr "syntax error: μη αναμενόμενο τέλος αρχείου"
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from command on line %d"
+#~ msgstr "syntax error: μη αναμενόμενο τέλος αρχείου"
+
+#~ msgid "syntax error: unexpected end of file"
+#~ msgstr "syntax error: μη αναμενόμενο τέλος αρχείου"
+
+#, c-format
+#~ msgid "GNU bash, version %s (%s)\n"
+#~ msgstr "GNU bash, έκδοση %s (%s)\n"
 
 #, c-format
 #~ msgid "%s: cannot open: %s"

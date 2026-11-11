@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bash 5.2-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 09:37-0400\n"
+"POT-Creation-Date: 2026-10-27 13:00+0700\n"
 "PO-Revision-Date: 2023-08-04 09:34+0300\n"
 "Last-Translator: Pavlo Marianov <acid@jack.kiev.ua>\n"
 "Language-Team: Russian <gnu@d07.ru>\n"
@@ -25,8 +25,8 @@ msgstr ""
 msgid "bad array subscript"
 msgstr "неправильный индекс массива"
 
-#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2196 variables.c:2225
-#: variables.c:3099
+#: arrayfunc.c:466 builtins/declare.def:748 variables.c:2203 variables.c:2232
+#: variables.c:3106
 #, c-format
 msgid "%s: removing nameref attribute"
 msgstr "%s: удаляется атрибут nameref"
@@ -91,7 +91,7 @@ msgstr "расширение скобки: не удалось выделить 
 msgid "brace expansion: failed to allocate memory for `%s'"
 msgstr "расширение скобки: не удалось выделить память для «%s»"
 
-#: builtins/alias.def:131 variables.c:1789
+#: builtins/alias.def:131 variables.c:1796
 #, c-format
 msgid "`%s': invalid alias name"
 msgstr "«%s»: недопустимый псевдоним"
@@ -190,7 +190,7 @@ msgstr "Не задана переменная OLDPWD"
 msgid "line %d: "
 msgstr "строка %d: "
 
-#: builtins/common.c:117 error.c:227
+#: builtins/common.c:117 error.c:254
 #, c-format
 msgid "warning: "
 msgstr "предупреждение: "
@@ -225,7 +225,7 @@ msgstr "%s: недопустимый параметр"
 msgid "%s: invalid option name"
 msgstr "%s: недопустимое название параметра"
 
-#: builtins/common.c:210 error.c:461
+#: builtins/common.c:210 error.c:488
 #, c-format
 msgid "`%s': not a valid identifier"
 msgstr "«%s»: это недопустимый идентификатор"
@@ -252,7 +252,7 @@ msgstr "%s: недопустимое указание сигнала"
 msgid "`%s': not a pid or valid job spec"
 msgstr "«%s»: это не идентификатор процесса и не допустимый указатель задания"
 
-#: builtins/common.c:242 error.c:455
+#: builtins/common.c:242 error.c:482
 #, c-format
 msgid "%s: readonly variable"
 msgstr "%s: переменная только для чтения"
@@ -348,12 +348,12 @@ msgstr "справка отсутствует в этой версии"
 msgid "%s: not an indexed array"
 msgstr "%s: это не индексированный массив"
 
-#: builtins/common.c:1028 builtins/set.def:964 variables.c:3868
+#: builtins/common.c:1028 builtins/set.def:964 variables.c:3875
 #, c-format
 msgid "%s: cannot unset: readonly %s"
 msgstr "%s: не удаётся выполнить сброс: %s доступен только для чтения"
 
-#: builtins/common.c:1033 builtins/set.def:930 variables.c:3873
+#: builtins/common.c:1033 builtins/set.def:930 variables.c:3880
 #, c-format
 msgid "%s: cannot unset"
 msgstr "%s: не удаётся выполнить сброс"
@@ -389,7 +389,7 @@ msgstr "можно использовать только внутри функц
 msgid "cannot use `-f' to make functions"
 msgstr "«-f» нельзя использовать для создания функций"
 
-#: builtins/declare.def:499 execute_cmd.c:6320
+#: builtins/declare.def:499
 #, c-format
 msgid "%s: readonly function"
 msgstr "%s: значение функции можно только считать"
@@ -399,12 +399,12 @@ msgstr "%s: значение функции можно только считат
 msgid "%s: reference variable cannot be an array"
 msgstr "%s: ссылочная переменная не может быть массивом"
 
-#: builtins/declare.def:567 variables.c:3346
+#: builtins/declare.def:567 variables.c:3353
 #, c-format
 msgid "%s: nameref variable self references not allowed"
 msgstr "%s: переменные nameref, ссылающиеся сами на себя, не допускаются"
 
-#: builtins/declare.def:572 variables.c:2035 variables.c:3343
+#: builtins/declare.def:572 variables.c:2042 variables.c:3350
 #, c-format
 msgid "%s: circular name reference"
 msgstr "%s: круговая ссылка на имя"
@@ -468,7 +468,7 @@ msgstr "%s: не загружается динамически"
 msgid "%s: cannot delete: %s"
 msgstr "%s: не удаётся удалить: %s"
 
-#: builtins/evalfile.c:137 builtins/hash.def:190 execute_cmd.c:6140
+#: builtins/evalfile.c:137 builtins/hash.def:190
 #, c-format
 msgid "%s: is a directory"
 msgstr "%s: это каталог"
@@ -483,7 +483,7 @@ msgstr "%s: это не обычный файл"
 msgid "%s: file is too large"
 msgstr "%s: файл слишком велик"
 
-#: builtins/evalfile.c:189 builtins/evalfile.c:207 execute_cmd.c:6222
+#: builtins/evalfile.c:191 builtins/evalfile.c:209 execute_cmd.c:6231
 #: shell.c:1687
 #, fuzzy
 msgid "cannot execute binary file"
@@ -501,8 +501,8 @@ msgstr "%s: не удаётся запустить: %s"
 
 #: builtins/exit.def:61
 #, c-format
-msgid "logout\n"
-msgstr "выход\n"
+msgid "bro logged out, so\n"
+msgstr ""
 
 #: builtins/exit.def:85
 msgid "not login shell: use `exit'"
@@ -517,6 +517,11 @@ msgstr "Есть остановленные задания.\n"
 #, c-format
 msgid "There are running jobs.\n"
 msgstr "Есть выполняемые задания.\n"
+
+#: builtins/exit.def:150
+#, c-format
+msgid "Bye bye and never meet again!\n"
+msgstr ""
 
 #: builtins/fc.def:284 builtins/fc.def:391 builtins/fc.def:435
 msgid "no command found"
@@ -594,20 +599,21 @@ msgid "cannot open"
 msgstr "не удаётся приостановить"
 
 #: builtins/help.def:264 builtins/help.def:306 builtins/history.def:306
-#: builtins/history.def:325 builtins/read.def:909
+#: builtins/history.def:325 builtins/read.def:911
 #, fuzzy
 msgid "read error"
 msgstr "ошибка чтения: %d: %s"
 
 #: builtins/help.def:517
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"These shell commands are defined internally.  Type `help' to see this list.\n"
+"These shell commands are defined internally. Please type `help' to see this "
+"list.\n"
 "Type `help name' to find out more about the function `name'.\n"
 "Use `info bash' to find out more about the shell in general.\n"
 "Use `man -k' or `info' to find out more about commands not in this list.\n"
 "\n"
-"A star (*) next to a name means that the command is disabled.\n"
+"A star (*) next to a name means that the command is disable.\n"
 "\n"
 msgstr ""
 "Показанные ниже команды определены внутри командного процессора.  Чтобы "
@@ -635,7 +641,7 @@ msgstr "положение журнала команд"
 msgid "empty filename"
 msgstr "пустое имя переменной массива"
 
-#: builtins/history.def:282 subst.c:8226
+#: builtins/history.def:282 subst.c:8233
 #, c-format
 msgid "%s: parameter null or not set"
 msgstr "%s: параметр не задан или пустой"
@@ -667,36 +673,36 @@ msgstr "Неизвестная ошибка"
 msgid "expression expected"
 msgstr "ожидается выражение"
 
-#: builtins/mapfile.def:249 builtins/read.def:373
+#: builtins/mapfile.def:252 builtins/read.def:373
 #, c-format
 msgid "%s: invalid file descriptor specification"
 msgstr "%s: недопустимое указание дескриптора файла"
 
-#: builtins/mapfile.def:257 builtins/read.def:380
+#: builtins/mapfile.def:260 builtins/read.def:380
 #, fuzzy
 msgid "invalid file descriptor"
 msgstr "%d: invalid недопустимый дескриптор файла: %s"
 
-#: builtins/mapfile.def:266 builtins/mapfile.def:304
+#: builtins/mapfile.def:269 builtins/mapfile.def:307
 #, c-format
 msgid "%s: invalid line count"
 msgstr "%s: недопустимое число строк"
 
-#: builtins/mapfile.def:277
+#: builtins/mapfile.def:280
 #, c-format
 msgid "%s: invalid array origin"
 msgstr "%s: недопустимое начало массива"
 
-#: builtins/mapfile.def:294
+#: builtins/mapfile.def:297
 #, c-format
 msgid "%s: invalid callback quantum"
 msgstr "%s: недопустимый квант обратного вызова"
 
-#: builtins/mapfile.def:327
+#: builtins/mapfile.def:330
 msgid "empty array variable name"
 msgstr "пустое имя переменной массива"
 
-#: builtins/mapfile.def:347
+#: builtins/mapfile.def:350
 msgid "array variable support required"
 msgstr "требуется поддержка переменных массива"
 
@@ -946,38 +952,50 @@ msgstr "отсутствует символ «]»"
 
 #: builtins/type.def:231
 #, c-format
-msgid "%s is aliased to `%s'\n"
-msgstr "%s — это псевдонимом для «%s»\n"
+msgid "You found %s, not a command, but it's shortcut for `%s'\n"
+msgstr ""
 
 #: builtins/type.def:252
 #, c-format
-msgid "%s is a shell keyword\n"
-msgstr "%s — это ключевое слово командного процессора\n"
+msgid "You found %s! A shell keyword, it is the part of the shell lang!\n"
+msgstr ""
 
-#: builtins/type.def:270 builtins/type.def:314
+#: builtins/type.def:270
 #, c-format
 msgid "%s is a special shell builtin\n"
 msgstr "%s — это специальная встроенная команда bash\n"
 
 #: builtins/type.def:289
 #, c-format
-msgid "%s is a function\n"
-msgstr "%s — это функция\n"
+msgid "You found %s, and it is a shell function \n"
+msgstr ""
+
+#: builtins/type.def:314
+#, c-format
+msgid "OHH!You found %s, a sPeaCAl SheLL BuilTIn \n"
+msgstr ""
 
 #: builtins/type.def:316
-#, c-format
-msgid "%s is a shell builtin\n"
+#, fuzzy, c-format
+msgid "You found %s, a shell builtin\n"
 msgstr "%s — это встроенная команда bash\n"
 
-#: builtins/type.def:338 builtins/type.def:425
+#: builtins/type.def:339
 #, c-format
 msgid "%s is %s\n"
 msgstr "%s является %s\n"
 
-#: builtins/type.def:358
+#: builtins/type.def:359
 #, c-format
-msgid "%s is hashed (%s)\n"
-msgstr "для %s вычислен хэш (%s)\n"
+msgid ""
+"Bro!you found %s, and it points to an ELF or something else... (For who "
+"don't know, it directory is %s, that all)\n"
+msgstr ""
+
+#: builtins/type.def:426
+#, c-format
+msgid "You found %s! a executable in $PATH (Directory:%s)\n"
+msgstr ""
 
 #: builtins/ulimit.def:403
 #, c-format
@@ -1017,48 +1035,81 @@ msgstr "«%c»: недопустимый оператор символьного
 msgid "`%c': invalid symbolic mode character"
 msgstr "«%c»: недопустимый знак символьного режима"
 
-#: error.c:83 error.c:311 error.c:313 error.c:315
+#: error.c:71
+msgid "403 Forbidden: permission skill issue"
+msgstr ""
+
+#: error.c:73
+msgid "404 Not Found: this path has left the chat"
+msgstr ""
+
+#: error.c:75
+msgid "Already exists: duplicate arc unlocked"
+msgstr ""
+
+#: error.c:77
+msgid "Not a directory: wrong side quest"
+msgstr ""
+
+#: error.c:79
+#, fuzzy
+msgid "Is a directory: plot twist"
+msgstr "%s: это каталог"
+
+#: error.c:81
+msgid "No space left: the disk is cooked"
+msgstr ""
+
+#: error.c:83
+msgid "Read-only filesystem said nope"
+msgstr ""
+
+#: error.c:85
+msgid "Broken pipe: the other side went to touch grass"
+msgstr ""
+
+#: error.c:111 error.c:338 error.c:340 error.c:342
 msgid " line "
 msgstr " строка "
 
-#: error.c:151
+#: error.c:178
 #, c-format
 msgid "last command: %s\n"
 msgstr "последняя команда: %s\n"
 
-#: error.c:159
+#: error.c:186
 #, c-format
 msgid "Aborting..."
 msgstr "Прерывание..."
 
 #. TRANSLATORS: this is a prefix for informational messages.
-#: error.c:244
+#: error.c:271
 #, c-format
 msgid "INFORM: "
 msgstr "ИНФО: "
 
-#: error.c:261
+#: error.c:288
 #, fuzzy, c-format
 msgid "DEBUG warning: "
 msgstr "предупреждение: "
 
-#: error.c:413
+#: error.c:440
 msgid "unknown command error"
 msgstr "неизвестная ошибка команды"
 
-#: error.c:414
+#: error.c:441
 msgid "bad command type"
 msgstr "неверный тип команды"
 
-#: error.c:415
+#: error.c:442
 msgid "bad connector"
 msgstr "неверный соединитель"
 
-#: error.c:416
+#: error.c:443
 msgid "bad jump"
 msgstr "ошибка перехода"
 
-#: error.c:449
+#: error.c:476
 #, c-format
 msgid "%s: unbound variable"
 msgstr "%s: не заданы границы переменной"
@@ -1067,73 +1118,82 @@ msgstr "%s: не заданы границы переменной"
 msgid "\atimed out waiting for input: auto-logout\n"
 msgstr "\aпревышено время ожидания ввода: auto-logout\n"
 
-#: execute_cmd.c:606
+#: execute_cmd.c:607
 #, fuzzy
 msgid "cannot redirect standard input from /dev/null"
 msgstr "не удаётся перенаправить стандартный ввод из /dev/null: %s"
 
-#: execute_cmd.c:1412
+#: execute_cmd.c:1413
 #, c-format
 msgid "TIMEFORMAT: `%c': invalid format character"
 msgstr "TIMEFORMAT: «%c»: недопустимый символ форматирования"
 
-#: execute_cmd.c:2493
+#: execute_cmd.c:2494
 #, c-format
 msgid "execute_coproc: coproc [%d:%s] still exists"
 msgstr "execute_coproc: coproc [%d:%s] всё ещё существует"
 
-#: execute_cmd.c:2647
+#: execute_cmd.c:2648
 msgid "pipe error"
 msgstr "ошибка конвейера"
 
-#: execute_cmd.c:4100
+#: execute_cmd.c:4101
 #, c-format
 msgid "invalid regular expression `%s': %s"
 msgstr ""
 
-#: execute_cmd.c:4102
+#: execute_cmd.c:4103
 #, c-format
 msgid "invalid regular expression `%s'"
 msgstr ""
 
-#: execute_cmd.c:5056
+#: execute_cmd.c:5061
 #, c-format
 msgid "eval: maximum eval nesting level exceeded (%d)"
 msgstr "eval: достигнут максимальный уровень вложенности eval (%d)"
 
-#: execute_cmd.c:5069
+#: execute_cmd.c:5074
 #, c-format
 msgid "%s: maximum source nesting level exceeded (%d)"
 msgstr "%s: достигнут максимальный уровень вложенности source (%d)"
 
-#: execute_cmd.c:5198
+#: execute_cmd.c:5203
 #, c-format
 msgid "%s: maximum function nesting level exceeded (%d)"
 msgstr "%s: достигнут максимальный уровень вложенности функций (%d)"
 
-#: execute_cmd.c:5754
-#, fuzzy
-msgid "command not found"
-msgstr "%s: команда не найдена"
+#: execute_cmd.c:5763
+msgid "bro...command not exist!"
+msgstr ""
 
-#: execute_cmd.c:5783
+#: execute_cmd.c:5792
 #, c-format
 msgid "%s: restricted: cannot specify `/' in command names"
 msgstr ""
 "%s: ограниченный режим: в названиях команд нельзя использовать косую черту "
 "«/»"
 
-#: execute_cmd.c:6176
+#: execute_cmd.c:6150
+#, fuzzy, c-format
+msgid "%s: Bro! You are execute the directory"
+msgstr "%s: каталоги не могут запускаться как исполняемые файлы"
+
+#: execute_cmd.c:6186
 #, fuzzy
 msgid "bad interpreter"
 msgstr "%s: %s: неверный интерпретатор"
 
-#: execute_cmd.c:6185
-#, fuzzy, c-format
-msgid "%s: cannot execute: required file not found"
-msgstr "%s: не удаётся запустить бинарный файл"
+#: execute_cmd.c:6195
+#, c-format
+msgid "%s: bro...required file not exist!"
+msgstr ""
 
-#: execute_cmd.c:6361
+#: execute_cmd.c:6329
+#, c-format
+msgid "%s: BRO! only read this thing!"
+msgstr ""
+
+#: execute_cmd.c:6370
 #, c-format
 msgid "cannot duplicate fd %d to fd %d"
 msgstr "не удаётся скопировать файловый дескриптор %d в %d"
@@ -1229,12 +1289,12 @@ msgstr "%s: ошибка выражения\n"
 msgid "getcwd: cannot access parent directories"
 msgstr "getcwd: нет доступа к родительским каталогам"
 
-#: general.c:459
+#: general.c:464
 #, c-format
 msgid "`%s': is a special builtin"
 msgstr "«%s»: это специальная встроенная команда"
 
-#: input.c:98 subst.c:6542
+#: input.c:98 subst.c:6544
 #, c-format
 msgid "cannot reset nodelay mode for fd %d"
 msgstr "не удаётся сбросить режим nodelay для файлового дескриптора %d"
@@ -1562,7 +1622,7 @@ msgid "make_redirection: redirection instruction `%d' out of range"
 msgstr ""
 "make_redirection: инструкция перенаправления «%d» вышла за пределы диапазона"
 
-#: parse.y:2572
+#: parse.y:2584
 #, c-format
 msgid ""
 "shell_getc: shell_input_line_size (%zu) exceeds SIZE_MAX (%lu): line "
@@ -1571,127 +1631,136 @@ msgstr ""
 "shell_getc: shell_input_line_size (%zu) превысил SIZE_MAX (%lu): строка "
 "обрезана"
 
-#: parse.y:2864
+#: parse.y:2876
 #, fuzzy
 msgid "script file read error"
 msgstr "ошибка записи: %s"
 
-#: parse.y:3101
+#: parse.y:3113
 msgid "maximum here-document count exceeded"
 msgstr "достигнуто максимальное число переменных here-document"
 
-#: parse.y:3901 parse.y:4799 parse.y:6859
+#: parse.y:3913 parse.y:4811
 #, c-format
 msgid "unexpected EOF while looking for matching `%c'"
 msgstr "неожиданный конец файла во время поиска «%c»"
 
-#: parse.y:5006
+#: parse.y:5019
 msgid "unexpected EOF while looking for `]]'"
 msgstr "неожиданный конец файла во время поиска «]]»"
 
-#: parse.y:5011
+#: parse.y:5024
 #, c-format
 msgid "syntax error in conditional expression: unexpected token `%s'"
 msgstr "синтаксическая ошибка в условном выражении: неожиданный маркер «%s»"
 
-#: parse.y:5015
+#: parse.y:5028
 msgid "syntax error in conditional expression"
 msgstr "синтаксическая ошибка в условном выражении"
 
-#: parse.y:5093
+#: parse.y:5106
 #, c-format
 msgid "unexpected token `%s', expected `)'"
 msgstr "неожиданный маркер «%s», ожидался «)»"
 
-#: parse.y:5097
+#: parse.y:5110
 msgid "expected `)'"
 msgstr "ожидается символ «)»"
 
-#: parse.y:5127
+#: parse.y:5140
 #, c-format
 msgid "unexpected argument `%s' to conditional unary operator"
 msgstr "неожиданный аргумент «%s» для условного унарного оператора"
 
-#: parse.y:5131
+#: parse.y:5144
 msgid "unexpected argument to conditional unary operator"
 msgstr "неожиданный аргумент для условного унарного оператора"
 
-#: parse.y:5178
+#: parse.y:5191
 #, c-format
 msgid "unexpected token `%s', conditional binary operator expected"
 msgstr "неожиданный маркер «%s», ожидается условный бинарный оператор"
 
-#: parse.y:5182
+#: parse.y:5195
 msgid "conditional binary operator expected"
 msgstr "ожидается условный бинарный оператор"
 
-#: parse.y:5211
+#: parse.y:5224
 #, c-format
 msgid "unexpected argument `%s' to conditional binary operator"
 msgstr "неожиданный аргумент «%s» для условного бинарного оператора"
 
-#: parse.y:5215
+#: parse.y:5228
 msgid "unexpected argument to conditional binary operator"
 msgstr "неожиданный аргумент для условного бинарного оператора"
 
-#: parse.y:5226
+#: parse.y:5239
 #, c-format
 msgid "unexpected token `%c' in conditional command"
 msgstr "неожиданный маркер «%c» в условной команде"
 
-#: parse.y:5229
+#: parse.y:5242
 #, c-format
 msgid "unexpected token `%s' in conditional command"
 msgstr "неожиданный маркер «%s» в условной команде"
 
-#: parse.y:5233
+#: parse.y:5246
 #, c-format
 msgid "unexpected token %d in conditional command"
 msgstr "неожиданный маркер %d в условной команде"
 
-#: parse.y:6827
-#, fuzzy, c-format
-msgid "syntax error near unexpected token `%s' while looking for matching `%c'"
-msgstr "неожиданный конец файла во время поиска «%c»"
-
-#: parse.y:6829
+#: parse.y:6860
 #, c-format
-msgid "syntax error near unexpected token `%s'"
-msgstr "синтаксическая ошибка рядом с неожиданным маркером «%s»"
+msgid "BRO! You left your `%s' while we searching`%c'"
+msgstr ""
 
-#: parse.y:6848
+#: parse.y:6862
 #, c-format
-msgid "syntax error near `%s'"
-msgstr "синтаксическая ошибка рядом с «%s»"
+msgid "BRO! you left your `%s'"
+msgstr ""
 
-#: parse.y:6867
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from `%s' command on line %d"
-msgstr "синтаксическая ошибка: неожиданный конец файла"
+#: parse.y:6881
+#, c-format
+msgid "BRO! token `%s' is wrong"
+msgstr ""
 
-#: parse.y:6869
-#, fuzzy, c-format
-msgid "syntax error: unexpected end of file from command on line %d"
-msgstr "синтаксическая ошибка: неожиданный конец файла"
+#: parse.y:6892
+#, c-format
+msgid "BRO! We are finding `%c', but why you EOF too soon?"
+msgstr ""
 
-#: parse.y:6873
-msgid "syntax error: unexpected end of file"
-msgstr "синтаксическая ошибка: неожиданный конец файла"
+#: parse.y:6900
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error : Why did you end the file too soon while we "
+"were looking for the end flag from `%s' command on line %d"
+msgstr ""
 
-#: parse.y:6873
+#: parse.y:6902
+#, c-format
+msgid ""
+"Error STUFF!! | Syntax Error: Why you end file too soon while we find a end "
+"flag from a command on %d"
+msgstr ""
+
+#: parse.y:6906
+msgid "Error STUFF: You left your EOF "
+msgstr ""
+
+#: parse.y:6906
 msgid "syntax error"
 msgstr "синтаксическая ошибка"
 
-#: parse.y:6922
+#: parse.y:6955
 #, c-format
 msgid "Use \"%s\" to leave the shell.\n"
 msgstr "Для выхода из командного процессора используйте «%s».\n"
 
-#: parse.y:7120
+#: parse.y:7153
 msgid "unexpected EOF while looking for matching `)'"
 msgstr "неожиданный конец файла во время поиска «)»"
 
-#: pathexp.c:897
+#: pathexp.c:909
 #, fuzzy
 msgid "invalid glob sort type"
 msgstr "недопустимое основание"
@@ -1878,7 +1947,13 @@ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 msgstr ""
 "Общая справка по использованию программ GNU: <http://www.gnu.org/gethelp/>\n"
 
-#: sig.c:809
+#: shell.c:2102
+#, c-format
+msgid ""
+"Internet lore status: skill issue contained; keep calm and touch grass.\n"
+msgstr ""
+
+#: sig.c:812
 #, c-format
 msgid "sigprocmask: %d: invalid operation"
 msgstr "sigprocmask: %d: недопустимая операция"
@@ -2048,103 +2123,103 @@ msgstr "Информационный запрос"
 msgid "Unknown Signal #%d"
 msgstr "Неизвестный номер сигнала %d"
 
-#: subst.c:1503 subst.c:1795 subst.c:2001
+#: subst.c:1505 subst.c:1797 subst.c:2003
 #, c-format
 msgid "bad substitution: no closing `%s' in %s"
 msgstr "неверная подстановка: нет закрывающей «%s» в %s"
 
-#: subst.c:3601
+#: subst.c:3603
 #, c-format
 msgid "%s: cannot assign list to array member"
 msgstr "%s: не удаётся присвоить список элементу массива"
 
-#: subst.c:6381 subst.c:6397
+#: subst.c:6383 subst.c:6399
 msgid "cannot make pipe for process substitution"
 msgstr "не удаётся создать конвейер для подстановки процесса"
 
-#: subst.c:6457
+#: subst.c:6459
 msgid "cannot make child for process substitution"
 msgstr "не удаётся создать дочерний процесс для подстановки"
 
-#: subst.c:6532
+#: subst.c:6534
 #, c-format
 msgid "cannot open named pipe %s for reading"
 msgstr "не удаётся открыть именованный конвейер %s для чтения"
 
-#: subst.c:6534
+#: subst.c:6536
 #, c-format
 msgid "cannot open named pipe %s for writing"
 msgstr "не удаётся открыть именованный конвейер %s для записи"
 
-#: subst.c:6557
+#: subst.c:6559
 #, c-format
 msgid "cannot duplicate named pipe %s as fd %d"
 msgstr ""
 "не удаётся скопировать именованный конвейер %s  в файловый дескриптор %d"
 
-#: subst.c:6723
+#: subst.c:6725
 msgid "command substitution: ignored null byte in input"
 msgstr "подстановка команды: во входных данных проигнорирован нулевой байт"
 
-#: subst.c:6962
+#: subst.c:6964
 msgid "function_substitute: cannot open anonymous file for output"
 msgstr ""
 
-#: subst.c:7036
+#: subst.c:7043
 #, fuzzy
 msgid "function_substitute: cannot duplicate anonymous file as standard output"
 msgstr ""
 "command_substitute: не удаётся скопировать конвейер в файловый дескриптор 1"
 
-#: subst.c:7210 subst.c:7231
+#: subst.c:7217 subst.c:7238
 msgid "cannot make pipe for command substitution"
 msgstr "не удаётся создать конвейер для подстановки команды"
 
-#: subst.c:7282
+#: subst.c:7289
 msgid "cannot make child for command substitution"
 msgstr "не удаётся создать дочерний процесс для подстановки команды"
 
-#: subst.c:7315
+#: subst.c:7322
 msgid "command_substitute: cannot duplicate pipe as fd 1"
 msgstr ""
 "command_substitute: не удаётся скопировать конвейер в файловый дескриптор 1"
 
-#: subst.c:7813 subst.c:10989
+#: subst.c:7820 subst.c:11013
 #, c-format
 msgid "%s: invalid variable name for name reference"
 msgstr "%s: недопустимое название переменной для ссылки на имя"
 
-#: subst.c:7906 subst.c:7924 subst.c:8100
+#: subst.c:7913 subst.c:7931 subst.c:8107
 #, c-format
 msgid "%s: invalid indirect expansion"
 msgstr "%s: недопустимое непрямое раскрытие"
 
-#: subst.c:7940 subst.c:8108
+#: subst.c:7947 subst.c:8115
 #, c-format
 msgid "%s: invalid variable name"
 msgstr "%s: недопустимое имя переменной"
 
-#: subst.c:8125 subst.c:10271 subst.c:10298
+#: subst.c:8132 subst.c:10278 subst.c:10305
 #, c-format
 msgid "%s: bad substitution"
 msgstr "%s: недопустимая подстановка"
 
-#: subst.c:8224
+#: subst.c:8231
 #, c-format
 msgid "%s: parameter not set"
 msgstr "%s: параметр не задан"
 
-#: subst.c:8480 subst.c:8495
+#: subst.c:8487 subst.c:8502
 #, c-format
 msgid "%s: substring expression < 0"
 msgstr "%s: заданное подстрокой выражение меньше нуля"
 
-#: subst.c:10397
+#: subst.c:10404
 #, c-format
 msgid "$%s: cannot assign in this way"
 msgstr "$%s: такое присвоение невозможно"
 
-#: subst.c:10855
+#: subst.c:10862
 msgid ""
 "future versions of the shell will force evaluation as an arithmetic "
 "substitution"
@@ -2152,12 +2227,12 @@ msgstr ""
 "в будущих версиях командный процессор оценка будет выполняться как "
 "математическая подстановка"
 
-#: subst.c:11563
+#: subst.c:11587
 #, c-format
 msgid "bad substitution: no closing \"`\" in %s"
 msgstr "неверная подстановка: нет закрывающей «`» в %s"
 
-#: subst.c:12636
+#: subst.c:12668
 #, c-format
 msgid "no match: %s"
 msgstr "нет совпадений: %s"
@@ -2229,88 +2304,88 @@ msgstr "trap_handler: неверный сигнал %d"
 msgid "frame not found"
 msgstr "%s: файл не найден"
 
-#: variables.c:441
+#: variables.c:444
 #, c-format
 msgid "error importing function definition for `%s'"
 msgstr "ошибка импорта определения функции для «%s»"
 
-#: variables.c:864
+#: variables.c:871
 #, c-format
 msgid "shell level (%d) too high, resetting to 1"
 msgstr "слишком высокий уровень командного процессора (%d); сбрасывается до 1"
 
-#: variables.c:2191 variables.c:2220 variables.c:2278 variables.c:2297
-#: variables.c:2315 variables.c:2350 variables.c:2378 variables.c:2405
-#: variables.c:2431 variables.c:3274 variables.c:3282 variables.c:3797
-#: variables.c:3841
+#: variables.c:2198 variables.c:2227 variables.c:2285 variables.c:2304
+#: variables.c:2322 variables.c:2357 variables.c:2385 variables.c:2412
+#: variables.c:2438 variables.c:3281 variables.c:3289 variables.c:3804
+#: variables.c:3848
 #, fuzzy, c-format
 msgid "%s: maximum nameref depth (%d) exceeded"
 msgstr "достигнуто максимальное число переменных here-document"
 
-#: variables.c:2641
+#: variables.c:2648
 msgid "make_local_variable: no function context at current scope"
 msgstr "make_local_variable: в текущей области отсутствует контекст функции"
 
-#: variables.c:2660
+#: variables.c:2667
 #, c-format
 msgid "%s: variable may not be assigned value"
 msgstr "%s: переменной не может быть присвоено значение"
 
-#: variables.c:2831 variables.c:2884
+#: variables.c:2838 variables.c:2891
 #, c-format
 msgid "%s: cannot inherit value from incompatible type"
 msgstr ""
 
-#: variables.c:3437
+#: variables.c:3444
 #, c-format
 msgid "%s: assigning integer to name reference"
 msgstr "%s: целое числе присваивается ссылке на имя"
 
-#: variables.c:4387
+#: variables.c:4394
 msgid "all_local_variables: no function context at current scope"
 msgstr "all_local_variables: в текущей области отсутствует контекст функции"
 
-#: variables.c:4816
+#: variables.c:4823
 #, c-format
 msgid "%s has null exportstr"
 msgstr "%s имеет пустую exportstr"
 
-#: variables.c:4821 variables.c:4830
+#: variables.c:4828 variables.c:4837
 #, c-format
 msgid "invalid character %d in exportstr for %s"
 msgstr "недопустимый символ %d в exportstr для %s"
 
-#: variables.c:4836
+#: variables.c:4843
 #, c-format
 msgid "no `=' in exportstr for %s"
 msgstr "отсутствует «=» в exportstr для %s"
 
-#: variables.c:5354
+#: variables.c:5361
 msgid "pop_var_context: head of shell_variables not a function context"
 msgstr ""
 "pop_var_context: заголовок shell_variables не является контекстом функции"
 
-#: variables.c:5367
+#: variables.c:5374
 msgid "pop_var_context: no global_variables context"
 msgstr "pop_var_context: отсутствует контекст global_variables"
 
-#: variables.c:5457
+#: variables.c:5464
 msgid "pop_scope: head of shell_variables not a temporary environment scope"
 msgstr ""
 "pop_scope: заголовок shell_variables не является областью временного "
 "окружения"
 
-#: variables.c:6448
+#: variables.c:6454
 #, c-format
 msgid "%s: %s: cannot open as FILE"
 msgstr "%s: %s: не удаётся открыть как ФАЙЛ"
 
-#: variables.c:6453
+#: variables.c:6459
 #, c-format
 msgid "%s: %s: invalid value for trace file descriptor"
 msgstr "%s: %s: недопустимое значение для дескриптора файла трассировки"
 
-#: variables.c:6497
+#: variables.c:6503
 #, c-format
 msgid "%s: %s: compatibility value out of range"
 msgstr "%s: %s: значение совместимости за пределами диапазона"
@@ -2322,16 +2397,18 @@ msgstr "© Free Software Foundation, Inc, 2020."
 
 #: version.c:51
 msgid ""
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
-"html>\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/"
+"gpl.html>\n"
 msgstr ""
 "Лицензия GPLv3+: GNU GPL версии 3 или более поздней <http://gnu.org/licenses/"
 "gpl.html>\n"
 
 #: version.c:90
 #, c-format
-msgid "GNU bash, version %s (%s)\n"
-msgstr "GNU bash, версия %s (%s)\n"
+msgid ""
+"Hello! My name is Gash, Version %s (%s), I like helping people talk with "
+"their computer!\n"
+msgstr ""
 
 #: version.c:95
 msgid "This is free software; you are free to change and redistribute it."
@@ -2857,8 +2934,8 @@ msgstr ""
 "      -f  файл           прочитать привязки из файла\n"
 "      -x  посл-клавиш:кмнд-shell выполнить команду bash, если введена\n"
 "    \t\t\t\tпоследовательность клавиш\n"
-"      -X\t\t     вывести последовательности клавиш, привязанные с помощью -"
-"x, и связанные команды\n"
+"      -X\t\t     вывести последовательности клавиш, привязанные с помощью "
+"-x, и связанные команды\n"
 "                         в формате для повторного использования\n"
 "    \n"
 "    Состояние выхода:\n"
@@ -6005,8 +6082,8 @@ msgid ""
 "    When completion is attempted, the actions are applied in the order the\n"
 "    uppercase-letter options are listed above. If multiple options are "
 "supplied,\n"
-"    the -D option takes precedence over -E, and both take precedence over -"
-"I.\n"
+"    the -D option takes precedence over -E, and both take precedence over "
+"-I.\n"
 "    \n"
 "    Exit Status:\n"
 "    Returns success unless an invalid option is supplied or an error occurs."
@@ -6215,6 +6292,62 @@ msgstr ""
 "    Синоним команды «mapfile»."
 
 #, c-format
+#~ msgid "logout\n"
+#~ msgstr "выход\n"
+
+#, c-format
+#~ msgid "%s is aliased to `%s'\n"
+#~ msgstr "%s — это псевдонимом для «%s»\n"
+
+#, c-format
+#~ msgid "%s is a shell keyword\n"
+#~ msgstr "%s — это ключевое слово командного процессора\n"
+
+#, c-format
+#~ msgid "%s is a function\n"
+#~ msgstr "%s — это функция\n"
+
+#, c-format
+#~ msgid "%s is hashed (%s)\n"
+#~ msgstr "для %s вычислен хэш (%s)\n"
+
+#, fuzzy
+#~ msgid "command not found"
+#~ msgstr "%s: команда не найдена"
+
+#, fuzzy, c-format
+#~ msgid "%s: cannot execute: required file not found"
+#~ msgstr "%s: не удаётся запустить бинарный файл"
+
+#, fuzzy, c-format
+#~ msgid ""
+#~ "syntax error near unexpected token `%s' while looking for matching `%c'"
+#~ msgstr "неожиданный конец файла во время поиска «%c»"
+
+#, c-format
+#~ msgid "syntax error near unexpected token `%s'"
+#~ msgstr "синтаксическая ошибка рядом с неожиданным маркером «%s»"
+
+#, c-format
+#~ msgid "syntax error near `%s'"
+#~ msgstr "синтаксическая ошибка рядом с «%s»"
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from `%s' command on line %d"
+#~ msgstr "синтаксическая ошибка: неожиданный конец файла"
+
+#, fuzzy, c-format
+#~ msgid "syntax error: unexpected end of file from command on line %d"
+#~ msgstr "синтаксическая ошибка: неожиданный конец файла"
+
+#~ msgid "syntax error: unexpected end of file"
+#~ msgstr "синтаксическая ошибка: неожиданный конец файла"
+
+#, c-format
+#~ msgid "GNU bash, version %s (%s)\n"
+#~ msgstr "GNU bash, версия %s (%s)\n"
+
+#, c-format
 #~ msgid "%s: cannot open: %s"
 #~ msgstr "%s: не удаётся открыть файл: %s"
 
@@ -6395,9 +6528,6 @@ msgstr ""
 
 #~ msgid "`-c' requires an argument"
 #~ msgstr "`-c' должен использоваться с аргументом"
-
-#~ msgid "%s: cannot execute directories"
-#~ msgstr "%s: каталоги не могут запускаться как исполняемые файлы"
 
 #~ msgid "Bad code in sig.c: sigprocmask"
 #~ msgstr "Неверный код в sig.c: sigprocmask"
