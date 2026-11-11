@@ -393,7 +393,7 @@ fi
 HELPDIR= HELPDIRDEFINE= HELPINSTALL= HELPFILES_TARGET=
 if test "$opt_separate_help" != no; then
 	if test "$opt_separate_help" = "yes" ; then
-		HELPDIR='${datadir}/bash/helpfiles'
+		HELPDIR='${datadir}/gash/helpfiles'
 	else
 		HELPDIR=$opt_separate_help
 	fi
@@ -1333,7 +1333,7 @@ AC_SUBST(localedir)
 
 # directory where we install dynamically loadable builtins
 if test -z "$loadablesdir"; then
-	loadablesdir='${libdir}/bash'
+	loadablesdir='${libdir}/gash'
 fi
 AC_SUBST(loadablesdir)
 if test -z "$headersdir"; then
